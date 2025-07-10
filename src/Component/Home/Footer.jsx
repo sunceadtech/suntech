@@ -42,10 +42,10 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook', color: 'hover:text-blue-600', bg: 'hover:bg-blue-50' },
-    { icon: Twitter, href: '#', label: 'Twitter', color: 'hover:text-sky-500', bg: 'hover:bg-sky-50' },
-    { icon: Instagram, href: '#', label: 'Instagram', color: 'hover:text-pink-600', bg: 'hover:bg-pink-50' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-700', bg: 'hover:bg-blue-50' },
+    { icon: Facebook, href: 'https://www.facebook.com/people/Sunce-Adtech/pfbid0LowM7Wqbyob9oVcAU3owX73BA47NTDpSHFeN6w64oH2YUKWDQiLCUm5adUuKt6epl/', label: 'Facebook', color: 'hover:text-blue-600', bg: 'hover:bg-blue-50' },
+    { icon: Twitter, href: 'https://x.com/sunceadtech', label: 'Twitter', color: 'hover:text-sky-500', bg: 'hover:bg-sky-50' },
+    { icon: Instagram, href: 'https://www.instagram.com/sunceadtech/', label: 'Instagram', color: 'hover:text-pink-600', bg: 'hover:bg-pink-50' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/sunce-adtech-600655364/', label: 'LinkedIn', color: 'hover:text-blue-700', bg: 'hover:bg-blue-50' },
     { icon: Youtube, href: '#', label: 'YouTube', color: 'hover:text-red-600', bg: 'hover:bg-red-50' }
   ];
 
@@ -60,8 +60,9 @@ const Footer = () => {
     { name: 'Social Media', path: '/services/social-media' },
     { name: 'PPC Advertising', path: '/services/ppc' },
     { name: 'Content Marketing', path: '/services/content' },
-    { name: 'Email Marketing', path: '/services/email' },
+    { name: 'Video Content', path: '/services/video-content' },
     { name: 'Analytics & Reporting', path: '/services/analytics' },
+    { name: 'Photography & video', path: '/services/photography' },
     { name: 'Web Development', path: '/services/web' },
     { name: 'Mobile App Development', path: '/services/mobile' },
     { name: 'Software Development', path: '/services/software' },
@@ -71,93 +72,146 @@ const Footer = () => {
 
   return (
     <>
-      <footer id="animated-footer" className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden md:mb-0 mb-4">
-        <div className="absolute inset-0 opacity-5">
-          {isVisible && (
-            <>
-              <div className="absolute top-10 left-10 w-20 h-20 bg-blue-500 rounded-full animate-pulse"></div>
-              <div className="absolute top-1/2 right-20 w-16 h-16 bg-purple-500 rounded-full animate-bounce delay-300"></div>
-              <div className="absolute bottom-20 left-1/3 w-12 h-12 bg-green-500 rounded-full animate-ping delay-700"></div>
-            </>
-          )}
-        </div>
+   <footer id="animated-footer" className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden md:mb-0 mb-4">
+  <div className="absolute inset-0 opacity-5">
+    {isVisible && (
+      <>
+        <div className="absolute top-10 left-10 w-20 h-20 bg-blue-500 rounded-full animate-pulse"></div>
+        <div className="absolute top-1/2 right-20 w-16 h-16 bg-purple-500 rounded-full animate-bounce delay-300"></div>
+        <div className="absolute bottom-20 left-1/3 w-12 h-12 bg-green-500 rounded-full animate-ping delay-700"></div>
+      </>
+    )}
+  </div>
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 lg:pt-20 pb-8">
-          <nav aria-label="Footer" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 lg:gap-12">
-            <div className={`lg:col-span-2 xl:col-span-2 transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              <div className="mb-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="relative group">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-110">
-                      <Globe className="w-6 h-6 text-white" aria-hidden="true" />
-                    </div>
-                  </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">SunceADTECH</h3>
-                </div>
-                <p className="text-gray-300 mb-6 text-sm sm:text-base">
-                  We're passionate about helping businesses thrive in the digital world.
-                </p>
-                <div className="space-y-3">
-                  <ContactItem icon={Mail} text="sunceadtech@gmail.com" href="mailto:sunceadtech@gmail.com" color="bg-blue-600" />
-                  <ContactItem icon={Phone} text="+91 9211877900" href="tel:+9211877900" color="bg-green-600" />
-                  <ContactItem icon={MapPin} text="1st floor A 797 GD Colony MayurVihar-Phase-III" />
-                  <ContactItem icon={Clock} text="Mon-Sat: 10AM-7PM EST" />
-                </div>
+  <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 lg:pt-20 pb-8">
+    <nav aria-label="Footer" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 lg:gap-12">
+      <div className={`lg:col-span-2 xl:col-span-2 transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+        <div className="mb-6">
+          <div className="flex items-center space-x-3 mb-4">
+            <div className="relative group">
+              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-110">
+                <Globe className="w-6 h-6 text-white" aria-hidden="true" />
               </div>
             </div>
-
-            <FooterLinks title="Quick Links" links={quickLinks} delay="200" isVisible={isVisible} />
-            <FooterLinks title="Services" links={services} delay="300" isVisible={isVisible} />
-
-            <Suspense fallback={<div>Loading...</div>}>
-              <Newsletter
-                email={email}
-                setEmail={setEmail}
-                handleNewsletterSubmit={() => setEmail('')}
-                socialLinks={socialLinks}
-                delay="400"
-                isVisible={isVisible}
-                setHoveredSocial={setHoveredSocial}
-                hoveredSocial={hoveredSocial}
+            <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">SunceADTECH</h3>
+          </div>
+          <p className="text-gray-300 mb-6 text-sm sm:text-base">
+            We're passionate about helping businesses thrive in the digital world.
+          </p>
+          <div className="space-y-4">
+            <a
+              href="mailto:sunceadtech@gmail.com"
+              className="text-sm text-blue-400"
+              aria-label="Send an email to sunceadtech@gmail.com"
+            >
+              <ContactItem
+                icon={Mail}
+                text="Email: sunceadtech@gmail.com"
+                color="bg-blue-600 mb-2"
               />
-            </Suspense>
-          </nav>
-        </div>
+            </a>
 
-        <div className="border-t border-gray-700/50 bg-gray-900/50 backdrop-blur-sm">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-            <div className="flex items-center space-x-2 text-gray-400 text-sm">
-              <span>© 2025 SunceADTECH. Made with</span>
-              <Heart className="w-4 h-4 text-red-500 animate-pulse" aria-hidden="true" />
-              <span>All rights reserved.</span>
-            </div>
-            <div className="flex flex-wrap justify-center lg:justify-end items-center space-x-6 text-sm">
-              {legalLinks.map((link, index) => (
-                <Link key={index} to={link.path} className="text-gray-400 hover:text-white transition-colors duration-300">
-                  {link.name}
-                </Link>
-              ))}
-            </div>
+            <a
+              href="tel:+9211877900"
+              className="text-sm text-green-400"
+              aria-label="Call SunceADTECH at +91 9211877900"
+            >
+              <ContactItem
+                icon={Phone}
+                text="Phone: +91 9211877900"
+                color="bg-green-600 mb-2"
+              />
+            </a>
+
+            <a
+              href="https://maps.app.goo.gl/E4zecJQijPHYswaP9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-red-400"
+              aria-label="View our location on Google Maps"
+            >
+              <ContactItem
+                icon={MapPin}
+                text="Location: 1st floor A 797 GD Colony MayurVihar-Phase-III"
+                color="bg-red-600 mb-2"
+              />
+            </a>
+
+            <a
+              href="#working-hours"
+              className="text-sm text-yellow-400"
+              aria-label="See SunceADTECH working hours"
+            >
+              <ContactItem
+                icon={Clock}
+                text="Hours: Mon-Sat, 10AM–7PM EST"
+                color="bg-yellow-500"
+              />
+            </a>
           </div>
         </div>
-      </footer>
-
-      <div className={`fixed bottom-0 left-0 right-0 z-50 ${isScrolled ? 'bg-white border-t border-gray-100' : 'bg-gradient-to-r from-gray-800 to-gray-900 border-t border-gray-700'} p-3 flex flex-nowrap items-center justify-center gap-2 transition-all duration-300`}>
-        <a href="tel:+919211877900" className="flex items-center justify-center px-4 py-3 rounded-md bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[300px] lg:w-[400px] xl:w-[350px]">
-          <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
-          <span className="font-semibold">Call Us</span>
-        </a>
-        <a href="https://wa.me/919211877900" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-4 py-3 rounded-md bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[240px] lg:w-[300px] xl:w-[350px]">
-          <MessageCircle className="w-4 h-4 mr-2" aria-hidden="true" />
-          <span className="font-semibold">WhatsApp Us</span>
-        </a>
       </div>
 
-      <button onClick={scrollToTop} aria-label="Scroll to top" className={`fixed bottom-20 right-6 z-50 w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 ${showScrollTop ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'}`}>
-        <ArrowUp className="w-5 h-5 mx-auto" aria-hidden="true" />
-      </button>
+      <FooterLinks title="Quick Links" links={quickLinks} delay="200" isVisible={isVisible} />
+      <FooterLinks title="Services" links={services} delay="300" isVisible={isVisible} />
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <Newsletter
+          email={email}
+          setEmail={setEmail}
+          handleNewsletterSubmit={() => setEmail('')}
+          socialLinks={socialLinks}
+          delay="400"
+          isVisible={isVisible}
+          setHoveredSocial={setHoveredSocial}
+          hoveredSocial={hoveredSocial}
+        />
+      </Suspense>
+    </nav>
+  </div>
+
+  <div className="border-t border-gray-700/50 bg-gray-900/50 backdrop-blur-sm">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+      <div className="flex items-center space-x-2 text-gray-400 text-sm">
+        <span>© 2025 SunceADTECH. Made with</span>
+        <Heart className="w-4 h-4 text-red-500 animate-pulse" aria-hidden="true" />
+        <span>All rights reserved.</span>
+      </div>
+      <div className="flex flex-wrap justify-center lg:justify-end items-center space-x-6 text-sm">
+        {legalLinks.map((link, index) => (
+          <a
+            key={index}
+            href={link.path}
+            className="text-gray-400 hover:text-white transition-colors duration-300"
+            aria-label={`Read our ${link.name} page`}
+          >
+            {link.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div className={`fixed bottom-0 left-0 right-0 z-50 ${isScrolled ? 'bg-white border-t border-gray-100' : 'bg-gradient-to-r from-gray-800 to-gray-900 border-t border-gray-700'} p-3 flex flex-nowrap items-center justify-center gap-2 transition-all duration-300`}>
+  <a href="tel:+919211877900" className="flex items-center justify-center px-4 py-3 rounded-md bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[300px] lg:w-[400px] xl:w-[350px]" aria-label="Click to call us now">
+    <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
+    <span className="font-semibold">Call Us</span>
+  </a>
+  <a href="https://wa.me/919211877900" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-4 py-3 rounded-md bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[240px] lg:w-[300px] xl:w-[350px]" aria-label="Message us on WhatsApp">
+    <MessageCircle className="w-4 h-4 mr-2" aria-hidden="true" />
+    <span className="font-semibold">WhatsApp Us</span>
+  </a>
+</div>
+<button
+  onClick={scrollToTop}
+  aria-label="Scroll to top"
+  className={`fixed bottom-20 right-6 z-50 w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 ${showScrollTop ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'}`}
+>
+  <ArrowUp className="w-5 h-5 mx-auto" aria-hidden="true" />
+</button>
     </>
   );
 };
