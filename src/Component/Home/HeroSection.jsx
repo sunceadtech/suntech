@@ -63,7 +63,6 @@ const HeroSection = () => {
                 Get Free Consultation
               </Link>
             </div>
-
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-gray-200">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">

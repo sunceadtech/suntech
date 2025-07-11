@@ -264,24 +264,35 @@ const services = [
 
         {/* CTA */}
         <div className={getAnimationClass('text-center mt-16 delay-700')}>
-          <div className="bg-gradient-to-br from-orange-500 via-red-500 to-blue-900 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
-            <h3 className="text-3xl lg:text-4xl font-bold mb-4">Ready to Transform Your Business?</h3>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Join 500+ successful businesses who've already accelerated their growth with our proven strategies.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact"
-                className="px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg"
-              >
-                Get Free Strategy Session
-              </Link>
-              <button className="px-8 py-4 border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all duration-300">
-                <Link to="/about">View Case Studies</Link>
-              </button>
-            </div>
-          </div>
-        </div>
+  <div className="bg-gradient-to-br from-orange-500 via-red-500 to-blue-900 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
+    <h3 className="text-3xl lg:text-4xl font-bold mb-4">Ready to Transform Your Business?</h3>
+    <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+      Join 500+ successful businesses who've already accelerated their growth with our proven strategies.
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      
+      {/* CTA Link: Strategy Session */}
+      <Link
+        to="/contact"
+        className="px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg"
+        aria-label="Book your free strategy session"
+        title="Book your free strategy session"
+      >
+        Get Free Strategy Session
+      </Link>
+
+      {/* CTA Link: Case Studies */}
+      <Link
+        to="/about"
+        className="px-8 py-4 border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all duration-300"
+        aria-label="Explore our successful case studies"
+        title="Explore our successful case studies"
+      >
+        Explore Case Studies
+      </Link>
+    </div>
+  </div>
+</div>
       </div>
     </section>
   );

@@ -195,16 +195,38 @@ const Footer = () => {
   </div>
 </footer>
 
-<div className={`fixed bottom-0 left-0 right-0 z-50 ${isScrolled ? 'bg-white border-t border-gray-100' : 'bg-gradient-to-r from-gray-800 to-gray-900 border-t border-gray-700'} p-3 flex flex-nowrap items-center justify-center gap-2 transition-all duration-300`}>
-  <a href="tel:+919211877900" className="flex items-center justify-center px-4 py-3 rounded-md bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[300px] lg:w-[400px] xl:w-[350px]" aria-label="Click to call us now">
+<div
+  className={`fixed bottom-0 left-0 right-0 z-50 ${
+    isScrolled
+      ? 'bg-white border-t border-gray-100'
+      : 'bg-gradient-to-r from-gray-800 to-gray-900 border-t border-gray-700'
+  } p-3 flex flex-nowrap items-center justify-center gap-2 transition-all duration-300`}
+>
+  {/* Call Us Button */}
+  <a
+    href="tel:+919211877900"
+    className="flex items-center justify-center px-4 py-3 rounded-md bg-orange-600 hover:bg-orange-700 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[300px] lg:w-[400px] xl:w-[350px]"
+    aria-label="Call us now at +91 9211877900"
+    title="Call us now at +91 9211877900"
+  >
     <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
     <span className="font-semibold">Call Us</span>
   </a>
-  <a href="https://wa.me/919211877900" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-4 py-3 rounded-md bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[240px] lg:w-[300px] xl:w-[350px]" aria-label="Message us on WhatsApp">
+
+  {/* WhatsApp Us Button */}
+  <a
+    href="https://wa.me/919211877900"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center px-4 py-3 rounded-md bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[240px] lg:w-[300px] xl:w-[350px]"
+    aria-label="Chat with us on WhatsApp"
+    title="Chat with us on WhatsApp"
+  >
     <MessageCircle className="w-4 h-4 mr-2" aria-hidden="true" />
     <span className="font-semibold">WhatsApp Us</span>
   </a>
 </div>
+
 <button
   onClick={scrollToTop}
   aria-label="Scroll to top"

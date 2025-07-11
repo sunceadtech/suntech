@@ -168,7 +168,6 @@ const PortfolioPage = () => {
           </div>
 
           <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-2xl mb-6 border border-[darkred]" />
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {Object.entries(project.results).map(([key, result]) => (
               <div key={key} className="text-center p-4 bg-[aliceblue] rounded-xl backdrop-blur-sm border border-[darkred]">
