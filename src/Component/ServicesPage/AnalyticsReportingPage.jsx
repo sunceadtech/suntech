@@ -190,7 +190,7 @@ const AnalyticsReportingPage = () => {
 
               {/* Navigation to demo page or form */}
               <a
-                href="/schedule-demo"
+                href="/blog"
                 className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-lg font-semibold hover:bg-white/20 transition-all duration-300 border border-white/20"
                 aria-label="Click to schedule a personalized product demo"
               >

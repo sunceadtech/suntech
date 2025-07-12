@@ -35,12 +35,10 @@ const Navbar = () => {
         {
           category: 'Next Gen',
           items: [
-            { name: 'SEO Marketing', path: '/services/seo' },
+            { name: 'Search Engine Marketing', path: '/services/seo' },
             { name: 'Social Media', path: '/services/social-media' },
             { name: 'PPC Advertising', path: '/services/ppc' },
             { name: 'Content Marketing', path: '/services/content' },
-            { name: 'Digital Media Planning', path: '/services/digital-media' },
-            { name: 'Digital strategy consultant', path: '/services/analysis' },
             { name: 'Analytics & Reporting', path: '/services/analytics' },
             { name: 'Video Content', path: '/services/video-content' },
           ],
@@ -48,10 +46,12 @@ const Navbar = () => {
         {
           category: 'Design',
           items: [
-            { name: 'UI/UX Design', path: '/services/uiux' },
+            { name: 'Website Designing', path: '/services/uiux' },
             { name: 'Branding', path: '/services/branding' },
-            { name: 'Graphic Design', path: '/services/graphic' },
-            { name: 'photography & Video', path: '/services/photography' },
+            { name: 'Graphic Designing', path: '/services/graphic' },
+            { name: 'Photography & Video', path: '/services/photography' },
+             { name: 'Digital Media Planning', path: '/services/digital-media' },
+            { name: 'Digital strategy consultant', path: '/services/analysis' },
           ],
         },
         {
@@ -97,23 +97,23 @@ const Navbar = () => {
                     </button>
 
                     <div className={`absolute top-full left-0 mt-2 w-[750px] bg-white rounded-xl shadow-2xl border border-gray-100 transform ${activeDropdown === item.name ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'} transition-all duration-500 delay-150`}>
-                      <div className="py-6 px-6">
-                        <div className="flex justify-around mb-6">
-                          {item.dropdown.map((group, idx) => (
-                            <h4 key={idx} className="text-orange-500 text-lg font-semibold text-center">{group.category}</h4>
-                          ))}
-                        </div>
-                        <div className="flex justify-around gap-6">
-                          {item.dropdown.map((group, idx) => (
-                            <div key={idx} className="flex flex-col items-center flex-1">
+                      <div className="py-6 px-6 grid grid-cols-3 gap-6">
+                        {item.dropdown.map((group, idx) => (
+                          <div key={idx}>
+                            <h4 className="text-orange-500 text-lg font-semibold mb-4">{group.category}</h4>
+                            <div className="flex flex-col space-y-2">
                               {group.items.map((dropdownItem, i) => (
-                                <Link key={i} to={dropdownItem.path} className="block text-center px-3 py-2 text-gray-800 hover:text-blue-600 hover:bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg text-sm font-medium">
+                                <Link
+                                  key={i}
+                                  to={dropdownItem.path}
+                                  className="px-4 py-2 text-gray-800 hover:text-blue-600 hover:bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg text-sm font-medium"
+                                >
                                   {dropdownItem.name}
                                 </Link>
                               ))}
                             </div>
-                          ))}
-                        </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -143,67 +143,10 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-
-        <div className={`lg:hidden transition-all duration-300 text-center overflow-hidden ${isOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-          <div className="py-4 space-y-2 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl mt-4 mb-4 max-h-[400px] overflow-y-auto">
-            {navItems.map((item, index) => (
-              <div key={index}>
-                {item.dropdown ? (
-                  <div className='text-center'>
-                    <button
-                      onClick={() => handleDropdown(item.name)}
-                      className="flex items-center justify-center w-full px-4 py-3 text-gray-800 hover:text-blue-600 font-semibold cursor-pointer"
-                      aria-expanded={activeDropdown === item.name}
-                    >
-                      <span className="text-base">{item.name === 'Services' ? 'Our Experties' : item.name}</span>
-                      <svg className={`w-4 h-4 ml-2 ${activeDropdown === item.name ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-                    {activeDropdown === item.name && (
-                      <div className="py-3 px-4 bg-white rounded-lg shadow mt-2 space-y-6 transition-all duration-500 delay-150">
-                        {item.dropdown.map((group, idx) => (
-                          <div key={idx} className="mb-4">
-                            <h4 className="text-orange-500 text-sm font-semibold mb-2 text-center">{group.category}</h4>
-                            <div className="flex flex-col gap-2 items-center">
-                              {group.items.map((dropdownItem, i) => (
-                                <Link
-                                  key={i}
-                                  to={dropdownItem.path}
-                                  className="block text-center px-3 py-2 text-gray-800 hover:text-blue-600 hover:bg-gradient-to-r from-blue-50 to-purple-50 rounded-md text-sm font-medium"
-                                  onClick={() => { setIsOpen(false); setActiveDropdown(null); }}
-                                >
-                                  {dropdownItem.name}
-                                </Link>
-                              ))}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ) : (
-                  <Link
-                    to={item.path}
-                    className="block text-center px-6 py-3 text-gray-800 hover:text-blue-600 font-medium hover:bg-white/50 rounded-lg mx-2 cursor-pointer"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                )}
-              </div>
-            ))}
-
-            <div className="px-6 pt-4">
-              <Link to="/contact" className="block w-full text-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700">
-                Get Free Quote
-              </Link>
-            </div>
-          </div>
-        </div>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
+

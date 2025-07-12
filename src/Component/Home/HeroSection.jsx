@@ -87,7 +87,7 @@ const HeroSection = () => {
                 <li>Creative Design Solutions</li>
               </ul>
               <Link
-                to="/services"
+                to="/blog"
                 className="mt-4 inline-block px-6 py-3 bg-blue-900 text-white rounded-full font-semibold hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-500 transition"
               >
                 Explore Services

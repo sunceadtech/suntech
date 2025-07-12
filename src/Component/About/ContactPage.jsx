@@ -116,115 +116,131 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       {/* Hero Section */}
- {/* Hero Section */}
-  <div className="relative sm:py-6 md:mt-0 mt-8"></div>
+      {/* Hero Section */}
+      <div className="relative sm:py-6 md:mt-0 mt-8"></div>
 
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
-      {/* Contact Information */}
-      <div className="space-y-8 animate-slide-in-left">
-        <div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Get In Touch</h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            We'd love to hear from you. Send us a message and we'll respond as soon as possible.
-          </p>
-        </div>
-        {/* Contact Cards */}
-        <div className="grid sm:grid-cols-2 gap-6">
-          <div className="group bg-white rounded-2xl px-4 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-            <div className="flex items-center space-x-4">
-              <div className="bg-blue-100 p-3 rounded-full text-center mt-0 md:mt-4 group-hover:bg-blue-200 transition-colors">
-                <Phone className="w-6 h-6 text-blue-600" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+          {/* Contact Information */}
+          <div className="space-y-8 animate-slide-in-left">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                Get In Touch
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                We'd love to hear from you. Send us a message and we'll respond
+                as soon as possible.
+              </p>
+            </div>
+            {/* Contact Cards */}
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="group bg-white rounded-2xl px-4 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+                <div className="flex items-center space-x-4">
+                  <div className="bg-blue-100 p-3 rounded-full text-center mt-0 md:mt-4 group-hover:bg-blue-200 transition-colors">
+                    <Phone className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Phone</h3>
+                    <a
+                      href="tel:+919211877900"
+                      className="text-gray-600 hover:underline"
+                      aria-label="Call us at +91 9211877900"
+                    >
+                      Call Us: +91 9211877900
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h3 className="font-semibold text-gray-900">Phone</h3>
-                <a href="tel:+919211877900" className="text-gray-600 hover:underline" aria-label="Call us at +91 9211877900">
-                  Call Us: +91 9211877900
-                </a>
+
+              <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 px-2">
+                <div className="flex items-center space-x-4 cursor-pointer">
+                  <div className="bg-green-100 p-3 rounded-full mx-0 md:mx-2 group-hover:bg-green-200 transition-colors">
+                    <Mail className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Email</h3>
+                    <a
+                      href="mailto:sunceadtech@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:underline"
+                      aria-label="Email us at sunceadtech@gmail.com"
+                    >
+                      sunceadtech@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+                <div className="flex items-center space-x-4">
+                  <div className="bg-purple-100 p-3 rounded-full group-hover:bg-purple-200 transition-colors mt-2">
+                    <MapPin className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <div className="max-w-lg mt-2">
+                    <h3 className="font-semibold text-gray-900">Address</h3>
+                    <p className="text-gray-600 text-sm leading-snug">
+                      1st floor A 797 GD Colony
+     
+                      MayurVihar-Phase-III
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+                <div className="flex items-center space-x-4">
+                  <div className="bg-orange-100 p-3 rounded-full group-hover:bg-orange-200 transition-colors">
+                    <Clock className="w-6 h-6 text-orange-600" />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-semibold text-gray-900">Hours</h3>
+                    <p className="text-gray-600">Mon-Sat: 10AM-7PM IST</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Additional Contact Methods */}
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 border border-blue-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Other Ways to Reach Us
+              </h3>
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <a
+                    href="https://wa.me/9211877900"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 font-medium hover:underline"
+                    aria-label="Message us on WhatsApp at +91 9211877900"
+                  >
+                    Message us on WhatsApp: +91 9211877900
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <a
+                    href="mailto:sunceadtech@gmail.com"
+                    className="text-blue-600 font-medium hover:underline"
+                    aria-label="Connect with us via email at sunceadtech@gmail.com"
+                  >
+                    Connect via Email: sunceadtech@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <a
+                    href="https://www.linkedin.com/company/sunceadtech"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 font-medium hover:underline"
+                    aria-label="Visit SunceADTECH LinkedIn page"
+                  >
+                    Find us on LinkedIn: @SunceADTECH
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-
-          <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 px-2">
-            <div className="flex items-center space-x-4 cursor-pointer">
-              <div className="bg-green-100 p-3 rounded-full mx-0 md:mx-2 group-hover:bg-green-200 transition-colors">
-                <Mail className="w-6 h-6 text-green-600" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900">Email</h3>
-                <a href="mailto:sunceadtech@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:underline" aria-label="Email us at sunceadtech@gmail.com">
-                  Email Us: sunceadtech@gmail.com
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-            <div className="flex items-center space-x-4">
-              <div className="bg-purple-100 p-3 rounded-full group-hover:bg-purple-200 transition-colors">
-                <MapPin className="w-6 h-6 text-purple-600" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900">Address</h3>
-                <p className="text-gray-600">
-                  1st floor A 797 <br />
-                  GD Colony MayurVihar-Phase-III
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-            <div className="flex items-center space-x-4">
-              <div className="bg-orange-100 p-3 rounded-full group-hover:bg-orange-200 transition-colors">
-                <Clock className="w-6 h-6 text-orange-600" />
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-gray-900">Hours</h3>
-                <p className="text-gray-600">Mon-Sat: 10AM-7PM IST</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Additional Contact Methods */}
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 border border-blue-200">
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Other Ways to Reach Us</h3>
-          <div className="space-y-3">
-            <div className="flex items-center space-x-3">
-              <a
-                href="https://wa.me/9211877900"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 font-medium hover:underline"
-                aria-label="Message us on WhatsApp at +91 9211877900"
-              >
-                Message us on WhatsApp: +91 9211877900
-              </a>
-            </div>
-            <div className="flex items-center space-x-3">
-              <a
-                href="mailto:sunceadtech@gmail.com"
-                className="text-blue-600 font-medium hover:underline"
-                aria-label="Connect with us via email at sunceadtech@gmail.com"
-              >
-                Connect via Email: sunceadtech@gmail.com
-              </a>
-            </div>
-            <div className="flex items-center space-x-3">
-              <a
-                href="https://www.linkedin.com/company/sunceadtech"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 font-medium hover:underline"
-                aria-label="Visit SunceADTECH LinkedIn page"
-              >
-                Find us on LinkedIn: @SunceADTECH
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
           {/* Contact Form */}
           <div className="animate-slide-in-right">
             <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-10 border border-gray-100">
