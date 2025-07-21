@@ -15,51 +15,52 @@ const TestimonialComponent = () => {
   const [imageLoaded, setImageLoaded] = useState({});
 
   const testimonials = [
-    {
-      id: 2,
-      name: "Michael Chen",
-      role: "CTO, InnovateLab",
-      company: "InnovateLab",
-      image: "./images/man.webp",
-      rating: 5,
-      text: "Outstanding service and results! The attention to detail and innovative approach helped us scale our platform to serve millions of users seamlessly.",
-      location: "New York, NY",
-      date: "1 month ago",
-    },
-    {
-      id: 3,
-      name: "Emily Rodriguez",
-      role: "Marketing Director",
-      company: "GrowthCo",
-      image: "./images/man2.webp",
-      rating: 5,
-      text: "Incredible ROI and professional execution. Our conversion rates improved by 250% within the first quarter. Highly recommend their services!",
-      location: "Austin, TX",
-      date: "3 weeks ago",
-    },
-    {
-      id: 4,
-      name: "David Thompson",
-      role: "Founder, StartupVision",
-      company: "StartupVision",
-      image: "./images/man8.webp",
-      rating: 5,
-      text: "Game-changing partnership! The strategic insights and technical excellence delivered results beyond our wildest dreams. Our revenue doubled in 6 months.",
-      location: "Seattle, WA",
-      date: "1 week ago",
-    },
-    {
-      id: 1,
-      name: "Sarah Johnson",
-      role: "CEO, TechStart Inc",
-      company: "TechStart Inc",
-      image: "./images/women.webp",
-      rating: 5,
-      text: "This solution completely transformed our business operations. The team's expertise and dedication exceeded our expectations. We've seen a 300% increase in efficiency since implementation.",
-      location: "San Francisco, CA",
-      date: "2 months ago",
-    },
-  ];
+  {
+    id: 1,
+    name: "Priya Desai",
+    role: "Head of Performance Marketing",
+    company: "BuzzReach Media",
+    image: "./images/women2.webp",
+    rating: 5,
+    text: "Their data-driven approach took our campaigns to the next level. We achieved a 4x boost in engagement and significantly reduced ad spend waste.",
+    location: "Bangalore, India",
+    date: "1 month ago",
+  },
+  {
+    id: 2,
+    name: "Ravi Mehra",
+    role: "Digital Strategy Consultant",
+    company: "BrandSphere India",
+    image: "./images/man9.avif",
+    rating: 5,
+    text: "Thanks to their expertise, our SEO rankings and lead quality have improved massively. We saw a 60% growth in inbound leads in just 6 weeks.",
+    location: "Mumbai, India",
+    date: "3 weeks ago",
+  },
+  {
+    id: 3,
+    name: "Ananya Verma",
+    role: "Founder & CMO",
+    company: "SocialNest",
+    image: "./images/women4.avif",
+    rating: 5,
+    text: "Working with them was a game-changer. Their creative ad strategies helped us reach a younger audience and double our conversion rate.",
+    location: "Delhi, India",
+    date: "2 weeks ago",
+  },
+  {
+    id: 4,
+    name: "Kunal Sharma",
+    role: "Growth Marketing Lead",
+    company: "AdSparrow",
+    image: "./images/man1.avif",
+    rating: 5,
+    text: "Their automation and funnel strategies brought clarity and results. We reduced customer acquisition cost by 40% while scaling fast.",
+    location: "Pune, India",
+    date: "1 week ago",
+  },
+];
+
 
   useEffect(() => {
     let interval;
@@ -162,7 +163,6 @@ const TestimonialComponent = () => {
                   </p>
                 </div>
               </div>
-
               <div className="order-1 lg:order-2 flex justify-center">
                 <div className="relative group">
                   <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl transform group-hover:scale-105 transition-all duration-500">

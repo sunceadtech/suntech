@@ -89,7 +89,7 @@ const Footer = () => {
                 <p className="text-gray-300 mb-6 text-sm sm:text-base">
                   We're passionate about helping businesses thrive in the digital world.
                 </p>
-                <div className="space-y-4">
+                <div className="space-y-2">
                   <ContactItem icon={Mail} text="Email: sunceadtech@gmail.com" color="bg-blue-600 mb-2" />
                   <ContactItem icon={Phone} text="Phone: +91 9211877900" color="bg-green-600 mb-2" />
                   <ContactItem icon={MapPin} text="Location: 1st floor A 797 GD Colony MayurVihar-Phase-III" color="bg-red-600 mb-2" />
@@ -172,7 +172,7 @@ const Footer = () => {
       >
         <a
           href="tel:+919211877900"
-          className="flex items-center justify-center px-4 py-3 rounded-md bg-orange-600 hover:bg-orange-700 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[300px] lg:w-[400px] xl:w-[350px]"
+          className="flex items-center justify-center px-4 py-2 rounded-md bg-orange-600 hover:bg-orange-700 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[300px] lg:w-[400px] xl:w-[350px]"
           aria-label="Call us now at +91 9211877900"
         >
           <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
@@ -182,7 +182,7 @@ const Footer = () => {
           href="https://wa.me/919211877900"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center px-4 py-3 rounded-md bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[240px] lg:w-[300px] xl:w-[350px]"
+          className="flex items-center justify-center px-4 py-2 rounded-md bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm shadow-md w-[48%] sm:w-[180px] md:w-[240px] lg:w-[300px] xl:w-[350px]"
           aria-label="Chat with us on WhatsApp"
         >
           <MessageCircle className="w-4 h-4 mr-2" aria-hidden="true" />

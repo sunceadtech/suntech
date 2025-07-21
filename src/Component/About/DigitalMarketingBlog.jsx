@@ -75,7 +75,7 @@ const DigitalMarketingBlog = () => {
       title: "The Future of Digital Marketing in 2025",
       excerpt:
         "Discover the latest trends and technologies shaping the digital marketing landscape.",
-      image: "./images/digital.webp",
+      image: "./images/digitalmedia.webp",
       category: "Trends",
       readTime: "8 min",
       author: "Sarah Johnson",
@@ -84,30 +84,30 @@ const DigitalMarketingBlog = () => {
       isVideo: false,
     },
     {
-      id: 2,
-      title: "AI-Powered Content Marketing Strategies",
+      id: 3,
+      title: "Harnessing Social Media for Digital Marketing Success",
       excerpt:
-        "Learn how artificial intelligence is revolutionizing content creation and distribution.",
-      image: "./images/cretaive.avif",
-      category: "AI & Marketing",
-      readTime: "12 min",
-      author: "Mike Chen",
-      date: "Dec 12, 2024",
-      views: "1.8k",
-      isVideo: true,
+        "Discover how platforms like Instagram, LinkedIn, and Facebook drive brand visibility, engagement, and conversions in today’s digital age.",
+      image: "./images/social2.avif", // or any other social-related image you have
+      category: "Social Media Marketing",
+      readTime: "8 min",
+      author: "Sarah Lee",
+      date: "Nov 28, 2024",
+      views: "2.4k",
+      isVideo: false,
     },
     {
-      id: 3,
-      title: "Social Commerce: The New Frontier",
+      id: 4,
+      title: "Building Scalable Web Applications",
       excerpt:
-        "Explore how social platforms are becoming the new shopping destinations.",
-      image: "./images/social3.avif",
-      category: "Social Commerce",
-      readTime: "6 min",
-      author: "Emma Davis",
-      date: "Dec 10, 2024",
-      views: "3.1k",
-      isVideo: false,
+        "Learn the best practices for architecting and developing scalable, secure software solutions.",
+      image: "./images/software2.webp",
+      category: "Software Development",
+      readTime: "10 min",
+      author: "Ravi Sharma",
+      date: "Nov 20, 2024",
+      views: "4.7k",
+      isVideo: true,
     },
   ];
 
@@ -216,32 +216,36 @@ const DigitalMarketingBlog = () => {
 
   return (
     <>
-      <div className="min-h-screen bg-[aliceblue]">
+      <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[aliceblue]">
-          <div className="relative max-w-7xl mx-auto">
+        <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-white via-[#fefefe] to-blue-50 overflow-hidden">
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
             <div
-              className={`text-center transform transition-all duration-1000 mt-6 ${
+              className={`text-center transform transition-all duration-1000 ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-10 opacity-0"
               }`}
             >
-              {/* Updated Badge with gradient like portfolio */}
-              <div className="inline-flex items-center bg-gradient-to-r from-orange-400 to-red-500 rounded-full px-6 py-2 mb-8 shadow-md">
-                <Megaphone className="w-5 h-5 mr-2 text-white" />
-                <span className="text-white font-medium">
+              {/* Themed badge */}
+              <div className="inline-flex items-center mt-4 px-6 py-2 mb-6 bg-orange-100 text-orange-700 rounded-full border border-orange-200 shadow-sm">
+                <Megaphone className="w-5 h-5 mr-2 text-orange-600" />
+                <span className="text-sm font-medium">
                   Digital Marketing Blogs
                 </span>
               </div>
 
-              {/* Matching heading style */}
-              <h1 className="text-4xl py-4 sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-[darkblue] to-[orange] bg-clip-text text-transparent">
-                Marketing Blog
+              {/* Themed heading */}
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-6">
+                <span className="block">Best Digital</span>
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-600">
+                  Marketing Blogs
+                </span>
+                <span className="block">To Grow Your Business</span>
               </h1>
 
-              {/* Matching paragraph color */}
-              <p className="text-xl text-orange-700 mb-12 max-w-3xl mx-auto">
+              {/* Themed paragraph */}
+              <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
                 Stay ahead of the curve with the latest digital marketing
                 strategies, trends, and insights from industry experts.
               </p>
@@ -250,53 +254,52 @@ const DigitalMarketingBlog = () => {
         </section>
 
         {/* Featured Posts Carousel */}
-        <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[white]">
+        <section className="py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-blue-900/90">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">
                 Featured Articles
               </h2>
-              <p className="text-[darkblue] text-lg">
+              <p className="text-lg">
                 Hand-picked content from our marketing experts
               </p>
             </div>
 
-            {/* ✅ Updated border & alt text */}
-            <div className="relative overflow-hidden rounded-3xl border border-[darkblue]/10 bg-white shadow-xl">
+            <div className="relative overflow-hidden rounded-3xl bg-white shadow-2xl border border-gray-200">
               <div
                 className="flex transition-transform duration-1000 ease-in-out"
                 style={{ transform: `translateX(-${featuredIndex * 100}%)` }}
               >
-                {featuredPosts.map((post, index) => (
+                {featuredPosts.map((post) => (
                   <div key={post.id} className="w-full flex-shrink-0 relative">
-                    <div className="relative h-[500px] sm:h-[600px] bg-gradient-to-br from-[darkblue]/50 to-[orange]/50 rounded-3xl overflow-hidden">
+                    <div className="relative h-[500px] sm:h-[600px] bg-white rounded-3xl overflow-hidden shadow-md border border-gray-100">
                       <img
                         src={post.image}
                         alt={`Cover image for '${post.title}' by ${post.author}`}
-                        className="absolute inset-0 w-full h-full object-cover opacity-30"
+                        className="absolute inset-0 w-full h-full object-cover"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[darkblue] via-[darkblue]/50 to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                       <div className="relative z-10 h-full flex items-end p-8 sm:p-12">
-                        <div className="max-w-4xl">
+                        <div className="max-w-4xl text-white">
                           <div className="flex items-center gap-4 mb-6">
-                            <span className="bg-[orange]/20 text-[orange] px-4 py-2 rounded-full text-sm font-medium">
+                            <span className="bg-orange-500/20 text-orange-100 px-4 py-2 rounded-full text-sm font-medium">
                               {post.category}
                             </span>
                             {post.isVideo && (
-                              <div className="flex items-center bg-[darkblue]/20 text-[darkblue] px-4 py-2 rounded-full text-sm">
+                              <div className="flex items-center bg-white/70 text-black px-4 py-2 rounded-full text-sm">
                                 <Play className="w-4 h-4 mr-1" />
                                 Video
                               </div>
                             )}
                           </div>
-                          <h3 className="text-3xl sm:text-5xl font-bold mb-4 text-[white]">
+                          <h3 className="text-3xl sm:text-5xl font-bold mb-4 text-white drop-shadow">
                             {post.title}
                           </h3>
-                          <p className="text-xl text-[white] mb-8 max-w-2xl">
+                          <p className="text-xl text-white mb-8 max-w-2xl drop-shadow">
                             {post.excerpt}
                           </p>
-                          <div className="flex items-center justify-between flex-wrap gap-4">
-                            <div className="flex items-center gap-6 text-[white]">
+                          <div className="flex items-center justify-between flex-wrap gap-4 text-white drop-shadow">
+                            <div className="flex items-center gap-6">
                               <div className="flex items-center gap-2">
                                 <User className="w-4 h-4" />
                                 {post.author}
@@ -317,10 +320,10 @@ const DigitalMarketingBlog = () => {
                             <button
                               type="button"
                               className="group bg-orange-500 cursor-pointer px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-white"
-                              aria-label="Read more about this service"
-                              title="Read more about this service"
+                              aria-label="Learn more about our service"
+                              title="Learn more about our  service"
                             >
-                              Read More
+                              Learn More About
                               <ArrowRight className="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform cursor-pointer" />
                             </button>
                           </div>
@@ -338,8 +341,8 @@ const DigitalMarketingBlog = () => {
                     key={index}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
                       index === featuredIndex
-                        ? "bg-[orange] scale-125"
-                        : "bg-[darkblue]/30"
+                        ? "bg-orange-500 scale-125"
+                        : "bg-gray-300"
                     }`}
                     onClick={() => setFeaturedIndex(index)}
                   />
@@ -496,9 +499,9 @@ const DigitalMarketingBlog = () => {
             {/* Load More Button */}
             <div className="text-center mt-12">
               <Link to="/portfolio">
-                <button className="group bg-gradient-to-r cursor-pointer from-white to-[orange] hover:from-[red] hover:to-[white] px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-[darkblue] border border-[darkblue]/30">
-                  Load More Articles
-                  <ChevronDown className="inline-block ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform duration-200 text-[darkblue]" />
+                <button className="group bg-blue-900/90 cursor-pointer hover:bg-orange-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                  Explore More Work from Our Portfolio
+                  <ChevronDown className="inline-block ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform duration-200 text-white" />
                 </button>
               </Link>
             </div>
@@ -508,33 +511,38 @@ const DigitalMarketingBlog = () => {
         {/* Newsletter Subscription */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-[darkblue]/5">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
-              <Zap className="w-12 h-12 text-[orange] mx-auto mb-4 animate-pulse" />
-              <h2 className="text-3xl sm:text-4xl py-4 font-bold mb-4 text-[darkblue]">
-                Stay Updated
+            <div className="mb-12">
+              <Zap className="w-12 h-12 text-orange-500 mx-auto mb-4 animate-pulse" />
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-6">
+                <span className="block">Subscribe to Our</span>
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-600">
+                  Marketing Newsletter
+                </span>
+                <span className="block">For Growth Insights</span>
               </h2>
-              <p className="text-xl text-[darkblue] max-w-2xl mx-auto">
-                Get the latest digital marketing insights delivered straight to
-                your inbox. Join 10,000+ marketers who trust our newsletter.
+              <p className="text-sm text-gray-600 max-w-xl mx-auto">
+                Join 10,000+ marketers who trust us. No spam. Unsubscribe
+                anytime.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <Link to="/contact" className="mx-auto">
+              <Link
+                to="/contact"
+                className="mx-auto"
+                aria-label="Navigate to SunceADTECH Contact Page"
+                title="Contact SunceADTECH for digital marketing services"
+              >
                 <button
                   type="button"
-                  className="bg-gradient-to-r cursor-pointer from-[darkblue] to-[orange] hover:from-[orange] hover:to-[darkblue] px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-white"
-                  aria-label="Learn more about our services or get in touch with us"
-                  title="Learn more about our services or get in touch with us"
+                  className="px-8 py-4 bg-orange-600 hover:bg-orange-700 cursor-pointer text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                  aria-label="Get in touch with SunceADTECH for digital marketing solutions"
+                  title="Get in touch with SunceADTECH for digital marketing solutions"
                 >
-                  Learn More
+                  Contact SunceADTECH – Let’s Grow Your Business
                 </button>
               </Link>
             </div>
-
-            <p className="text-sm text-[darkblue] mt-4">
-              No spam, unsubscribe at any time.
-            </p>
           </div>
         </section>
       </div>
