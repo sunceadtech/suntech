@@ -171,9 +171,9 @@ const USPComponent = () => {
                           <div className="text-3xl sm:text-4xl lg:text-6xl mb-2 sm:mb-3 lg:mb-4">
                             {card.icon}
                           </div>
-                          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 sm:mb-2 leading-tight">
+                          <p className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 sm:mb-2 leading-tight">
                             {card.title}
-                          </h3>
+                          </p>
                           <p className="text-sm sm:text-base lg:text-lg opacity-90 leading-snug">
                             {card.subtitle}
                           </p>

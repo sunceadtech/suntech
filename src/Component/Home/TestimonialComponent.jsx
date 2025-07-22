@@ -149,9 +149,9 @@ const TestimonialComponent = () => {
                 </blockquote>
 
                 <div className="space-y-2 sm:space-y-3">
-                  <h4 className="text-xl sm:text-2xl font-bold text-blue-900">
+                  <p className="text-xl sm:text-2xl font-bold text-blue-900">
                     {currentTestimonial.name}
-                  </h4>
+                  </p>
                   <p className="text-sm sm:text-base text-orange-500 font-semibold">
                     {currentTestimonial.role}
                   </p>

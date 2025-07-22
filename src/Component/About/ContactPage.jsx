@@ -73,7 +73,7 @@ const ContactPage = () => {
     setIsSubmitting(true);
     const formPayload = {
       access_key: "bb8e7492-826c-47d4-a267-11ad80807fbe", // 🔑 Yahan apna key daal
-      subject: ` sunceadtech - ${formData.service}`,
+      subject: ` Sunceadtech - ${formData.service}`,
       from_name: `${formData.firstName} ${formData.lastName}`,
       email: formData.email,
       phone: formData.phone || "Not provided",
@@ -120,7 +120,11 @@ const ContactPage = () => {
         <title>Contact Us | Sunceadtech</title>
         <meta
           name="description"
-          content="Get in touch with SunceADTECH, the best digital marketing agency in Delhi NCR. We're here to answer your queries and help grow your business online."
+          content="Get in touch with Sunceadtech, the best digital marketing agency in Delhi NCR. We're here to answer your queries and help grow your business online."
+        />
+        <meta
+          name="keywords"
+          content="Contact SunceADTECH, Digital Marketing Support, SEO Expert Delhi, Social Media Help, PPC Consultation, Marketing Agency Delhi"
         />
       </Helmet>
 
@@ -134,9 +138,9 @@ const ContactPage = () => {
             {/* Contact Information */}
             <div className="space-y-8 animate-slide-in-left">
               <div>
-                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
                   Get In Touch
-                </h2>
+                </h1>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   We'd love to hear from you. Send us a message and we'll
                   respond as soon as possible.
@@ -161,7 +165,6 @@ const ContactPage = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 px-2">
                   <div className="flex items-center space-x-4 cursor-pointer">
                     <div className="bg-green-100 p-3 rounded-full mx-0 md:mx-2 group-hover:bg-green-200 transition-colors">
@@ -170,13 +173,13 @@ const ContactPage = () => {
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
                       <a
-                        href="mailto:sunceadtech@gmail.com"
+                        href="mailto:Sunceadtech@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 hover:underline"
-                        aria-label="Email us at sunceadtech@gmail.com"
+                        aria-label="Email us at Sunceadtech@gmail.com"
                       >
-                        sunceadtech@gmail.com
+                        Sunceadtech@gmail.com
                       </a>
                     </div>
                   </div>
@@ -228,22 +231,22 @@ const ContactPage = () => {
                   </div>
                   <div className="flex items-center space-x-3">
                     <a
-                      href="mailto:sunceadtech@gmail.com"
+                      href="mailto:Sunceadtech@gmail.com"
                       className="text-blue-600 font-medium hover:underline"
-                      aria-label="Connect with us via email at sunceadtech@gmail.com"
+                      aria-label="Connect with us via email at Sunceadtech@gmail.com"
                     >
-                      Connect via Email: sunceadtech@gmail.com
+                      Connect via Email: Sunceadtech@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <a
-                      href="https://www.linkedin.com/company/sunceadtech"
+                      href="https://www.linkedin.com/company/Sunceadtech"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 font-medium hover:underline"
-                      aria-label="Visit SunceADTECH LinkedIn page"
+                      aria-label="Visit Sunceadtech LinkedIn page"
                     >
-                      Find us on LinkedIn: @SunceADTECH
+                      Find us on LinkedIn: @Sunceadtech
                     </a>
                   </div>
                 </div>
@@ -252,9 +255,9 @@ const ContactPage = () => {
             {/* Contact Form */}
             <div className="animate-slide-in-right">
               <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-10 border border-gray-100">
-                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
                   Start Your Project Today
-                </h3>
+                </h2>
 
                 {submitStatus === "error" && (
                   <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center space-x-3 animate-fade-in">

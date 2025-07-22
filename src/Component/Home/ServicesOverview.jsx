@@ -271,9 +271,9 @@ const ServicesOverview = () => {
               </div>
               {/* Service content */}
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-1 text-gray-900">
+                <p className="text-2xl font-bold mb-1 text-gray-900">
                   {service.title}
-                </h3>
+                </p>
                 <p className="text-sm text-gray-500 mb-4">{service.subtitle}</p>
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {service.description}
@@ -336,9 +336,9 @@ const ServicesOverview = () => {
                 <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-6 shadow-lg">
                   {step.step}
                 </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">
+                <p className="text-xl font-bold text-gray-900 mb-2">
                   {step.title}
-                </h4>
+                </p>
                 <p className="text-gray-600">{step.desc}</p>
               </div>
             ))}

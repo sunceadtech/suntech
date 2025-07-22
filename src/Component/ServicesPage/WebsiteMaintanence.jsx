@@ -12,7 +12,7 @@ import {
   Layers,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 function WebsiteMaintanence() {
   const [isVisible, setIsVisible] = useState(false);
   const [activeService, setActiveService] = useState(0);
@@ -135,6 +135,18 @@ function WebsiteMaintanence() {
 
   return (
     <>
+      <Helmet>
+        <title>Website Maintenance Services | Sunceadtech</title>
+        <meta
+          name="description"
+          content="Keep your website secure, updated, and running smoothly with Sunceadtech's website maintenance services. Regular updates, backups, and support."
+        />
+        <meta
+          name="keywords"
+          content="website maintenance, site updates, website support, security monitoring, Sunceadtech"
+        />
+      </Helmet>
+
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
         <section className="relative px-4 py-20 sm:px-6 lg:px-8">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-3xl"></div>

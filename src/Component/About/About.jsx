@@ -15,7 +15,6 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet";
 
-
 const AboutPage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeValue, setActiveValue] = useState(0);
@@ -89,13 +88,17 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Sunceadtech</title>
+        <title>Analytics & Reporting | Sunceadtech</title>
         <meta
           name="description"
-          content="Learn more about SunceADTECH,Best DigitalMarketing Agency In Delhi NCR."
-
+          content="Track performance with Sunceadtech's analytics and reporting services. Make data-driven digital marketing decisions for better ROI."
+        />
+        <meta
+          name="keywords"
+          content="analytics, reporting, digital marketing insights, performance tracking, ROI, Sunceadtech services"
         />
       </Helmet>
+
       <div className="min-h-screen bg-gradient-to-br from-white via-[#f0f8ff] to-blue-100 overflow-hidden">
         {/* Hero Section */}
         <section className="relative px-4 py-20 sm:px-6 lg:px-8">
@@ -104,17 +107,18 @@ const AboutPage = () => {
               <div className="inline-flex items-center px-4 py-2 rounded-full border mb-8">
                 <Megaphone className="w-5 h-5 mr-2 text-orange-500" />
                 <span className="text-orange-500 font-medium">
-                  About Our Digital Marketing Agency
+                  About Sunceadtech Leading Digital Marketing Agency in Delhi
+                  NCR
                 </span>
               </div>
 
-              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-600">
-                  Driving Growth
+                  About Sunceadtech
                 </span>
                 <br />
                 <span className="bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
-                  Through Innovation
+                  Your Trusted Digital Marketing in Delhi NCR
                 </span>
               </h1>
 
@@ -197,9 +201,9 @@ const AboutPage = () => {
                   >
                     {value.icon}
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-gray-800">
+                  <p className="text-xl font-bold mb-4 text-gray-800">
                     {value.title}
-                  </h3>
+                  </p>
                   <p className="text-gray-600">{value.description}</p>
                 </div>
               ))}

@@ -221,9 +221,14 @@ const DigitalMarketingBlog = () => {
         <title>Best Digital Marketing Blogs | Sunceadtech</title>
         <meta
           name="description"
-          content="Discover the best digital marketing blogs by SunceADTECH to grow your business. Get expert tips on SEO, social media, branding, and more."
+          content="Discover the best digital marketing blogs by Sunceadtech to grow your business. Get expert tips on SEO, social media, branding, and more."
+        />
+        <meta
+          name="keywords"
+          content="Digital Marketing Blogs, SEO Tips, Social Media Strategy, Branding Insights, Marketing Blog Delhi NCR"
         />
       </Helmet>
+
       <div className="min-h-screen">
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-white via-[#fefefe] to-blue-50 overflow-hidden">
@@ -547,7 +552,7 @@ const DigitalMarketingBlog = () => {
                   aria-label="Get in touch with SunceADTECH for digital marketing solutions"
                   title="Get in touch with SunceADTECH for digital marketing solutions"
                 >
-                  Contact SunceADTECH – Let’s Grow Your Business
+                  Contact Sunceadtech  Let’s Grow Your Business
                 </button>
               </Link>
             </div>

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import sunceAdtec from "../../assets/sunceAdtec.png";
+import sunceAdtec from "../../assets/sunceadtech.png";
 
 import { useNavigate ,useLocation} from "react-router-dom";
 const Navbar = () => {
@@ -81,7 +81,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center space-x-2">
               <img
                 src={sunceAdtec}
-                alt="SunceADTECH"
+                alt="Sunceadtech"
                 className="w-32 h-14 p-1 object-contain transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300"
               />
             </Link>

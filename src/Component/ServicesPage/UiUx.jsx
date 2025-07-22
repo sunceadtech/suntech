@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 function UiUx() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -56,6 +57,18 @@ function UiUx() {
 
   return (
     <>
+      <Helmet>
+        <title>UI/UX Design Services | Sunceadtech</title>
+        <meta
+          name="description"
+          content="Deliver exceptional user experiences with Sunceadtech's UI/UX design services. We craft intuitive interfaces for web and mobile applications."
+        />
+        <meta
+          name="keywords"
+          content="UI design, UX design, UI/UX services, user interface design, user experience, Sunceadtech"
+        />
+      </Helmet>
+
       <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50">
         <div
           className={`pt-32 pb-16 px-4 transform transition-all duration-1000 ${
