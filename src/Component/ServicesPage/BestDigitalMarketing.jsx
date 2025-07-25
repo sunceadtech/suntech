@@ -105,10 +105,11 @@ const BestDigitalMarketing = () => {
           name="description"
           content="Sunceadtech is the best digital marketing agency in Delhi NCR offering SEO, video marketing, mobile app development, and custom web solutions to boost your online growth."
         />
-        <meta
-          name="keywords"
-          content="best digital marketing agency in Delhi, SEO services Delhi NCR, video marketing India, mobile app development Delhi, web development company, Sunceadtech, branding services, performance marketing, PPC, social media marketing"
-        />
+       <meta
+  name="keywords"
+  content="digital marketing Delhi, SEO Delhi NCR, video marketing India, app & web development, Sunceadtech, branding, PPC, social media"
+/>
+
       </Helmet>
 
       <section className="relative py-24 lg:py-32 bg-gradient-to-br from-white via-blue-50 to-blue-100 overflow-hidden">
@@ -121,7 +122,7 @@ const BestDigitalMarketing = () => {
         {/* Main Content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Heading */}
-          <motion.h2
+          <motion.h1
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -132,7 +133,7 @@ const BestDigitalMarketing = () => {
               Marketing Agency
             </span>
             <span className="block">In Delhi NCR</span>
-          </motion.h2>
+          </motion.h1>
 
           {/* Description */}
           <motion.p
@@ -165,9 +166,9 @@ const BestDigitalMarketing = () => {
                 aria-label={`Service: ${service.title}`}
               >
                 <div className="text-3xl mb-3">{service.icon}</div>
-                <h4 className="text-xl font-bold text-gray-800 mb-1">
+                <h2 className="text-xl font-bold text-gray-800 mb-1">
                   {service.title}
-                </h4>
+                </h2>
                 <p className="text-gray-600 text-sm">{service.desc}</p>
               </Link>
             ))}

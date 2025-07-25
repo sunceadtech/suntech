@@ -13,7 +13,7 @@ import {
   Star,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 const ContentMarketingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState(0);

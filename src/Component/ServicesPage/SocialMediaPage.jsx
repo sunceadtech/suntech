@@ -278,9 +278,9 @@ const SocialMediaPage = () => {
                   key={index}
                   className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                  <p className="text-2xl font-bold text-gray-800 mb-4">
                     {service.title}
-                  </h3>
+                  </p>
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <div className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
@@ -311,20 +311,20 @@ const SocialMediaPage = () => {
             <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                  <p className="text-2xl font-bold text-gray-800 mb-4">
                     {caseStudy.client}
-                  </h3>
+                  </p>
                   <div className="space-y-6">
                     <div>
-                      <h4 className="font-semibold text-pink-600 mb-2">
+                      <p className="font-semibold text-pink-600 mb-2">
                         Challenge
-                      </h4>
+                      </p>
                       <p className="text-gray-600">{caseStudy.challenge}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-pink-600 mb-2">
+                      <p className="font-semibold text-pink-600 mb-2">
                         Solution
-                      </h4>
+                      </p>
                       <p className="text-gray-600">{caseStudy.solution}</p>
                     </div>
                   </div>
@@ -402,13 +402,13 @@ const SocialMediaPage = () => {
                   )}
 
                   <div className="text-center mb-8">
-                    <h3
+                    <p
                       className={`text-2xl font-bold mb-2 ${
                         pkg.popular ? "text-white" : "text-gray-800"
                       }`}
                     >
                       {pkg.name}
-                    </h3>
+                    </p>
                     <div
                       className={`mb-4 ${
                         pkg.popular ? "text-pink-100" : "text-pink-600"
@@ -472,9 +472,9 @@ const SocialMediaPage = () => {
         {/* CTA Section */}
         <div className="py-16 px-4 bg-gradient-to-br from-pink-600 to-purple-600">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to Transform Your Social Media Presence?
-            </h2>
+            </h3>
             <p className="text-xl text-pink-100 mb-8 max-w-2xl mx-auto">
               Let's create a social media strategy that drives real results for
               your business. Get started with a free consultation and social

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import sunceAdtec from "../../assets/sunceadtech.png";
+import sunceAdtec from "../../assets/sun3.png";
 
 import { useNavigate ,useLocation} from "react-router-dom";
 const Navbar = () => {

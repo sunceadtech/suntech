@@ -52,7 +52,7 @@ function Photography() {
 
         {/* Gallery Section */}
         <section className="bg-gray-100 py-12 px-6">
-          <h2 className="text-3xl font-semibold text-center mb-10">Gallery</h2>
+          <h2 className="text-3xl font-semibold text-center mb-10">Our Gallery</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {photography.map((url, index) => (
               <div
@@ -74,9 +74,9 @@ function Photography() {
           className="text-center py-12 bg-white"
           aria-labelledby="book-session-heading"
         >
-          <h2 id="book-session-heading" className="text-3xl font-semibold mb-4">
+          <p id="book-session-heading" className="text-3xl font-semibold mb-4">
             Book Your Session Today
-          </h2>
+          </p>
           <p className="mb-6 text-lg">
             Let us help you preserve your memories with stunning photography.
           </p>

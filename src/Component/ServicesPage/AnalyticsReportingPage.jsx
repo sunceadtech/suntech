@@ -193,13 +193,13 @@ const AnalyticsReportingPage = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up delay-400">
                 {/* Tab toggle = keep as <button>, add aria-label */}
-                <button
-                  onClick={() => setActiveTab("overview")}
+                <Link
+                  to="/contact"
                   className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-2xl"
                   aria-label="View analytics dashboard overview"
                 >
                   View Dashboard Overview
-                </button>
+                </Link>
 
                 {/* Navigation to demo page or form */}
                 <a
@@ -368,9 +368,9 @@ const AnalyticsReportingPage = () => {
 
               {/* Device Breakdown */}
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                <h3 className="text-xl font-bold text-white mb-6">
+                <p className="text-xl font-bold text-white mb-6">
                   Device Breakdown
-                </h3>
+                </p>
                 <div className="h-80 flex items-center justify-center">
                   <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
@@ -418,9 +418,9 @@ const AnalyticsReportingPage = () => {
             {/* Campaign Performance Table */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 mb-12">
               <div className="flex items-center justify-between mb-6">
-                <h3 className="text-xl font-bold text-white">
+                <p className="text-xl font-bold text-white">
                   Campaign Performance
-                </h3>
+                </p>
                 <button className="text-blue-400 hover:text-blue-300 text-sm font-medium">
                   View All
                 </button>
@@ -551,9 +551,9 @@ const AnalyticsReportingPage = () => {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm rounded-2xl p-12 border border-white/10">
-              <h2 className="text-4xl font-bold text-white mb-6">
+              <h3 className="text-4xl font-bold text-white mb-6">
                 Ready to Transform Your Data?
-              </h2>
+              </h3>
               <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
                 Start making data-driven decisions with our comprehensive
                 analytics platform. Get insights that drive real business

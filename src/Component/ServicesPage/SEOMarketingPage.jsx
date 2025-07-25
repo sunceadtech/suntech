@@ -267,9 +267,9 @@ const SEOMarketingPage = () => {
                   key={index}
                   className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                  <p className="text-2xl font-bold text-gray-800 mb-4">
                     {service.title}
-                  </h3>
+                  </p>
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <div className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
@@ -315,9 +315,9 @@ const SEOMarketingPage = () => {
                   )}
 
                   <div className="text-center mb-8">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                    <p className="text-2xl font-bold text-gray-800 mb-2">
                       {pkg.name}
-                    </h3>
+                    </p>
                     <div className="flex items-baseline justify-center">
                       <span className="text-4xl font-bold text-green-600">
                         {pkg.price}
@@ -367,9 +367,9 @@ const SEOMarketingPage = () => {
         <div className="py-16 px-4 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 Our SEO Process
-              </h2>
+              </h3>
               <p className="text-xl text-gray-600">
                 A systematic approach to improve your search rankings and drive
                 results
@@ -417,9 +417,9 @@ const SEOMarketingPage = () => {
         <div className="py-16 px-4 bg-gradient-to-br from-green-50 to-emerald-50">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 Frequently Asked Questions
-              </h2>
+              </h3>
             </div>
 
             <div className="space-y-6">
@@ -441,9 +441,9 @@ const SEOMarketingPage = () => {
         {/* CTA Section */}
         <div className="py-16 px-4 bg-gradient-to-r from-green-600 to-emerald-600">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <p className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Boost Your Search Rankings?
-            </h2>
+            </p>
             <p className="text-xl mb-8 opacity-90">
               Get a free SEO audit and discover how we can help you dominate
               search results.

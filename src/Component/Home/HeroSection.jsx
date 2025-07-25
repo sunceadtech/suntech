@@ -6,7 +6,7 @@ const HeroSection = () => {
   const stats = [
     { number: "500+", label: "Happy Clients" },
     { number: "1000+", label: "Projects Done" },
-    { number: "15+", label: "Team Members" },
+    { number: "90M+", label: "Leads Generated" },
     { number: "5+", label: "Years Experience" },
   ];
   const features = [

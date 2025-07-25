@@ -183,7 +183,6 @@ function WebsiteMaintanence() {
                 Request Maintenance
                 <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-
               <Link
                 to="/portfolio"
                 className="px-8 py-4 border-2 border-purple-400/50 rounded-xl font-semibold text-lg hover:bg-purple-600/20 hover:border-purple-400 transition-all duration-300 backdrop-blur-sm"
@@ -230,7 +229,6 @@ function WebsiteMaintanence() {
               Comprehensive maintenance and security tailored for your website
             </p>
           </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             {services.map((service, index) => (
               <div
@@ -304,7 +302,7 @@ function WebsiteMaintanence() {
                 <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 transition-transform duration-300">
                   {process.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3">{process.title}</h3>
+                <p className="text-xl font-bold mb-3">{process.title}</p>
                 <p className="text-gray-300">{process.desc}</p>
                 <div className="absolute -top-4 -right-4 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-xs font-bold">
                   {process.step}

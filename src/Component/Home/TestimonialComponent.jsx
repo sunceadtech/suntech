@@ -106,9 +106,9 @@ const TestimonialComponent = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-orange-600 mb-3 sm:mb-4">
+        <p className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-orange-600 mb-3 sm:mb-4">
           What Our Clients Say
-        </h2>
+        </p>
         <p className="text-base sm:text-lg lg:text-xl text-blue-900 max-w-2xl mx-auto leading-relaxed">
           Don't just take our word for it. Here's what industry leaders have to
           say about their experience.
@@ -275,7 +275,6 @@ const TestimonialComponent = () => {
           </div>
         </div>
       </div>
-
      <div
   className={`mt-12 sm:mt-16 lg:mt-20 transition-all duration-1000 delay-700 ${
     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -287,7 +286,7 @@ const TestimonialComponent = () => {
     {[
       { number: "500+", label: "Happy Clients" },
       { number: "98%", label: "Satisfaction Rate" },
-      { number: "250%", label: "Average ROI" },
+      { number: "300%", label: "Average ROI" },
       { number: "24/7", label: "Support Availability" },
     ].map((stat, index) => (
       <div

@@ -139,9 +139,9 @@ function UiUx() {
               </h2>
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="bg-gradient-to-br from-gray-50 to-pink-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                  <p className="text-2xl font-bold text-gray-800 mb-4">
                     Human-Centered Design
-                  </h3>
+                  </p>
                   <p className="text-gray-600 mb-4">
                     We focus on the real needs of users to craft intuitive and
                     delightful experiences that drive engagement.
@@ -154,9 +154,9 @@ function UiUx() {
                 </div>
 
                 <div className="bg-gradient-to-br from-purple-500 to-pink-600 text-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform scale-105">
-                  <h3 className="text-2xl font-bold mb-4">
+                  <p className="text-2xl font-bold mb-4">
                     Iterative Prototyping
-                  </h3>
+                  </p>
                   <p className="mb-4 text-pink-100">
                     We believe in quick iteration, rapid prototyping, and
                     frequent feedback to refine designs efficiently.

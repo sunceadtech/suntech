@@ -339,7 +339,7 @@ const EmailMarketingPage = () => {
                   className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 w-full sm:w-auto"
                 >
                   <span className="flex items-center justify-center gap-2">
-                    Start Free Trial
+                    Start Our Services
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </span>
                 </Link>

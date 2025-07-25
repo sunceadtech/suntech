@@ -470,27 +470,27 @@ const PPCAdvertisingPage = () => {
                   </h3>
                   <div className="space-y-4 sm:space-y-6">
                     <div>
-                      <h4 className="font-semibold text-blue-600 mb-2">
+                      <p className="font-semibold text-blue-600 mb-2">
                         Industry
-                      </h4>
+                      </p>
                       <p className="text-gray-600">{caseStudy.industry}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-blue-600 mb-2">
+                      <p className="font-semibold text-blue-600 mb-2">
                         Challenge
-                      </h4>
+                      </p>
                       <p className="text-gray-600">{caseStudy.challenge}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-blue-600 mb-2">
+                      <p className="font-semibold text-blue-600 mb-2">
                         Solution
-                      </h4>
+                      </p>
                       <p className="text-gray-600">{caseStudy.solution}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-blue-600 mb-2">
+                      <p className="font-semibold text-blue-600 mb-2">
                         Timeline
-                      </h4>
+                      </p>
                       <p className="text-gray-600">{caseStudy.duration}</p>
                     </div>
                   </div>

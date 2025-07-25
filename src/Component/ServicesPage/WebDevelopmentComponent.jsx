@@ -209,9 +209,9 @@ const WebDevelopmentComponent = () => {
                     <div className="text-purple-400 mb-6 transform group-hover:scale-110 transition-transform duration-300">
                       {service.icon}
                     </div>
-                    <h3 className="text-2xl font-bold mb-4 group-hover:text-purple-300 transition-colors">
+                    <p className="text-2xl font-bold mb-4 group-hover:text-purple-300 transition-colors">
                       {service.title}
-                    </h3>
+                    </p>
                     <p className="text-gray-300 mb-6 leading-relaxed">
                       {service.description}
                     </p>
@@ -285,9 +285,9 @@ const WebDevelopmentComponent = () => {
                     <div className="text-6xl font-bold text-purple-500/30 mb-4 group-hover:text-purple-400/50 transition-colors">
                       {step.step}
                     </div>
-                    <h3 className="text-xl font-bold mb-4 group-hover:text-purple-300 transition-colors">
+                    <p className="text-xl font-bold mb-4 group-hover:text-purple-300 transition-colors">
                       {step.title}
-                    </h3>
+                    </p>
                     <p className="text-gray-300 leading-relaxed">
                       {step.description}
                     </p>

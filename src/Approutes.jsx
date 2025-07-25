@@ -38,12 +38,12 @@ const Approutes = () => {
         <Route path="/services/seo" element={<SEOMarketingPage />} />
         <Route path="/services/ppc" element={<PPCAdvertisingPage />} />
         <Route path="/services/social-media" element={<SocialMediaPage />} />
-        <Route path="/services/digital-media" element={<DigitalMediaPlanning />} />
+        {/* <Route path="/services/digital-media" element={<DigitalMediaPlanning />} /> */}
         <Route path="/services/analysis" element={<EmailMarketingPage />} />
         <Route path="/services/content" element={<ContentMarketingPage />} />
         <Route path="/services/analytics" element={<AnalyticsReportingPage />} />
         <Route path="/services/web" element={<WebDevelopmentComponent />} />
-        <Route path="/services/video-content" element={<DigitalDesign />} />
+        {/* <Route path="/services/video-content" element={<DigitalDesign />} /> */}
         <Route path="/services/uiux" element={<UiUx />} />
         <Route path="/services/logo-design" element={<LogoDesign />} />
         <Route path="/services/graphic" element={<Graphic />} />

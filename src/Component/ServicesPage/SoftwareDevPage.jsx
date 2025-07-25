@@ -141,7 +141,7 @@ const SoftwareDevPage = () => {
             <div className="inline-flex items-center px-4 py-2 bg-purple-600/20 rounded-full border border-purple-400/30 mb-8 backdrop-blur-sm">
               <Code className="w-5 h-5 mr-2 text-purple-400" />
               <span className="text-purple-300 font-medium">
-                Professional Software Development
+                Professional Software Development 
               </span>
             </div>
 

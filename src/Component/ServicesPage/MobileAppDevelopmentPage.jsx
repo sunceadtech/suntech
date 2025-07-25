@@ -305,12 +305,12 @@ const MobileAppDevelopmentPage = () => {
               id="platforms"
               data-animate
             >
-              <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-900 mb-12">
+              <p className="text-4xl lg:text-5xl font-bold text-center text-gray-900 mb-12">
                 Multi-Platform{" "}
                 <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
                   Excellence
                 </span>
-              </h2>
+              </p>
 
               <div className="flex justify-center mb-12">
                 <div className="bg-white rounded-2xl p-2 shadow-lg">
@@ -335,9 +335,9 @@ const MobileAppDevelopmentPage = () => {
                   <div>
                     {activeTab === "ios" && (
                       <div className="space-y-6 animate-fadeIn">
-                        <h3 className="text-3xl font-bold text-gray-900">
+                        <p className="text-3xl font-bold text-gray-900">
                           iOS Development
-                        </h3>
+                        </p>
                         <p className="text-gray-600 text-lg">
                           Create premium iOS applications with native
                           performance using Swift and the latest iOS frameworks.
@@ -361,9 +361,9 @@ const MobileAppDevelopmentPage = () => {
                     )}
                     {activeTab === "android" && (
                       <div className="space-y-6 animate-fadeIn">
-                        <h3 className="text-3xl font-bold text-gray-900">
+                        <p className="text-3xl font-bold text-gray-900">
                           Android Development
-                        </h3>
+                        </p>
                         <p className="text-gray-600 text-lg">
                           Build powerful Android applications using Kotlin and
                           modern Android architecture patterns. Reach billions
@@ -387,9 +387,9 @@ const MobileAppDevelopmentPage = () => {
                     )}
                     {activeTab === "cross-platform" && (
                       <div className="space-y-6 animate-fadeIn">
-                        <h3 className="text-3xl font-bold text-gray-900">
+                        <p className="text-3xl font-bold text-gray-900">
                           Cross-Platform Solutions
-                        </h3>
+                        </p>
                         <p className="text-gray-600 text-lg">
                           Maximize your reach with cross-platform development
                           using React Native and Flutter. One codebase, multiple
@@ -437,12 +437,12 @@ const MobileAppDevelopmentPage = () => {
               id="features"
               data-animate
             >
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              <p className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Advanced{" "}
                 <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
                   Features
                 </span>
-              </h2>
+              </p>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Every app we build comes packed with modern features and
                 capabilities

@@ -78,8 +78,8 @@ const USPComponent = () => {
     },
     {
       icon: "🔒",
-      title: "Guaranteed ROI",
-      description: "Money-back guarantee on results",
+      title: "Guaranteed",
+      description: "guarantee on results",
     },
     {
       icon: "👥",
