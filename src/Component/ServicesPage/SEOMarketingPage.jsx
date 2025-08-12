@@ -124,17 +124,57 @@ const SEOMarketingPage = () => {
   return (
     <>
       <Helmet>
-        <title>SEO Marketing Services | Sunceadtech</title>
+        <title>
+          Top SEO Marketing Services in India | Boost Your Google Rankings |
+          Sunceadtech
+        </title>
+
         <meta
           name="description"
-          content="Improve your online visibility with Sunceadtech's SEO marketing services. We offer on-page, off-page, and technical SEO to boost your rankings."
+          content="Drive targeted traffic and increase sales with Sunceadtech’s expert SEO marketing services. Comprehensive on-page, off-page & technical SEO solutions tailored for your business growth."
         />
+
         <meta
           name="keywords"
-          content="SEO marketing, search engine optimization, on-page SEO, off-page SEO, SEO services, Sunceadtech"
+          content="SEO marketing services India, best SEO agency, search engine optimization, increase website traffic, Google ranking, on-page SEO, off-page SEO, technical SEO, SEO company Delhi NCR, digital marketing"
         />
+
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
+
+        {/* Open Graph tags for better social sharing */}
+        <meta
+          property="og:title"
+          content="Top SEO Marketing Services | Sunceadtech"
+        />
+        <meta
+          property="og:description"
+          content="Boost your Google rankings and drive more sales with our proven SEO strategies. Get a free SEO audit today!"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.sunceadtech.com/seo-marketing"
+        />
+        <meta
+          property="og:image"
+          content="https://www.sunceadtech.com/images/seo-marketing-banner.jpg"
+        />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Top SEO Marketing Services | Sunceadtech"
+        />
+        <meta
+          name="twitter:description"
+          content="Boost your Google rankings and drive more sales with our proven SEO strategies. Get a free SEO audit today!"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.sunceadtech.com/images/seo-marketing-banner.jpg"
+        />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50">
@@ -167,12 +207,10 @@ const SEOMarketingPage = () => {
                     SEO Marketing
                   </span>
                 </div>
-
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                  Dominate Search Results with
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+                  Unlock Top Google Rankings with <br />
                   <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
-                    {" "}
-                    Expert SEO
+                    Proven SEO Strategies
                   </span>
                 </h1>
 
@@ -405,9 +443,9 @@ const SEOMarketingPage = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl group-hover:scale-110 transition-transform duration-300">
                     {process.step}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  <p className="text-xl font-bold text-gray-800 mb-4">
                     {process.title}
-                  </h3>
+                  </p>
                   <p className="text-gray-600">{process.desc}</p>
                 </div>
               ))}

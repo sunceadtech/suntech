@@ -58,17 +58,21 @@ function UiUx() {
   return (
     <>
       <Helmet>
-        <title>UI/UX Design Services | Sunceadtech</title>
+        <title>Innovative UI/UX Design Services | Sunceadtech</title>
         <meta
           name="description"
-          content="Deliver exceptional user experiences with Sunceadtech's UI/UX design services. We craft intuitive interfaces for web and mobile applications."
+          content="Elevate your digital presence with Sunceadtech's innovative UI/UX design services. We create user-centric, intuitive designs for web and mobile platforms."
         />
         <meta
           name="keywords"
-          content="UI design, UX design, UI/UX services, user interface design, user experience, Sunceadtech"
+          content="innovative UI design, UX design services, user experience design, UI/UX design agency, Sunceadtech"
         />
-          <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" /> 
+        <link
+          rel="canonical"
+          href="https://www.sunceadtech.com/ui-ux-design-services"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50">
@@ -81,12 +85,12 @@ function UiUx() {
             {/* Header Section */}
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                Exceptional{" "}
+                Transform Your Brand with
                 <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  UI/UX Design
-                </span>{" "}
-                Services
+                  Innovative UI/UX Design Solutions
+                </span>
               </h1>
+
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Delivering intuitive, engaging, and aesthetically pleasing
                 digital experiences tailored to your audience.

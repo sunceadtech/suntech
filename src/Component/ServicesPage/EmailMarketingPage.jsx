@@ -302,12 +302,12 @@ const EmailMarketingPage = () => {
               </div>
 
               {/* Main Heading */}
-              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+              <h1 className="text-4xl sm:text-6xl lg:text-6xl font-bold mb-8 leading-tight">
                 <span className="block bg-gradient-to-r from-white via-blue-200 py-4 to-purple-200 bg-clip-text text-transparent animate-gradient-x">
-                  Digital Strategy Consultant
+                  Best Digital Strategy Consultant
                 </span>
                 <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-x-reverse">
-                  That Converts
+                  That Change Your Life
                 </span>
               </h1>
 
@@ -408,7 +408,7 @@ const EmailMarketingPage = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-                Powerful Features
+                Powerful Features to Elevate Your Digital Strategy Consulting
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                 Everything you need to create, send, and optimize email
@@ -542,9 +542,9 @@ const EmailMarketingPage = () => {
         >
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl  py-6 sm:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+              <h3 className="text-3xl  py-6 sm:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
                 Complete Digital Problems Solutions
-              </h2>
+              </h3>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                 From strategy to execution, we provide everything you need for
                 successful Digital Strategy Consultant
@@ -638,9 +638,9 @@ const EmailMarketingPage = () => {
         >
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
+              <h3 className="text-3xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
                 Choose Your Plan
-              </h2>
+              </h3>
               <p className="text-xl text-gray-300">
                 Flexible pricing that grows with your business
               </p>

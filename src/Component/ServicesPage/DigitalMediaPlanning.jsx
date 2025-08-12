@@ -112,6 +112,8 @@ function DigitalMediaPlanning() {
         {/* Optional but recommended */}
         {/* <link rel="canonical" href="https://example.com/digital-media-planning" /> */}
       </Helmet>
+
+
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
         <div
           className={`pt-32 pb-16 px-4 transform transition-all duration-1000 ${
@@ -150,6 +152,9 @@ function DigitalMediaPlanning() {
             </div>
 
             {/* Services */}
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+              Our Digital Media Planning Services
+            </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {services.map((service, index) => (
                 <div
@@ -175,7 +180,7 @@ function DigitalMediaPlanning() {
             {/* Packages */}
             <div className="py-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
-                Our Packages
+                Affordable Digital Media Packages
               </h2>
               <div className="grid md:grid-cols-3 gap-8">
                 {packages.map((pkg, index) => (
@@ -202,13 +207,13 @@ function DigitalMediaPlanning() {
                       >
                         {pkg.name}
                       </h3>
-                      <div
+                      <p
                         className={`mb-4 ${
                           pkg.popular ? "text-indigo-100" : "text-indigo-600"
                         }`}
                       >
                         Digital Media Planning
-                      </div>
+                      </p>
                       <div className="flex items-baseline justify-center">
                         <span
                           className={`text-4xl font-bold ${

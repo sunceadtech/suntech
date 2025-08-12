@@ -189,8 +189,7 @@ const TestimonialComponent = () => {
               </div>
             </div>
           </div>
-        </div>
-
+        </div>       
         <div
           className="flex items-center justify-between mt-6 sm:mt-8"
           role="navigation"

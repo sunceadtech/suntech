@@ -120,14 +120,18 @@ const MobileAppDevelopmentPage = () => {
         <title>Mobile App Development Services | Sunceadtech</title>
         <meta
           name="description"
-          content="Build high-performance mobile apps with Sunceadtech. We design and develop Android & iOS apps tailored to your business goals."
+          content="Build high-performance mobile apps with Sunceadtech. We design and develop Android & iOS apps tailored to your business goals, ensuring seamless user experience and scalable solutions."
         />
         <meta
           name="keywords"
-          content="mobile app development, android app, ios app, app development company, Sunceadtech"
+          content="mobile app development, android app development, ios app development, app development company, Sunceadtech, custom mobile apps, scalable mobile solutions"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://www.sunceadtech.com/mobile-app-development"
+        />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
@@ -150,12 +154,13 @@ const MobileAppDevelopmentPage = () => {
                   #1 Mobile App Development Agency
                 </div>
 
+                {/* UNIQUE H1 */}
                 <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                   Build{" "}
                   <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    Powerful
+                    Powerful Mobile Apps
                   </span>{" "}
-                  Mobile Apps
+                  That Drive Business Growth
                 </h1>
 
                 <p className="text-xl text-gray-600 leading-relaxed">
@@ -185,6 +190,7 @@ const MobileAppDevelopmentPage = () => {
                   </Link>
                 </div>
               </div>
+
               <div
                 className={`relative transform transition-all duration-1000 delay-300 ${
                   isVisible.hero
@@ -256,16 +262,16 @@ const MobileAppDevelopmentPage = () => {
               id="services"
               data-animate
             >
+              {/* H2 #1 */}
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Our{" "}
                 <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
-                  Development
-                </span>{" "}
-                Services
+                  Development Services
+                </span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 From native iOS and Android apps to cross-platform solutions, we
-                deliver cutting-edge mobile experiences
+                deliver cutting-edge mobile experiences.
               </p>
             </div>
 
@@ -283,6 +289,7 @@ const MobileAppDevelopmentPage = () => {
                   <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transform transition-all duration-300">
                     <service.icon className="w-8 h-8 text-white" />
                   </div>
+                  {/* H3 under H2 #1 */}
                   <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
                     {service.title}
                   </h3>
@@ -307,121 +314,40 @@ const MobileAppDevelopmentPage = () => {
               id="platforms"
               data-animate
             >
-              <p className="text-4xl lg:text-5xl font-bold text-center text-gray-900 mb-12">
+              {/* H2 #2 */}
+              <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-900 mb-12">
                 Multi-Platform{" "}
                 <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
                   Excellence
                 </span>
-              </p>
+              </h2>
 
-              <div className="flex justify-center mb-12">
-                <div className="bg-white rounded-2xl p-2 shadow-lg">
-                  {["ios", "android", "cross-platform"].map((tab) => (
-                    <button
-                      key={tab}
-                      onClick={() => setActiveTab(tab)}
-                      className={`px-8 py-3 rounded-xl font-semibold capitalize transition-all duration-300 ${
-                        activeTab === tab
-                          ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg"
-                          : "text-gray-600 hover:text-gray-900"
-                      }`}
-                    >
-                      {tab.replace("-", " ")}
-                    </button>
-                  ))}
-                </div>
-              </div>
+              {/* Tabs & Content (no headings here to keep H3 count balanced) */}
+              {/* H3s under H2 #2 */}
+              <div className="space-y-8 max-w-4xl mx-auto">
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  Native iOS App Development
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Create premium iOS apps using Swift and Apple's latest
+                  frameworks, ensuring top performance and user experience.
+                </p>
 
-              <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-2xl">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
-                  <div>
-                    {activeTab === "ios" && (
-                      <div className="space-y-6 animate-fadeIn">
-                        <p className="text-3xl font-bold text-gray-900">
-                          iOS Development
-                        </p>
-                        <p className="text-gray-600 text-lg">
-                          Create premium iOS applications with native
-                          performance using Swift and the latest iOS frameworks.
-                          We ensure your app meets Apple's strict guidelines and
-                          delivers exceptional user experiences.
-                        </p>
-                        <div className="grid grid-cols-2 gap-4">
-                          {[
-                            "SwiftUI",
-                            "Core Data",
-                            "ARKit",
-                            "App Store Optimization",
-                          ].map((tech) => (
-                            <div key={tech} className="flex items-center">
-                              <Check className="w-5 h-5 text-green-500 mr-2" />
-                              <span className="text-gray-700">{tech}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                    {activeTab === "android" && (
-                      <div className="space-y-6 animate-fadeIn">
-                        <p className="text-3xl font-bold text-gray-900">
-                          Android Development
-                        </p>
-                        <p className="text-gray-600 text-lg">
-                          Build powerful Android applications using Kotlin and
-                          modern Android architecture patterns. Reach billions
-                          of users across diverse Android devices with optimized
-                          performance.
-                        </p>
-                        <div className="grid grid-cols-2 gap-4">
-                          {[
-                            "Kotlin",
-                            "Jetpack Compose",
-                            "Room Database",
-                            "Google Play Console",
-                          ].map((tech) => (
-                            <div key={tech} className="flex items-center">
-                              <Check className="w-5 h-5 text-green-500 mr-2" />
-                              <span className="text-gray-700">{tech}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                    {activeTab === "cross-platform" && (
-                      <div className="space-y-6 animate-fadeIn">
-                        <p className="text-3xl font-bold text-gray-900">
-                          Cross-Platform Solutions
-                        </p>
-                        <p className="text-gray-600 text-lg">
-                          Maximize your reach with cross-platform development
-                          using React Native and Flutter. One codebase, multiple
-                          platforms, faster time-to-market.
-                        </p>
-                        <div className="grid grid-cols-2 gap-4">
-                          {[
-                            "React Native",
-                            "Flutter",
-                            "Shared Codebase",
-                            "Faster Development",
-                          ].map((tech) => (
-                            <div key={tech} className="flex items-center">
-                              <Check className="w-5 h-5 text-green-500 mr-2" />
-                              <span className="text-gray-700">{tech}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  Powerful Android App Solutions
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Build optimized Android apps with Kotlin and modern
+                  architecture for a wide range of devices.
+                </p>
 
-                  <div className="relative">
-                    <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl p-8 transform hover:scale-105 transition-all duration-500">
-                      <div className="w-full h-80 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center">
-                        <Smartphone className="w-24 h-24 text-white animate-bounce" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  Cross-Platform React Native & Flutter
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  One codebase, multiple platforms — faster delivery with React
+                  Native and Flutter.
+                </p>
               </div>
             </div>
           </div>
@@ -439,41 +365,45 @@ const MobileAppDevelopmentPage = () => {
               id="features"
               data-animate
             >
-              <p className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              {/* H2 #3 */}
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Advanced{" "}
                 <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
                   Features
                 </span>
-              </p>
+              </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Every app we build comes packed with modern features and
-                capabilities
+                capabilities.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className={`bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-l-4 border-gradient-to-b from-blue-500 to-purple-500 ${
-                    isVisible.features
-                      ? "translate-y-0 opacity-100"
-                      : "translate-y-8 opacity-0"
-                  }`}
-                  style={{
-                    transitionDelay: `${index * 50}ms`,
-                    borderImage:
-                      "linear-gradient(to bottom, #3b82f6, #8b5cf6) 1",
-                  }}
-                >
-                  <div className="flex items-center">
-                    <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                    <span className="font-semibold text-gray-800">
-                      {feature}
-                    </span>
-                  </div>
-                </div>
-              ))}
+            {/* H3s under H2 #3 */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <div>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Seamless User Experience
+                </h3>
+                <p className="text-gray-600">
+                  Intuitive interfaces designed for effortless user interaction.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Robust Security Measures
+                </h3>
+                <p className="text-gray-600">
+                  State-of-the-art security to protect your app and user data.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Fast Performance & Scalability
+                </h3>
+                <p className="text-gray-600">
+                  Optimized apps that grow with your business needs.
+                </p>
+              </div>
             </div>
           </div>
         </section>

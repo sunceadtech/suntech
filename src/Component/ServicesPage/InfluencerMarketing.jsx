@@ -156,30 +156,35 @@ function InfluencerMarketing() {
   return (
     <>
       <Helmet>
-        <title>Influencer Marketing Services | Sunceadtech</title>
+        <title>
+          Top Influencer Marketing Services for Brands | Sunceadtech
+        </title>
         <meta
           name="description"
-          content="Discover, manage, and scale influencer campaigns across Instagram, YouTube & TikTok. End‑to‑end influencer marketing with discovery, contracts, tracking & ROI."
+          content="Boost your brand's reach and sales with Sunceadtech's expert influencer marketing services. End-to-end solutions from influencer discovery, campaign management to ROI tracking on Instagram, YouTube, TikTok, and more."
         />
         <meta
           name="keywords"
-          content="influencer marketing, creator marketing, instagram influencers, youtube collaborations, tiktok creators, KOL marketing, Sunceadtech"
+          content="influencer marketing services, influencer campaign management, creator marketing agency, Instagram influencer marketing, YouTube collaborations, TikTok marketing, brand influencer partnerships, Sunceadtech"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        <link rel="canonical" href="https://example.com/services/influencer" />
+        <link
+          rel="canonical"
+          href="https://example.com/services/influencer-marketing"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Influencer Marketing Services | Sunceadtech"
+          content="Top Influencer Marketing Services for Brands | Sunceadtech"
         />
         <meta
           property="og:description"
-          content="Run high‑ROI influencer campaigns with creator discovery, negotiation, and real‑time performance tracking."
+          content="Partner with top creators and scale your brand with tailored influencer marketing campaigns managed end-to-end by Sunceadtech."
         />
         <meta
           property="og:url"
-          content="https://example.com/influencer-marketing"
+          content="https://example.com/services/influencer-marketing"
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
@@ -216,18 +221,17 @@ function InfluencerMarketing() {
                 </div>
 
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                  Partner with Creators &
+                  Drive Authentic Growth with Expert{" "}
                   <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-                    {" "}
-                    Grow with Authentic Content
+                    Influencer Marketing Strategies
                   </span>
                 </h1>
 
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Discover the right creators, craft compelling briefs, and run
-                  high‑ROI influencer campaigns across Instagram, YouTube,
-                  TikTok, and LinkedIn. We handle everything—from discovery and
-                  negotiations to tracking and reporting.
+                  Partner with the right creators to amplify your brand’s voice
+                  on Instagram, YouTube, TikTok, and LinkedIn. From campaign
+                  planning to performance tracking, we deliver measurable ROI
+                  with personalized influencer programs.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -285,27 +289,36 @@ function InfluencerMarketing() {
         </div>
 
         {/* Services Section */}
-        <div className="py-16 px-4 bg-white">
+        <section
+          className="py-16 px-4 bg-white"
+          aria-labelledby="services-heading"
+        >
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                End‑to‑End Influencer Solutions
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Discovery se lekar contracts, execution aur ROI tak—hum aapke
-                liye poora creator program manage karte hain.
-              </p>
-            </div>
+            <h2
+              id="services-heading"
+              className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center"
+            >
+              Comprehensive Influencer Marketing Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12 text-center">
+              From discovery and contracts to execution and analytics, we manage
+              your entire influencer program to ensure maximum engagement and
+              ROI.
+            </p>
 
             <div className="grid md:grid-cols-2 gap-8">
               {services.map((service, index) => (
-                <div
+                <article
                   key={index}
                   className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                  aria-labelledby={`service-title-${index}`}
                 >
-                  <p className="text-2xl font-bold text-gray-800 mb-4">
+                  <h3
+                    id={`service-title-${index}`}
+                    className="text-2xl font-bold text-gray-800 mb-4"
+                  >
                     {service.title}
-                  </p>
+                  </h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <div className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
@@ -315,47 +328,61 @@ function InfluencerMarketing() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </article>
               ))}
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Case Study Section */}
-        <div className="py-16 px-4 bg-gradient-to-br from-gray-50 to-pink-50">
+        <section
+          className="py-16 px-4 bg-gradient-to-br from-gray-50 to-pink-50"
+          aria-labelledby="case-study-heading"
+        >
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Success Story
-              </h2>
-              <p className="text-xl text-gray-600">
-                How we scaled a D2C launch with nano + mid‑tier creators
-              </p>
-            </div>
+            <h2
+              id="case-study-heading"
+              className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center"
+            >
+              Proven Success: Influencer Marketing Case Study
+            </h2>
+            <p className="text-xl text-gray-600 mb-12 text-center">
+              Learn how we helped a D2C brand explode with nano and mid-tier
+              influencer collaborations.
+            </p>
 
             <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <p className="text-2xl font-bold text-gray-800 mb-4">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
                     {caseStudy.client}
-                  </p>
+                  </h3>
                   <div className="space-y-6">
-                    <div>
-                      <p className="font-semibold text-pink-600 mb-2">
+                    <section aria-labelledby="challenge-heading">
+                      <h3
+                        id="challenge-heading"
+                        className="font-semibold text-pink-600 mb-2"
+                      >
                         Challenge
-                      </p>
+                      </h3>
                       <p className="text-gray-600">{caseStudy.challenge}</p>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-pink-600 mb-2">
+                    </section>
+
+                    <section aria-labelledby="solution-heading">
+                      <h3
+                        id="solution-heading"
+                        className="font-semibold text-pink-600 mb-2"
+                      >
                         Solution
-                      </p>
+                      </h3>
                       <p className="text-gray-600">{caseStudy.solution}</p>
-                    </div>
+                    </section>
                   </div>
+
                   <Link
                     to="/contact"
                     className="inline-flex items-center mt-8 px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold rounded-lg hover:from-pink-700 hover:to-purple-700 transition-all duration-300"
+                    aria-label="View full influencer marketing case study"
                   >
                     View Full Case Study
                     <svg
@@ -392,30 +419,35 @@ function InfluencerMarketing() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Pricing Section */}
-        <div className="py-16 px-4 bg-white">
+        <section
+          className="py-16 px-4 bg-white"
+          aria-labelledby="pricing-heading"
+        >
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Choose Your Influencer Package
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Flexible packages for launches, promos ya always‑on
-                programs—hamisha ROI par focus.
-              </p>
-            </div>
+            <h2
+              id="pricing-heading"
+              className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center"
+            >
+              Flexible Influencer Marketing Packages
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12 text-center">
+              Choose from launch, promotional, or ongoing programs with packages
+              designed to maximize your ROI.
+            </p>
 
             <div className="grid md:grid-cols-3 gap-8">
               {packages.map((pkg, index) => (
-                <div
+                <article
                   key={index}
                   className={`rounded-2xl p-8 relative ${
                     pkg.popular
                       ? "bg-gradient-to-br from-pink-500 to-purple-600 text-white transform scale-105"
                       : "bg-gradient-to-br from-gray-50 to-pink-50"
                   } hover:shadow-xl transition-all duration-300`}
+                  aria-labelledby={`package-title-${index}`}
                 >
                   {pkg.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -425,37 +457,36 @@ function InfluencerMarketing() {
                     </div>
                   )}
 
-                  <div className="text-center mb-8">
-                    <p
-                      className={`text-2xl font-bold mb-2 ${
+                  <h3
+                    id={`package-title-${index}`}
+                    className={`text-2xl font-bold mb-2 ${
+                      pkg.popular ? "text-white" : "text-gray-800"
+                    }`}
+                  >
+                    {pkg.name}
+                  </h3>
+                  <p
+                    className={`mb-4 ${
+                      pkg.popular ? "text-pink-100" : "text-pink-600"
+                    }`}
+                  >
+                    {pkg.platforms}
+                  </p>
+                  <div className="flex items-baseline justify-center mb-8">
+                    <span
+                      className={`text-4xl font-bold ${
                         pkg.popular ? "text-white" : "text-gray-800"
                       }`}
                     >
-                      {pkg.name}
-                    </p>
-                    <div
-                      className={`mb-4 ${
-                        pkg.popular ? "text-pink-100" : "text-pink-600"
+                      {pkg.price}
+                    </span>
+                    <span
+                      className={`ml-1 ${
+                        pkg.popular ? "text-pink-100" : "text-gray-600"
                       }`}
                     >
-                      {pkg.platforms}
-                    </div>
-                    <div className="flex items-baseline justify-center">
-                      <span
-                        className={`text-4xl font-bold ${
-                          pkg.popular ? "text-white" : "text-gray-800"
-                        }`}
-                      >
-                        {pkg.price}
-                      </span>
-                      <span
-                        className={`ml-1 ${
-                          pkg.popular ? "text-pink-100" : "text-gray-600"
-                        }`}
-                      >
-                        {pkg.period}
-                      </span>
-                    </div>
+                      {pkg.period}
+                    </span>
                   </div>
 
                   <div className="space-y-4 mb-8">
@@ -484,30 +515,38 @@ function InfluencerMarketing() {
                         ? "bg-white text-pink-600 hover:bg-pink-50"
                         : "bg-gradient-to-r from-pink-600 to-purple-600 text-white hover:from-pink-700 hover:to-purple-700"
                     }`}
+                    aria-label={`Get started with the ${pkg.name} influencer marketing package`}
                   >
                     Get Started
                   </Link>
-                </div>
+                </article>
               ))}
             </div>
           </div>
-        </div>
+        </section>
 
         {/* CTA Section */}
-        <div className="py-16 px-4 bg-gradient-to-br from-pink-600 to-purple-600">
+        <section
+          className="py-16 px-4 bg-gradient-to-br from-pink-600 to-purple-600"
+          aria-labelledby="cta-heading"
+        >
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2
+              id="cta-heading"
+              className="text-3xl md:text-4xl font-bold text-white mb-6"
+            >
               Ready to Scale with Creators?
-            </h3>
+            </h2>
             <p className="text-xl text-pink-100 mb-8 max-w-2xl mx-auto">
-              Let’s build an influencer program that drives measurable
-              growth—free audit & roadmap included.
+              Let’s build an influencer program that drives measurable growth —
+              free audit & roadmap included.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="inline-flex items-center px-8 py-4 bg-white text-pink-700 font-semibold rounded-xl hover:bg-pink-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center px-8 py-4 bg-white text-pink-700 font-semibold rounded-xl hover:bg-pink-50 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl"
+                aria-label="Get free influencer marketing audit"
               >
                 Get Free Audit
                 <svg
@@ -527,6 +566,7 @@ function InfluencerMarketing() {
               <Link
                 to="/contact"
                 className="inline-flex items-center px-8 py-4 bg-transparent text-white font-semibold rounded-xl border-2 border-white hover:bg-white hover:text-pink-700 transform hover:scale-105 transition-all duration-300"
+                aria-label="Schedule an influencer marketing consultation"
               >
                 Schedule Consultation
               </Link>
@@ -547,7 +587,7 @@ function InfluencerMarketing() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </>
   );

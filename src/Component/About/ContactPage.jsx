@@ -179,7 +179,7 @@ const ContactPage = () => {
                       <Phone className="w-6 h-6 text-blue-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Phone</h3>
+                      <p className="font-semibold text-gray-900">Phone</p>
                       <a
                         href="tel:+919211877900"
                         className="text-gray-600 hover:underline"
@@ -196,7 +196,7 @@ const ContactPage = () => {
                       <Mail className="w-6 h-6 text-green-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Email</h3>
+                      <p className="font-semibold text-gray-900">Email</p>
                       <a
                         href="mailto:Sunceadtech@gmail.com"
                         target="_blank"
@@ -216,7 +216,7 @@ const ContactPage = () => {
                       <MapPin className="w-6 h-6 text-purple-600" />
                     </div>
                     <div className="max-w-lg mt-2">
-                      <h3 className="font-semibold text-gray-900">Address</h3>
+                      <p className="font-semibold text-gray-900">Address</p>
                       <p className="text-gray-600 text-sm leading-snug">
                         1st floor A 797 GD Colony MayurVihar-Phase-III
                       </p>
@@ -230,7 +230,7 @@ const ContactPage = () => {
                       <Clock className="w-6 h-6 text-orange-600" />
                     </div>
                     <div className="p-4">
-                      <h3 className="font-semibold text-gray-900">Hours</h3>
+                      <p className="font-semibold text-gray-900">Hours</p>
                       <p className="text-gray-600">Mon-Sat: 10AM-7PM IST</p>
                     </div>
                   </div>
@@ -515,9 +515,9 @@ const ContactPage = () => {
         {/* Bottom CTA Section */}
         <div className="bg-gradient-to-r from-gray-900 to-blue-900 py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               Ready to Transform Your Digital Presence?
-            </h2>
+            </h3>
             <p className="text-lg text-gray-300 mb-8">
               Join hundreds of successful businesses that trust us with their
               digital marketing.

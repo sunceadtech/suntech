@@ -158,9 +158,9 @@ const Footer = () => {
                   : "translate-y-8 opacity-0"
               }`}
             >
-              <h4 className="text-lg sm:text-xl font-semibold mb-6 text-white">
+              <p className="text-lg sm:text-xl font-semibold mb-6 text-blue-500">
                 Quick Links
-              </h4>
+              </p>
               <ul className="space-y-3 mb-6">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
@@ -178,9 +178,9 @@ const Footer = () => {
               </ul>
 
               {/* Follow Us Section */}
-              <h4 className="text-lg sm:text-xl font-semibold mb-4 text-white">
+              <p className="text-lg sm:text-xl font-semibold mb-4 text-blue-500">
                 Follow Us
-              </h4>
+              </p>
               <div className="flex space-x-4 mx-14 md:mx-10">
                 <a
                   href="https://www.linkedin.com/in/sunce-adtech-600655364/"
@@ -328,9 +328,9 @@ const FooterLinks = React.memo(({ title, links, delay, isVisible }) => (
       isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
     }`}
   >
-    <h4 className="text-lg sm:text-xl font-semibold mb-6 text-white">
+    <p className="text-lg sm:text-xl font-semibold mb-6 text-blue-500">
       {title}
-    </h4>
+    </p>
     <ul className="space-y-3">
       {links.map((link, index) => (
         <li key={index}>

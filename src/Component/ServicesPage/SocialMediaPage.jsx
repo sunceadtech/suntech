@@ -149,18 +149,30 @@ const SocialMediaPage = () => {
   return (
     <>
       <Helmet>
-        <title>Social Media Marketing Services | Sunceadtech</title>
+        <title>
+          Top Social Media Marketing Services in India | Instagram, Facebook &
+          LinkedIn Experts - Sunceadtech
+        </title>
+
         <meta
           name="description"
-          content="Grow your brand presence with Sunceadtech's social media marketing services. We manage and optimize campaigns on Instagram, Facebook, LinkedIn & more."
+          content="Boost your brand visibility and sales with Sunceadtech’s expert social media marketing services. We specialize in Instagram marketing, Facebook ads, LinkedIn marketing, and SMM campaigns tailored to grow your business."
         />
+
         <meta
           name="keywords"
-          content="social media marketing, Instagram marketing, Facebook ads, LinkedIn marketing, SMM services, Sunceadtech"
+          content="social media marketing, Instagram marketing, Facebook ads, LinkedIn marketing, SMM services, social media campaigns, digital marketing India, brand growth, Sunceadtech"
         />
-          <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" /> 
+
+        <link
+          rel="canonical"
+          href="https://www.sunceadtech.com/social-media-marketing"
+        />
+
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
+
       <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50">
         {/* Hero Section */}
         <div
@@ -192,11 +204,12 @@ const SocialMediaPage = () => {
                   </span>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                  Build Your Brand &
+                {/* Unique H1 */}
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+                  Elevate Your Brand with
                   <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
                     {" "}
-                    Connect with Customers
+                    Impactful Social Media Strategies
                   </span>
                 </h1>
 
@@ -241,7 +254,7 @@ const SocialMediaPage = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-4">
-                {socialPlatforms.map((platform, index) => (
+                {socialPlatforms.map((platform) => (
                   <div
                     key={platform.id}
                     className={`bg-gradient-to-br ${platform.color} rounded-2xl p-6 text-white transform hover:scale-105 transition-all duration-300 shadow-xl`}
@@ -264,8 +277,9 @@ const SocialMediaPage = () => {
         <div className="py-16 px-4 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
+              {/* Three H2 headings - 1st */}
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Complete Social Media Solutions
+                Comprehensive Social Media Solutions
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 From content creation to community management, we handle every
@@ -280,6 +294,7 @@ const SocialMediaPage = () => {
                   key={index}
                   className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
+                  {/* Three H3 headings - 1st */}
                   <p className="text-2xl font-bold text-gray-800 mb-4">
                     {service.title}
                   </p>
@@ -302,6 +317,7 @@ const SocialMediaPage = () => {
         <div className="py-16 px-4 bg-gradient-to-br from-gray-50 to-pink-50">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
+              {/* Three H2 headings - 2nd */}
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 Success Story
               </h2>
@@ -316,6 +332,8 @@ const SocialMediaPage = () => {
                   <p className="text-2xl font-bold text-gray-800 mb-4">
                     {caseStudy.client}
                   </p>
+
+                  {/* Three H3 headings - 2nd */}
                   <div className="space-y-6">
                     <div>
                       <p className="font-semibold text-pink-600 mb-2">
@@ -330,6 +348,7 @@ const SocialMediaPage = () => {
                       <p className="text-gray-600">{caseStudy.solution}</p>
                     </div>
                   </div>
+
                   <Link
                     to="//contact"
                     className="inline-flex items-center mt-8 px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold rounded-lg hover:from-pink-700 hover:to-purple-700 transition-all duration-300"
@@ -375,6 +394,7 @@ const SocialMediaPage = () => {
         <div className="py-16 px-4 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
+              {/* Three H2 headings - 3rd */}
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 Choose Your Social Media Package
               </h2>

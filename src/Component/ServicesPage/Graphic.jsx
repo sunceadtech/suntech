@@ -91,19 +91,25 @@ function Graphic() {
   return (
     <>
       <Helmet>
-        <title>Graphic Design Services | Sunceadtech</title>
+        <title>
+          Stunning Graphic Design Solutions for Powerful Digital Marketing |
+          SunceADTECH
+        </title>
         <meta
           name="description"
-          content="Enhance your brand with creative graphic design services from Sunceadtech. Logos, banners, branding, and social media graphics that make an impact."
+          content="SunceADTECH offers stunning graphic design solutions to boost your digital marketing impact. From logos and banners to social media graphics, we create designs that engage and convert."
         />
         <meta
           name="keywords"
-          content="graphic design, creative design, banner design, social media graphics, Sunceadtech"
+          content="graphic design for digital marketing, creative graphic design services, logo and banner design, social media graphics, branding design, SunceADTECH"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://www.sunceadtech.com/services/graphic"
+        />
       </Helmet>
-
       <main
         className="min-h-screen bg-gradient-to-br from-yellow-50 to-red-50"
         aria-label="Graphic Design Services"
@@ -121,8 +127,9 @@ function Graphic() {
                 <span className="bg-gradient-to-r from-yellow-500 to-red-500 bg-clip-text text-transparent">
                   Graphic Design
                 </span>{" "}
-                Solutions
+                Solutions for Powerful Digital Marketing
               </h1>
+
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Captivate your audience with impactful visuals that elevate your
                 brand identity and messaging.
@@ -154,7 +161,7 @@ function Graphic() {
               className="grid md:grid-cols-2 gap-8"
             >
               <h2 id="services-heading" className="sr-only">
-                Graphic Design Services
+                Graphic Designing Services
               </h2>
               {services.map((service, index) => (
                 <article
@@ -164,7 +171,13 @@ function Graphic() {
                   <h3 className="text-2xl font-bold text-gray-800 mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 mb-6">{service.description}</p>
+                  <p className="text-gray-600 mb-4">{service.description}</p>
+                  <p className="text-gray-600 mb-6">
+                    Our expert team leverages the latest design trends and
+                    digital marketing insights to craft visuals that not only
+                    look amazing but also drive customer engagement and brand
+                    loyalty.
+                  </p>
                   <ul className="space-y-3">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center">
@@ -188,6 +201,12 @@ function Graphic() {
               >
                 Our Creative Approach
               </h2>
+              <p className="text-center max-w-4xl mx-auto text-gray-700 mb-10">
+                We believe that effective graphic design is the cornerstone of
+                successful digital marketing. By combining creativity with
+                data-driven strategies, we ensure every design element
+                contributes to your business goals.
+              </p>
               <div className="grid md:grid-cols-3 gap-8">
                 {approach.map((item, index) => (
                   <article
@@ -211,6 +230,15 @@ function Graphic() {
                       }`}
                     >
                       {item.description}
+                    </p>
+                    <p
+                      className={
+                        index === 1 ? "text-yellow-100" : "text-gray-700"
+                      }
+                    >
+                      Our approach ensures designs are not only visually
+                      appealing but also aligned with SEO best practices to
+                      increase online visibility.
                     </p>
                     <ul
                       className={`space-y-2 ${

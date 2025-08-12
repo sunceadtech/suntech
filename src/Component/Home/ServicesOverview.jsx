@@ -312,9 +312,9 @@ const ServicesOverview = () => {
         {/* Process Steps */}
         <div className={`${getAnimationClass("mb-20")} delay-300`}>
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+            <p className="text-3xl font-bold text-gray-900 mb-4">
               Our Proven Process
-            </h3>
+            </p>
             <p className="text-lg text-gray-600">
               A systematic approach that delivers consistent results for every
               client

@@ -256,7 +256,7 @@ const DigitalMarketingBlog = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-6">
                 <span className="block">Best Digital</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-600">
-                  Marketing Blogs
+                  Best Digital Marketing Blogs
                 </span>
                 <span className="block">To Grow Your Business</span>
               </h1>
@@ -274,6 +274,7 @@ const DigitalMarketingBlog = () => {
         <section className="py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="mb-12 text-center">
+              {/* H2 HEADING 1 */}
               <h2 className="text-3xl sm:text-4xl font-bold mb-4">
                 Featured Articles
               </h2>
@@ -309,6 +310,7 @@ const DigitalMarketingBlog = () => {
                               </div>
                             )}
                           </div>
+                          {/* H3 HEADING 1 */}
                           <h3 className="text-3xl sm:text-5xl font-bold mb-4 text-white drop-shadow">
                             {post.title}
                           </h3>
@@ -413,9 +415,10 @@ const DigitalMarketingBlog = () => {
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[white]">
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-orange-500">
+              {/* H2 HEADING 2 */}
+              <h3 className="text-3xl sm:text-4xl font-bold mb-4 text-orange-500">
                 Latest Articles
-              </h2>
+              </h3>
               <p className="text-[darkblue] text-lg">
                 {filteredPosts.length} articles found
                 {selectedCategory !== "all" && (
@@ -467,9 +470,10 @@ const DigitalMarketingBlog = () => {
                       </div>
                     </div>
 
-                    <h3 className="text-xl font-bold mb-3 text-[darkblue] group-hover:text-[orange] transition-colors duration-300 line-clamp-2">
+                    {/* Changed to H4 */}
+                    <p className="text-xl font-bold mb-3 text-[darkblue] group-hover:text-[orange] transition-colors duration-300 line-clamp-2">
                       {post.title}
-                    </h3>
+                    </p>
                     <p className="text-[darkblue] mb-6 line-clamp-3 leading-relaxed">
                       {post.excerpt}
                     </p>
@@ -530,13 +534,14 @@ const DigitalMarketingBlog = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-12">
               <Zap className="w-12 h-12 text-orange-500 mx-auto mb-4 animate-pulse" />
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-6">
+              {/* H2 HEADING 3 */}
+              <p className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-6">
                 <span className="block">Subscribe to Our</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-600">
                   Marketing Newsletter
                 </span>
                 <span className="block">For Growth Insights</span>
-              </h2>
+              </p>
               <p className="text-sm text-gray-600 max-w-xl mx-auto">
                 Join 10,000+ marketers who trust us. No spam. Unsubscribe
                 anytime.

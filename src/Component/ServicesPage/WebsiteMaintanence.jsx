@@ -136,14 +136,18 @@ function WebsiteMaintanence() {
   return (
     <>
       <Helmet>
-        <title>Website Maintenance Services | Sunceadtech</title>
+        <title>Reliable Website Maintenance Services | Sunceadtech</title>
         <meta
           name="description"
-          content="Keep your website secure, updated, and running smoothly with Sunceadtech's website maintenance services. Regular updates, backups, and support."
+          content="Ensure your website stays secure, updated, and performs optimally with Sunceadtech's reliable website maintenance services including regular updates, backups, and expert support."
         />
         <meta
           name="keywords"
-          content="website maintenance, site updates, website support, security monitoring, Sunceadtech"
+          content="website maintenance, site updates, website support, security monitoring, website backups, Sunceadtech"
+        />
+        <link
+          rel="canonical"
+          href="https://www.sunceadtech.com/website-maintenance-services"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
@@ -166,11 +170,12 @@ function WebsiteMaintanence() {
               </span>
             </div>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent leading-tight">
-              Safeguard & Maintain
+              Reliable Website
               <span className="block bg-gradient-to-r py-4 from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                Your Digital Presence
+                Maintenance & Support Services
               </span>
             </h1>
+
             <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
               Reliable maintenance and robust security to keep your website
               fast, safe, and always online.

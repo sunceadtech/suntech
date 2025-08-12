@@ -14,26 +14,33 @@ function Photography() {
   return (
     <>
       <Helmet>
-        <title>Professional Photography Services | Sunceadtech</title>
+        <title>
+          Professional Photography Services for Events & Branding | Sunceadtech
+        </title>
         <meta
           name="description"
-          content="Capture stunning moments with Sunceadtech's professional photography services. From events to branding, we deliver high-quality visuals."
+          content="Sunceadtech offers expert professional photography services for events, branding, product shoots, and corporate projects. Capture your moments with stunning visuals."
         />
         <meta
           name="keywords"
-          content="photography services, professional photography, event photography, product shoots, Sunceadtech"
+          content="professional photography, event photography, branding photography, product shoots, corporate photography, Sunceadtech"
         />
-          <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" /> 
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
-
+      
       <div className="font-sans text-gray-800">
         {/* Hero Section */}
-        <div className="relative h-[60vh] bg-cover bg-center flex items-center justify-center">
-          <div className="bg-black bg-opacity-50 p-8 rounded-xl text-white text-center max-w-2xl">
-            <h1 className="text-4xl md:text-5xl font-bold">
-              Professional Business Photography
+        <div
+          className="relative h-[60vh] mt-14 bg-cover  text-white bg-center flex items-center justify-center"
+          aria-label="Professional Business Photography Hero Background"
+        >
+          <div className="border-3 border-black bg-slate-400 bg-opacity-50 p-8 rounded-xl text-white text-center max-w-2xl">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Expert Professional Photography Services for Events, Branding &
+              Product Shoots
             </h1>
+
             <p className="mt-4 text-lg">
               Elevate your brand with high-quality corporate headshots,
               workplace imagery, and event coverage tailored for businesses.
@@ -43,7 +50,9 @@ function Photography() {
 
         {/* About Section */}
         <section className="max-w-5xl mx-auto px-6 py-12">
-          <h2 className="text-3xl font-semibold mb-4">Why Choose Us?</h2>
+          <h2 className="text-3xl font-semibold mb-4">
+            Why Our Business Photography Stands Out
+          </h2>
           <p className="text-lg leading-relaxed">
             With a passion for storytelling through the lens, we specialize in
             weddings, portraits, fashion, and commercial shoots. Our goal is to
@@ -54,7 +63,9 @@ function Photography() {
 
         {/* Gallery Section */}
         <section className="bg-gray-100 py-12 px-6">
-          <h2 className="text-3xl font-semibold text-center mb-10">Our Gallery</h2>
+          <h2 className="text-3xl font-semibold text-center mb-10">
+            Explore Our Stunning Business Photography Portfolio
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {photography.map((url, index) => (
               <div
@@ -63,9 +74,12 @@ function Photography() {
               >
                 <img
                   src={url}
-                  alt={`Gallery ${index + 1}`}
+                  alt={`Professional business photography example ${index + 1}`}
                   className="w-full h-full object-cover"
                 />
+                <h3 className="sr-only">
+                  Business Photography Image {index + 1}
+                </h3>
               </div>
             ))}
           </div>
@@ -76,9 +90,9 @@ function Photography() {
           className="text-center py-12 bg-white"
           aria-labelledby="book-session-heading"
         >
-          <p id="book-session-heading" className="text-3xl font-semibold mb-4">
-            Book Your Session Today
-          </p>
+          <h2 id="book-session-heading" className="text-3xl font-semibold mb-4">
+            Ready to Capture Your Brand’s Best Moments?
+          </h2>
           <p className="mb-6 text-lg">
             Let us help you preserve your memories with stunning photography.
           </p>

@@ -112,17 +112,21 @@ const WebDevelopmentComponent = () => {
   return (
     <>
       <Helmet>
-        <title>Web Development Services | Sunceadtech</title>
+        <title>Professional Web Development Services | Sunceadtech</title>
         <meta
           name="description"
-          content="Build fast, secure, and scalable websites with Sunceadtech's expert web development services. From static sites to dynamic web apps, we do it all."
+          content="Sunceadtech offers professional web development services to build fast, secure, and scalable websites and web applications tailored to your business goals."
         />
         <meta
           name="keywords"
-          content="web development, website development, web application, frontend development, backend development, Sunceadtech"
+          content="web development, website development, web application development, frontend development, backend development, scalable websites, Sunceadtech"
         />
-          <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" /> 
+        <link
+          rel="canonical"
+          href="https://www.sunceadtech.com/web-development-services"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
@@ -142,15 +146,19 @@ const WebDevelopmentComponent = () => {
                   Premium Web Development
                 </span>
               </div>
+
+              {/* UNIQUE H1 */}
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
-                Craft Digital
+                Crafting Cutting-Edge
                 <br />
-                <span className="text-white">Experiences</span>
+                <span className="text-white">Digital Experiences</span>
               </h1>
+
               <p className="text-xl sm:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
                 Transform your ideas into stunning, high-performance web
                 applications that captivate users and drive business growth.
               </p>
+
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <Link
                   to="/contact"
@@ -174,17 +182,13 @@ const WebDevelopmentComponent = () => {
               </div>
             </div>
           </div>
-
-          {/* Floating Elements */}
-          <div className="absolute top-1/4 left-10 w-20 h-20 bg-purple-500/20 rounded-full animate-pulse hidden lg:block"></div>
-          <div className="absolute top-1/3 right-10 w-16 h-16 bg-pink-500/20 rounded-full animate-bounce hidden lg:block"></div>
-          <div className="absolute bottom-1/4 left-1/4 w-12 h-12 bg-blue-500/20 rounded-full animate-ping hidden lg:block"></div>
         </section>
 
         {/* Services Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
+              {/* 1st H2 */}
               <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Our Services
               </h2>
@@ -211,22 +215,25 @@ const WebDevelopmentComponent = () => {
                     <div className="text-purple-400 mb-6 transform group-hover:scale-110 transition-transform duration-300">
                       {service.icon}
                     </div>
-                    <p className="text-2xl font-bold mb-4 group-hover:text-purple-300 transition-colors">
+                    {/* H3 - 3 times here (per service card) */}
+                    <h3 className="text-2xl font-semibold mb-4 group-hover:text-purple-300 transition-colors">
                       {service.title}
-                    </p>
+                    </h3>
                     <p className="text-gray-300 mb-6 leading-relaxed">
                       {service.description}
                     </p>
                     <div className="space-y-2">
-                      {service.features.map((feature, featureIndex) => (
-                        <div
-                          key={featureIndex}
-                          className="flex items-center text-sm text-gray-400"
-                        >
-                          <CheckCircle className="w-4 h-4 text-green-400 mr-2" />
-                          {feature}
-                        </div>
-                      ))}
+                      {service.features
+                        .slice(0, 3)
+                        .map((feature, featureIndex) => (
+                          <div
+                            key={featureIndex}
+                            className="flex items-center text-sm text-gray-400"
+                          >
+                            <CheckCircle className="w-4 h-4 text-green-400 mr-2" />
+                            {feature}
+                          </div>
+                        ))}
                     </div>
                   </div>
                 </div>
@@ -239,6 +246,7 @@ const WebDevelopmentComponent = () => {
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/30">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
+              {/* 2nd H2 */}
               <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Technologies We Use
               </h2>
@@ -248,7 +256,7 @@ const WebDevelopmentComponent = () => {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {technologies.map((tech, index) => (
+              {technologies.slice(0, 3).map((tech, index) => (
                 <div
                   key={index}
                   className="group relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-500 transform hover:scale-105 hover:shadow-xl text-center"
@@ -259,6 +267,7 @@ const WebDevelopmentComponent = () => {
                   >
                     {tech.name.charAt(0)}
                   </div>
+                  {/* H3 - limited to 3 */}
                   <h3 className="text-lg font-semibold group-hover:text-purple-300 transition-colors">
                     {tech.name}
                   </h3>
@@ -272,6 +281,7 @@ const WebDevelopmentComponent = () => {
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
+              {/* 3rd H2 */}
               <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Our Process
               </h2>
@@ -280,65 +290,21 @@ const WebDevelopmentComponent = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {processSteps.map((step, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {processSteps.slice(0, 3).map((step, index) => (
                 <div key={index} className="relative group">
                   <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-500 transform hover:scale-105 hover:shadow-xl">
                     <div className="text-6xl font-bold text-purple-500/30 mb-4 group-hover:text-purple-400/50 transition-colors">
                       {step.step}
                     </div>
-                    <p className="text-xl font-bold mb-4 group-hover:text-purple-300 transition-colors">
+                    {/* H3 limited to 3 */}
+                    <h3 className="text-2xl font-semibold mb-3 group-hover:text-purple-300 transition-colors">
                       {step.title}
-                    </p>
+                    </h3>
                     <p className="text-gray-300 leading-relaxed">
                       {step.description}
                     </p>
                   </div>
-                  {index < processSteps.length - 1 && (
-                    <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
-                      <ChevronRight className="w-8 h-8 text-purple-400 animate-pulse" />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Stats Section */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-900/30 to-pink-900/30">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-              {[
-                {
-                  number: "500+",
-                  label: "Projects Completed",
-                  icon: <Rocket className="w-8 h-8" />,
-                },
-                {
-                  number: "100+",
-                  label: "Happy Clients",
-                  icon: <Star className="w-8 h-8" />,
-                },
-                {
-                  number: "5+",
-                  label: "Years Experience",
-                  icon: <Globe className="w-8 h-8" />,
-                },
-                {
-                  number: "24/7",
-                  label: "Support Available",
-                  icon: <Shield className="w-8 h-8" />,
-                },
-              ].map((stat, index) => (
-                <div key={index} className="group">
-                  <div className="text-purple-400 mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
-                    {stat.icon}
-                  </div>
-                  <div className="text-4xl sm:text-5xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    {stat.number}
-                  </div>
-                  <div className="text-gray-300 text-lg">{stat.label}</div>
                 </div>
               ))}
             </div>

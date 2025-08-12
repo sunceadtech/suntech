@@ -95,6 +95,9 @@ function Branding() {
 
             {/* Pillars of Branding */}
             <div className="mb-20 grid md:grid-cols-2 gap-8 px-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 col-span-full text-center">
+                Core Pillars of a Successful Brand
+              </h2>
               {pillars.map((pillar, index) => (
                 <div
                   key={index}
@@ -111,12 +114,12 @@ function Branding() {
             {/* The Branding Process */}
             <div className="mb-20 text-center px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Our Branding Process
+                Our Proven Branding Process
               </h2>
               <p className="text-gray-600 max-w-3xl mx-auto mb-8">
-                A well-defined, collaborative process ensures that your brand
-                not only looks great but also resonates with your audience on a
-                deeper level.
+                Our structured, collaborative process ensures that your brand
+                not only looks exceptional but also resonates with your ideal
+                customers, driving loyalty and recognition.
               </p>
               <div className="grid md:grid-cols-4 gap-8">
                 {processSteps.map((step, idx) => (
@@ -135,15 +138,36 @@ function Branding() {
               </div>
             </div>
 
+            {/* Extra Insight Section */}
+            <div className="mb-20 px-4">
+              <h3 className="text-2xl font-bold mb-4 text-orange-600">
+                Why Strategic Branding Matters
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Strategic branding is more than just a logo — it’s the emotional
+                and visual narrative that defines your company. It helps you
+                stand out in competitive markets, build stronger connections,
+                and influence customer decisions.
+              </p>
+              <p className="text-gray-600">
+                From colors and typography to messaging and customer experience,
+                every detail plays a role in shaping how your brand is
+                perceived.
+              </p>
+            </div>
+
             {/* Call to Action Section */}
             <div className="bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl py-12 px-8 text-white text-center shadow-lg">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Let’s Build Your Brand Together
+              </h2>
+              <h3 className="text-2xl font-semibold mb-4">
+                Your Vision, Our Creative Expertise
               </h3>
               <p className="mb-6 text-lg max-w-2xl mx-auto text-orange-100">
                 Whether you're starting from scratch or refreshing your
                 identity, we’re here to bring your vision to life with
-                creativity and strategy.
+                creativity, research-driven strategy, and impactful design.
               </p>
               <Link
                 to="/contact"

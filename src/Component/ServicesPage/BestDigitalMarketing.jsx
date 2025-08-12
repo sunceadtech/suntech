@@ -112,7 +112,6 @@ const BestDigitalMarketing = () => {
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
       </Helmet>
-
       <section className="relative py-24 lg:py-32 bg-gradient-to-br from-white via-blue-50 to-blue-100 overflow-hidden">
         {/* Background Glow Elements */}
         <div className="absolute inset-0 -z-10">
@@ -122,7 +121,7 @@ const BestDigitalMarketing = () => {
 
         {/* Main Content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Heading */}
+          {/* Main Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -144,12 +143,25 @@ const BestDigitalMarketing = () => {
             className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto mb-10 leading-relaxed"
           >
             At <strong>SunceADTECH</strong>, we combine creativity, technology,
-            and strategy to grow brands across India and globally. From{" "}
-            <strong>SEO</strong> and <strong>video marketing</strong> to{" "}
-            <strong>mobile apps</strong> and{" "}
-            <strong>custom web development</strong>, we turn clicks into loyal
-            customers.
+            and data-driven strategies to deliver measurable growth for brands.
+            Our services include <strong>SEO</strong>,{" "}
+            <strong>social media marketing</strong>,
+            <strong> content creation</strong>, <strong>video marketing</strong>
+            ,<strong> mobile app development</strong>, and{" "}
+            <strong>custom web solutions</strong>
+            tailored for businesses in Delhi NCR and beyond.
           </motion.p>
+
+          {/* H2 - Why Choose Us */}
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">
+            Why We’re the Top Digital Marketing Agency in Delhi NCR
+          </h2>
+          <p className="text-gray-600 max-w-4xl mx-auto mb-10">
+            Our expertise spans multiple industries, helping startups, SMEs, and
+            enterprises create strong brand presence online. With a team of SEO
+            specialists, ad experts, and creative designers, we ensure your
+            business gets noticed and achieves sustainable growth.
+          </p>
 
           {/* Service Cards */}
           <motion.div
@@ -167,15 +179,33 @@ const BestDigitalMarketing = () => {
                 aria-label={`Service: ${service.title}`}
               >
                 <div className="text-3xl mb-3">{service.icon}</div>
-                <h2 className="text-xl font-bold text-gray-800 mb-1">
+                <h3 className="text-xl font-bold text-gray-800 mb-1">
                   {service.title}
-                </h2>
+                </h3>
                 <p className="text-gray-600 text-sm">{service.desc}</p>
               </Link>
             ))}
           </motion.div>
 
-          {/* CTA Buttons */}
+          {/* H2 - Our Services */}
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">
+            Our Core Digital Marketing Services
+          </h2>
+          <p className="text-gray-600 max-w-4xl mx-auto mb-10">
+            From targeted ad campaigns to organic search growth, our tailored
+            solutions are designed to convert visitors into loyal customers.
+          </p>
+
+          {/* H3 - Proven SEO Strategies */}
+          <h3 className="text-2xl font-semibold text-blue-700 mb-4">
+            Proven SEO Strategies
+          </h3>
+          <p className="text-gray-600 mb-8">
+            We focus on keyword research, on-page optimization, and high-quality
+            backlinks to help your website rank on Google for competitive terms.
+          </p>
+
+          {/* CTA */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}

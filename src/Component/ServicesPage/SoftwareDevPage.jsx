@@ -5,20 +5,17 @@ import {
   Globe,
   Database,
   Shield,
-  Zap,
+  Trophy,
+  Users,
+  Clock,
   CheckCircle,
   ArrowRight,
-  Users,
-  Trophy,
-  Clock,
-  Layers,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const SoftwareDevPage = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeService, setActiveService] = useState(0);
 
   useEffect(() => {
     setIsVisible(true);
@@ -26,19 +23,19 @@ const SoftwareDevPage = () => {
 
   const services = [
     {
-      icon: <Globe className="w-8 h-8" />,
+      icon: <Globe className="w-10 h-10 text-purple-400" />,
       title: "Web Development",
       description:
         "Custom web applications built with modern frameworks and cutting-edge technologies.",
       features: [
-        "React/Next.js",
+        "React / Next.js",
         "Node.js Backend",
         "Cloud Deployment",
         "SEO Optimized",
       ],
     },
     {
-      icon: <Smartphone className="w-8 h-8" />,
+      icon: <Smartphone className="w-10 h-10 text-purple-400" />,
       title: "Mobile Development",
       description:
         "Native and cross-platform mobile apps that deliver exceptional user experiences.",
@@ -50,7 +47,7 @@ const SoftwareDevPage = () => {
       ],
     },
     {
-      icon: <Database className="w-8 h-8" />,
+      icon: <Database className="w-10 h-10 text-purple-400" />,
       title: "Backend Systems",
       description:
         "Scalable server architectures and robust API development for enterprise solutions.",
@@ -62,7 +59,7 @@ const SoftwareDevPage = () => {
       ],
     },
     {
-      icon: <Shield className="w-8 h-8" />,
+      icon: <Shield className="w-10 h-10 text-purple-400" />,
       title: "DevOps & Security",
       description:
         "Secure deployment pipelines and infrastructure management for optimal performance.",
@@ -79,22 +76,22 @@ const SoftwareDevPage = () => {
     {
       number: "500+",
       label: "Projects Delivered",
-      icon: <Trophy className="w-6 h-6" />,
+      icon: <Trophy className="w-8 h-8 text-purple-400" />,
     },
     {
       number: "150+",
       label: "Happy Clients",
-      icon: <Users className="w-6 h-6" />,
+      icon: <Users className="w-8 h-8 text-purple-400" />,
     },
     {
       number: "5+",
       label: "Years Experience",
-      icon: <Clock className="w-6 h-6" />,
+      icon: <Clock className="w-8 h-8 text-purple-400" />,
     },
     {
       number: "99%",
       label: "Client Satisfaction",
-      icon: <CheckCircle className="w-6 h-6" />,
+      icon: <CheckCircle className="w-8 h-8 text-purple-400" />,
     },
   ];
 
@@ -116,94 +113,179 @@ const SoftwareDevPage = () => {
   return (
     <>
       <Helmet>
-        <title>Software Development Services | Sunceadtech</title>
+        <title>Building Scalable Custom Software Solutions | Sunceadtech</title>
         <meta
           name="description"
-          content="Custom software development services by Sunceadtech. We build scalable web and desktop solutions tailored to your business needs."
+          content="Sunceadtech offers scalable, custom software development services tailored for your business growth. Expert web and desktop applications built with cutting-edge technology."
         />
         <meta
           name="keywords"
-          content="software development, custom software, enterprise software, web applications, Sunceadtech"
+          content="custom software development, scalable software solutions, business software, web applications, desktop applications, Sunceadtech"
+        />
+        <link
+          rel="canonical"
+          href="https://www.sunceadtech.com/software-development"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
-        {/* Hero Section */}
-        <section className="relative px-4 py-20 sm:px-6 lg:px-8">
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-3xl "></div>
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+        {/* Hero */}
+        <section className="relative px-6 py-24 sm:px-12 lg:px-20 text-center max-w-7xl mx-auto">
           <div
-            className={`relative max-w-7xl mx-auto text-center transform transition-all duration-1000 mt-6 ${
+            className={`transform transition-all duration-1000 ${
               isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-10 opacity-0"
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
             }`}
           >
-            <div className="inline-flex items-center px-4 py-2 bg-purple-600/20 rounded-full border border-purple-400/30 mb-8 backdrop-blur-sm">
-              <Code className="w-5 h-5 mr-2 text-purple-400" />
-              <span className="text-purple-300 font-medium">
-                Professional Software Development
-              </span>
+            <div className="inline-flex items-center justify-center gap-3 bg-purple-700/30 rounded-full px-5 py-3 mb-8 font-semibold uppercase tracking-wider text-purple-300 backdrop-blur-sm animate-pulse mx-auto w-max">
+              <Code className="w-6 h-6 text-purple-400" />
+              Professional Software Development
             </div>
-
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent leading-tight">
-              Crafting Digital
-              <span className="block bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                Experiences
-              </span>
+            <h1 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-white via-purple-300 to-blue-300 bg-clip-text text-transparent leading-tight">
+              Scalable & Custom Software Solutions
             </h1>
-
-            <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Transform your ideas into powerful software solutions with
-              cutting-edge technology and innovative design
+            <p className="max-w-3xl mx-auto text-gray-300 text-lg sm:text-xl leading-relaxed mb-10">
+              Empower your business with expertly crafted software, tailored to
+              your unique needs and built with the latest technologies.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row justify-center gap-6">
               <Link
                 to="/contact"
-                className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl font-semibold text-lg hover:from-purple-500 hover:to-blue-500 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-purple-500/25"
-                aria-label="Start your software development project by contacting us"
+                className="px-10 py-4 rounded-3xl bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 font-semibold text-lg shadow-lg transition transform hover:scale-105"
+                aria-label="Start your software development project"
               >
-                Start Your Software Project
-                <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                Start Your Project
               </Link>
               <Link
                 to="/portfolio"
-                className="px-8 py-4 border-2 border-purple-400/50 rounded-xl font-semibold text-lg hover:bg-purple-600/20 hover:border-purple-400 transition-all duration-300 backdrop-blur-sm"
-                aria-label="View our software development portfolio"
+                className="px-10 py-4 rounded-3xl border-2 border-purple-500 hover:bg-purple-700/20 font-semibold text-lg transition"
+                aria-label="View our software portfolio"
               >
-                View Our Software Portfolio
+                View Portfolio
               </Link>
             </div>
           </div>
-
-          {/* Floating Elements */}
-          <div className="absolute top-20 left-10 w-20 h-20 bg-purple-600/20 rounded-full blur-xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-32 h-32 bg-blue-600/20 rounded-full blur-xl animate-pulse delay-1000"></div>
         </section>
 
-        {/* Remaining sections remain unchanged */}
-
-        {/* CTA Section */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-900/50 to-blue-900/50 backdrop-blur-sm">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Ready to Build Something Amazing?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8">
-              Let's discuss your project and turn your vision into reality
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+919873569000"
-                className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl font-semibold text-lg hover:from-purple-500 hover:to-blue-500 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-purple-500/25"
-                aria-label="Call us for a free software consultation"
+        {/* Services */}
+        <section className="max-w-7xl mx-auto px-6 py-20">
+          <h2 className="text-4xl font-extrabold mb-12 text-center text-white">
+            Our Core Software Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            {services.map(({ icon, title, description, features }) => (
+              <div
+                key={title}
+                className="bg-purple-800/40 rounded-xl p-8 flex flex-col shadow-lg hover:shadow-purple-500/50 transition-shadow duration-300"
               >
-                Call Now for Free Consultation
-                <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </div>
+                <div className="mb-4">{icon}</div>
+                <h3 className="text-2xl font-semibold mb-3">{title}</h3>
+                <p className="text-gray-300 mb-4 flex-grow">{description}</p>
+                <ul className="list-disc list-inside text-gray-400 space-y-1">
+                  {features.map((feat) => (
+                    <li key={feat}>{feat}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Technologies */}
+        <section className="bg-gradient-to-r from-purple-900 to-blue-900 py-16 px-6">
+          <h2 className="text-4xl font-extrabold mb-8 text-center text-white">
+            Technologies We Use
+          </h2>
+          <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-6">
+            {technologies.map((tech) => (
+              <span
+                key={tech}
+                className="bg-purple-700/40 px-5 py-3 rounded-full text-white font-semibold tracking-wide text-lg cursor-default select-none"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        {/* Stats */}
+        <section className="max-w-7xl mx-auto px-6 py-20">
+          <h2 className="text-4xl font-extrabold mb-12 text-center text-white">
+            Our Achievements
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-12 text-center text-gray-300">
+            {stats.map(({ number, label, icon }) => (
+              <div
+                key={label}
+                className="flex flex-col items-center gap-3 bg-purple-800/40 rounded-xl p-8 shadow-lg hover:shadow-purple-500/50 transition-shadow duration-300"
+              >
+                <div>{icon}</div>
+                <p className="text-4xl font-extrabold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  {number}
+                </p>
+                <p className="text-lg">{label}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Development Process */}
+        <section className="bg-gradient-to-r from-purple-800 to-blue-800 rounded-xl max-w-6xl mx-auto px-6 py-16 text-white mb-20">
+          <h2 className="text-4xl font-extrabold mb-12 text-center">
+            Our Development Process
+          </h2>
+          <ol className="max-w-3xl mx-auto list-decimal list-inside space-y-8 text-gray-300 text-lg">
+            <li>
+              <strong className="text-white">Discovery & Planning:</strong> We
+              collaborate with you to understand your goals, challenges, and
+              scope to create a detailed project roadmap.
+            </li>
+            <li>
+              <strong className="text-white">Design & Prototyping:</strong>{" "}
+              Crafting intuitive UI/UX designs and interactive prototypes to
+              visualize the end product.
+            </li>
+            <li>
+              <strong className="text-white">Agile Development:</strong> Using
+              iterative sprints, we build, test, and refine your software to
+              ensure quality and adaptability.
+            </li>
+            <li>
+              <strong className="text-white">Deployment & Maintenance:</strong>{" "}
+              Launching your solution with continuous support, updates, and
+              scalability.
+            </li>
+          </ol>
+        </section>
+
+        {/* Call to Action */}
+        <section className="py-20 px-6 max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-extrabold mb-6 text-white">
+            Ready to Build Your Custom Software?
+          </h2>
+          <p className="text-lg text-gray-300 max-w-xl mx-auto mb-12">
+            Contact Sunceadtech’s expert team today to start turning your ideas
+            into scalable software solutions that accelerate your business.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-8">
+            <Link
+              to="/contact"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-14 py-5 rounded-full font-semibold shadow-lg transition transform hover:scale-105"
+              aria-label="Contact us to start software project"
+            >
+              Get a Free Consultation
+            </Link>
+            <a
+              href="tel:+919873569000"
+              className="border-2 border-purple-500 text-purple-300 hover:bg-purple-700 hover:text-white px-14 py-5 rounded-full font-semibold transition-colors"
+              aria-label="Call us for software inquiry"
+            >
+              Call Us Now
+            </a>
           </div>
         </section>
       </div>

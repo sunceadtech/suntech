@@ -266,14 +266,16 @@ const PPCAdvertisingPage = () => {
   return (
     <>
       <Helmet>
-        <title>PPC Advertising Services | Sunceadtech</title>
+        <title>
+          Expert PPC Advertising Services for Maximum ROI | Sunceadtech
+        </title>
         <meta
           name="description"
-          content="Boost your ROI with Sunceadtech's expert PPC advertising services. We manage Google Ads, Bing Ads, and more to drive targeted traffic and conversions."
+          content="Drive high-converting traffic with Sunceadtech’s professional PPC advertising services. Specialized in Google Ads, Bing Ads, and targeted paid campaigns to maximize your ROI."
         />
         <meta
           name="keywords"
-          content="PPC advertising, Google Ads, paid marketing, search ads, PPC services, Sunceadtech"
+          content="PPC advertising services, Google Ads management, paid search marketing, Bing Ads, PPC campaign optimization, Sunceadtech"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
@@ -311,10 +313,9 @@ const PPCAdvertisingPage = () => {
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 leading-tight">
-                  Drive Instant Traffic &
+                  Accelerate Targeted Traffic Growth &
                   <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    {" "}
-                    Maximize ROI
+                    Boost Your ROI Effectively
                   </span>
                 </h1>
 
@@ -547,9 +548,9 @@ const PPCAdvertisingPage = () => {
         <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6">
                 What Our Clients Say
-              </h2>
+              </h3>
               <p className="text-lg sm:text-xl text-gray-600">
                 Real results from real businesses
               </p>
@@ -612,9 +613,9 @@ const PPCAdvertisingPage = () => {
         <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6">
+              <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6">
                 Choose Your PPC Package
-              </h2>
+              </p>
               <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
                 Transparent pricing with no hidden fees. All packages include
                 setup, management, and detailed reporting.
@@ -640,13 +641,13 @@ const PPCAdvertisingPage = () => {
                   )}
 
                   <div className="text-center mb-6 sm:mb-8">
-                    <h3
+                    <p
                       className={`text-xl sm:text-2xl font-bold mb-2 ${
                         pkg.popular ? "text-white" : "text-gray-800"
                       }`}
                     >
                       {pkg.name}
-                    </h3>
+                    </p>
                     <div
                       className={`mb-2 text-sm sm:text-base ${
                         pkg.popular ? "text-blue-100" : "text-blue-600"
@@ -717,9 +718,9 @@ const PPCAdvertisingPage = () => {
         {/* CTA Section */}
         <div className="py-16 px-4 bg-gradient-to-br from-pink-600 to-purple-600">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <p className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to Transform Your Social Media Presence?
-            </h2>
+            </p>
             <p className="text-xl text-pink-100 mb-8 max-w-2xl mx-auto">
               Let's create a social media strategy that drives real results for
               your business. Get started with a free consultation and social

@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 function OnlieReputation() {
-     const [isVisible, setIsVisible] = useState(false);
-      const [activeTab, setActiveTab] = useState("overview");
-    
-      useEffect(() => {
-        setIsVisible(true);
-      }, []);
+  const [isVisible, setIsVisible] = useState(false);
+  const [activeTab, setActiveTab] = useState("overview");
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   const ormServices = [
     {
       title: "Review Monitoring & Response",
@@ -127,14 +127,17 @@ function OnlieReputation() {
   return (
     <>
       <Helmet>
-        <title>Online Reputation Management (ORM) Services | Sunceadtech</title>
+        <title>
+          Online Reputation Management Services | Protect & Grow Your Brand |
+          Sunceadtech
+        </title>
         <meta
           name="description"
-          content="Protect and grow your brand with ORM—review monitoring, crisis management, SERP suppression and social listening. Improve ratings and trust quickly."
+          content="Sunceadtech offers expert Online Reputation Management services including review monitoring, crisis response, SERP suppression, and brand trust building. Boost your ratings and safeguard your online presence today."
         />
         <meta
           name="keywords"
-          content="online reputation management, ORM services, review management, crisis management, brand reputation, SERP suppression, Sunceadtech"
+          content="Online Reputation Management Services, ORM services, Sunceadtech"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
@@ -142,8 +145,9 @@ function OnlieReputation() {
           rel="canonical"
           href="https://example.com/online-reputation-management"
         />
-        {/* OG/Twitter optional */}
+        {/* Open Graph / Twitter Card metadata can be added here for social sharing */}
       </Helmet>
+
       <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-violet-50">
         {/* Hero Section */}
         <div
@@ -175,18 +179,17 @@ function OnlieReputation() {
                   </span>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                  Build Trust & Control Your
-                  <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
-                    {" "}
-                    Online Reputation
-                  </span>
+                {/* Unique SEO-Friendly H1 */}
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+                  Trusted Online Reputation Management to Protect Your Brand
+                  Image
                 </h1>
 
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Monitor reviews and mentions, respond fast, and keep negative
-                  results out of sight. We combine review ops, crisis playbooks,
-                  PR and SEO to safeguard your brand.
+                  Monitor reviews and mentions, respond quickly, and keep
+                  negative content out of sight. Our combined approach of review
+                  operations, crisis playbooks, PR, and SEO safeguards your
+                  brand reputation.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -264,8 +267,9 @@ function OnlieReputation() {
         <div className="py-16 px-4 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
+              {/* H2 for Services */}
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Complete ORM Solutions
+                Complete Online Reputation Management Solutions
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 From review operations to SERP suppression and crisis control,
@@ -279,9 +283,10 @@ function OnlieReputation() {
                   key={index}
                   className="bg-gradient-to-br from-indigo-50 to-violet-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  <p className="text-2xl font-bold text-gray-800 mb-4">
+                  {/* H3 for each service title */}
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
                     {service.title}
-                  </p>
+                  </h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <div className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
@@ -301,6 +306,7 @@ function OnlieReputation() {
         <div className="py-16 px-4 bg-gradient-to-br from-gray-50 to-indigo-50">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
+              {/* H2 for Pricing */}
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 ORM Packages & Pricing
               </h2>
@@ -326,9 +332,10 @@ function OnlieReputation() {
                   )}
 
                   <div className="text-center mb-8">
-                    <p className="text-2xl font-bold text-gray-800 mb-2">
+                    {/* H3 for package name */}
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2">
                       {pkg.name}
-                    </p>
+                    </h3>
                     <div className="flex items-baseline justify-center">
                       <span className="text-4xl font-bold text-indigo-600">
                         {pkg.price}
@@ -378,9 +385,10 @@ function OnlieReputation() {
         <div className="py-16 px-4 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Our ORM Process
-              </h3>
+              {/* H2 for Process */}
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                Our Proven 4-Step ORM Process to Restore Trust
+              </h2>
               <p className="text-xl text-gray-600">
                 Practical steps that restore trust—and keep it
               </p>
@@ -413,6 +421,7 @@ function OnlieReputation() {
                   <div className="w-16 h-16 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl group-hover:scale-110 transition-transform duration-300">
                     {process.step}
                   </div>
+                  {/* H3 for each process step */}
                   <h3 className="text-xl font-bold text-gray-800 mb-4">
                     {process.title}
                   </h3>
@@ -427,6 +436,7 @@ function OnlieReputation() {
         <div className="py-16 px-4 bg-gradient-to-br from-indigo-50 to-violet-50">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
+              {/* FAQ main heading is optional but here kept as h3 */}
               <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 Frequently Asked Questions
               </h3>

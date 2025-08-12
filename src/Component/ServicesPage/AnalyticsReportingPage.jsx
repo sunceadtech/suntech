@@ -137,10 +137,12 @@ const AnalyticsReportingPage = () => {
     },
   ];
 
+  
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 1000);
     return () => clearTimeout(timer);
   }, [activeTab]);
+
 
   const refreshData = () => {
     setIsLoading(true);
@@ -159,8 +161,8 @@ const AnalyticsReportingPage = () => {
           name="keywords"
           content="analytics, reporting, digital marketing insights, performance tracking, ROI, Sunceadtech services"
         />
-          <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" /> 
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">

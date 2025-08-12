@@ -170,7 +170,16 @@ const ContentMarketingPage = () => {
 
         {/* Stats Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
-          <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div className="max-w-7xl mx-auto text-center mb-12">
+            <h2 className="text-3xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
+              Why Choose Our Content Marketing Agency
+            </h2>
+            <p className="text-gray-300 max-w-3xl mx-auto">
+              We’ve helped brands scale with data-driven content strategies,
+              high-quality visuals, and targeted storytelling.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
               <div key={index} className="group cursor-pointer">
                 <div className="mb-4 flex justify-center">
@@ -186,6 +195,49 @@ const ContentMarketingPage = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-3xl sm:text-5xl font-bold mb-8 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
+              Our Core Content Marketing Services
+            </h2>
+            <p className="text-xl text-gray-300 mb-12 leading-relaxed">
+              From blog writing to social media campaigns, we offer end-to-end
+              content marketing solutions to grow your brand.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-10 text-left">
+              <div>
+                <h3 className="text-2xl font-semibold text-purple-300 mb-3">
+                  Strategic Content Planning
+                </h3>
+                <p className="text-gray-400">
+                  We analyze your audience and industry trends to craft a
+                  winning content calendar that drives engagement.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold text-purple-300 mb-3">
+                  SEO-Optimized Copywriting
+                </h3>
+                <p className="text-gray-400">
+                  Our writers create keyword-rich, compelling content that ranks
+                  high on search engines and attracts the right audience.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold text-purple-300 mb-3">
+                  Multi-Platform Content Distribution
+                </h3>
+                <p className="text-gray-400">
+                  We publish and promote your content across multiple channels
+                  to maximize reach and ROI.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
