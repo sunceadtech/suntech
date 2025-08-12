@@ -145,6 +145,8 @@ function WebsiteMaintanence() {
           name="keywords"
           content="website maintenance, site updates, website support, security monitoring, Sunceadtech"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">

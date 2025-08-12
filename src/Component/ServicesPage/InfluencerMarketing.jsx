@@ -1,86 +1,93 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-const SocialMediaPage = () => {
+
+function InfluencerMarketing() {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeTab, setActiveTab] = useState("facebook");
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
-  const socialPlatforms = [
-    {
-      id: "facebook",
-      name: "Facebook",
-      icon: "📘",
-      color: "from-blue-600 to-blue-700",
-      stats: { users: "2.9B", engagement: "6.4%", demographics: "25-54 years" },
-    },
+  // Platforms tailored for influencer marketing
+  const influencerPlatforms = [
     {
       id: "instagram",
       name: "Instagram",
       icon: "📷",
       color: "from-pink-500 to-purple-600",
-      stats: { users: "2B", engagement: "4.2%", demographics: "18-34 years" },
+      stats: { creators: "2M+", engagement: "High", bestFor: "Reels, Stories" },
+    },
+    {
+      id: "youtube",
+      name: "YouTube",
+      icon: "▶️",
+      color: "from-red-500 to-red-700",
+      stats: { creators: "1M+", engagement: "Long-form", bestFor: "Reviews" },
+    },
+    {
+      id: "tiktok",
+      name: "TikTok",
+      icon: "🎵",
+      color: "from-gray-900 to-gray-700",
+      stats: { creators: "1.5M+", engagement: "Very High", bestFor: "Shorts" },
     },
     {
       id: "linkedin",
       name: "LinkedIn",
       icon: "💼",
       color: "from-blue-700 to-blue-800",
-      stats: { users: "900M", engagement: "2.1%", demographics: "25-44 years" },
-    },
-    {
-      id: "twitter",
-      name: "Twitter",
-      icon: "🐦",
-      color: "from-blue-400 to-blue-500",
-      stats: { users: "450M", engagement: "1.4%", demographics: "25-49 years" },
+      stats: {
+        creators: "B2B KOLs",
+        engagement: "Thought Leadership",
+        bestFor: "B2B",
+      },
     },
   ];
 
   const services = [
     {
-      title: "Content Creation & Strategy",
+      title: "Influencer Discovery & Vetting",
       description:
-        "Engaging visual and written content tailored to each platform",
+        "Niche, audience quality, authenticity aur brand fit par based curated creator lists.",
       features: [
-        "Custom Graphics & Videos",
-        "Content Calendar Planning",
-        "Brand Voice Development",
-        "Trend Integration",
+        "Audience & Demographic Match",
+        "Fake Follower/Fraud Checks",
+        "Brand-fit Scoring",
+        "Category & Region Filters",
       ],
     },
     {
-      title: "Community Management",
+      title: "Campaign Strategy & Briefs",
       description:
-        "Active engagement and relationship building with your audience",
+        "Clear objectives, content angles, deliverables aur timelines define karte hain.",
       features: [
-        "Real-time Response Management",
-        "Community Building",
-        "User-Generated Content",
-        "Crisis Management",
+        "Creative Brief & Concepts",
+        "Hashtags & CTA Framework",
+        "Timeline & Deliverables Plan",
+        "Compliance (ASCI/Disclaimers)",
       ],
     },
     {
-      title: "Social Media Advertising",
-      description: "Targeted ad campaigns to reach your ideal customers",
+      title: "Negotiation & Contracts",
+      description:
+        "Best value ensure karte hue contracts, usage rights aur whitelisting manage.",
       features: [
-        "Campaign Strategy & Setup",
-        "Audience Targeting",
-        "A/B Testing",
-        "ROI Optimization",
+        "Rate & Barter Negotiations",
+        "Usage & Whitelisting Rights",
+        "Product Seeding/Logistics",
+        "Payment & Invoicing Support",
       ],
     },
     {
-      title: "Analytics & Reporting",
-      description: "Detailed insights to measure and improve performance",
+      title: "Execution, Tracking & Reporting",
+      description:
+        "End‑to‑end execution with real‑time tracking and clear ROI reporting.",
       features: [
-        "Performance Tracking",
-        "Engagement Analytics",
-        "Growth Metrics",
-        "Competitor Analysis",
+        "Live Link/Content Tracking",
+        "UTM & Coupon Setup",
+        "Performance Dashboards",
+        "Post‑Campaign Insights",
       ],
     },
   ];
@@ -89,13 +96,13 @@ const SocialMediaPage = () => {
     {
       name: "Starter",
       price: "₹₹₹",
-      period: "/month",
-      platforms: "2 Platforms",
+      period: "/campaign",
+      platforms: "Up to 5 Creators",
       features: [
-        "10 Posts per Month",
-        "Basic Graphics Design",
-        "Community Management",
-        "Monthly Analytics Report",
+        "Creator Discovery & Outreach",
+        "1 Platform (IG or YT)",
+        "Brief + 1 Review Cycle",
+        "Basic Performance Report",
         "Email Support",
       ],
       popular: false,
@@ -103,14 +110,14 @@ const SocialMediaPage = () => {
     {
       name: "Professional",
       price: "₹₹₹",
-      period: "/month",
-      platforms: "4 Platforms",
+      period: "/campaign",
+      platforms: "10–15 Creators",
       features: [
-        "20 Posts per Month",
-        "Custom Graphics & Videos",
-        "Advanced Community Management",
-        "Social Media Advertising (200 ad spend included)",
-        "Bi-weekly Reports",
+        "Multi‑platform (IG + YT/TikTok)",
+        "Negotiation & Contracting",
+        "Whitelisting (30 days)",
+        "UTM/Coupon Tracking",
+        "Bi‑weekly Performance Updates",
         "Phone + Email Support",
       ],
       popular: true,
@@ -118,14 +125,14 @@ const SocialMediaPage = () => {
     {
       name: "Enterprise",
       price: "₹₹₹",
-      period: "/month",
-      platforms: "All Platforms",
+      period: "/quarter",
+      platforms: "25+ Creators",
       features: [
-        "40 Posts per Month",
-        "Premium Content Creation",
-        "24/7 Community Management",
-        "Advanced Advertising Campaigns (500 ad spend included)",
-        "Weekly Reports & Strategy Calls",
+        "Always‑on Creator Program",
+        "Multi‑wave Content Calendar",
+        "Paid Amplification + Whitelisting (90 days)",
+        "Quarterly Strategy Workshops",
+        "Custom Dashboards & MMM Inputs",
         "Dedicated Account Manager",
         "Priority Support",
       ],
@@ -134,33 +141,49 @@ const SocialMediaPage = () => {
   ];
 
   const caseStudy = {
-    client: "Local Restaurant Chain",
-    challenge: "Low brand awareness and customer engagement",
+    client: "D2C Skincare Brand",
+    challenge:
+      "Low awareness in tier‑1/2 cities and low trust for new launches",
     solution:
-      "Comprehensive social media strategy across Instagram and Facebook",
+      "Nano + mid‑tier creator mix across Instagram Reels & YouTube Shorts with coupon tracking",
     results: [
-      { metric: "Followers Growth", value: "+340%" },
-      { metric: "Engagement Rate", value: "+180%" },
-      { metric: "Website Traffic", value: "+225%" },
-      { metric: "Online Orders", value: "+150%" },
+      { metric: "Reach", value: "12M+" },
+      { metric: "Coupon Sales", value: "+210%" },
+      { metric: "CPA vs Paid Social", value: "-32%" },
+      { metric: "Repeat Purchases", value: "+45%" },
     ],
   };
-
   return (
     <>
       <Helmet>
-        <title>Social Media Marketing Services | Sunceadtech</title>
+        <title>Influencer Marketing Services | Sunceadtech</title>
         <meta
           name="description"
-          content="Grow your brand presence with Sunceadtech's social media marketing services. We manage and optimize campaigns on Instagram, Facebook, LinkedIn & more."
+          content="Discover, manage, and scale influencer campaigns across Instagram, YouTube & TikTok. End‑to‑end influencer marketing with discovery, contracts, tracking & ROI."
         />
         <meta
           name="keywords"
-          content="social media marketing, Instagram marketing, Facebook ads, LinkedIn marketing, SMM services, Sunceadtech"
+          content="influencer marketing, creator marketing, instagram influencers, youtube collaborations, tiktok creators, KOL marketing, Sunceadtech"
         />
-          <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" /> 
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <link rel="canonical" href="https://example.com/services/influencer" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Influencer Marketing Services | Sunceadtech"
+        />
+        <meta
+          property="og:description"
+          content="Run high‑ROI influencer campaigns with creator discovery, negotiation, and real‑time performance tracking."
+        />
+        <meta
+          property="og:url"
+          content="https://example.com/influencer-marketing"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
+
       <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50">
         {/* Hero Section */}
         <div
@@ -183,37 +206,38 @@ const SocialMediaPage = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                        d="M15 10l4.553-.661a1 1 0 01.94 1.54l-3.295 3.21.777 4.53a1 1 0 01-1.451 1.054L12 18.347l-4.523 2.326a1 1 0 01-1.451-1.054l.777-4.53-3.295-3.21a1 1 0 01.94-1.54L9 10l2-4 2 4z"
                       />
                     </svg>
                   </div>
                   <span className="text-pink-600 font-semibold text-lg">
-                    Social Media Marketing
+                    Influencer Marketing
                   </span>
                 </div>
 
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                  Build Your Brand &
+                  Partner with Creators &
                   <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
                     {" "}
-                    Connect with Customers
+                    Grow with Authentic Content
                   </span>
                 </h1>
 
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Transform your social media presence into a powerful marketing
-                  engine. We create engaging content, build communities, and
-                  drive real business results across all major platforms.
+                  Discover the right creators, craft compelling briefs, and run
+                  high‑ROI influencer campaigns across Instagram, YouTube,
+                  TikTok, and LinkedIn. We handle everything—from discovery and
+                  negotiations to tracking and reporting.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
                     to="/contact"
                     className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold rounded-xl hover:from-pink-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                    aria-label="Request a free social media audit by contacting us"
-                    title="Request a free social media audit"
+                    aria-label="Request a free influencer marketing audit by contacting us"
+                    title="Request a free influencer marketing audit"
                   >
-                    Get Social Media Audit
+                    Get Influencer Audit
                     <svg
                       className="w-5 h-5 ml-2"
                       fill="none"
@@ -232,8 +256,8 @@ const SocialMediaPage = () => {
                   <Link
                     to="/contact"
                     className="inline-flex items-center px-8 py-4 bg-white text-pink-700 font-semibold rounded-xl hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border border-pink-200"
-                    aria-label="View our portfolio of social media marketing work"
-                    title="View our social media marketing portfolio"
+                    aria-label="View our influencer campaign case studies"
+                    title="View our influencer marketing work"
                   >
                     View Our Work
                   </Link>
@@ -241,7 +265,7 @@ const SocialMediaPage = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-4">
-                {socialPlatforms.map((platform, index) => (
+                {influencerPlatforms.map((platform) => (
                   <div
                     key={platform.id}
                     className={`bg-gradient-to-br ${platform.color} rounded-2xl p-6 text-white transform hover:scale-105 transition-all duration-300 shadow-xl`}
@@ -249,9 +273,9 @@ const SocialMediaPage = () => {
                     <div className="text-3xl mb-2">{platform.icon}</div>
                     <h3 className="font-bold text-lg mb-2">{platform.name}</h3>
                     <div className="space-y-1 text-sm opacity-90">
-                      <div>{platform.stats.users} Users</div>
-                      <div>{platform.stats.engagement} Engagement</div>
-                      <div>{platform.stats.demographics}</div>
+                      <div>{platform.stats.creators}</div>
+                      <div>{platform.stats.engagement}</div>
+                      <div>{platform.stats.bestFor}</div>
                     </div>
                   </div>
                 ))}
@@ -265,12 +289,11 @@ const SocialMediaPage = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Complete Social Media Solutions
+                End‑to‑End Influencer Solutions
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                From content creation to community management, we handle every
-                aspect of your social media presence to drive engagement and
-                growth.
+                Discovery se lekar contracts, execution aur ROI tak—hum aapke
+                liye poora creator program manage karte hain.
               </p>
             </div>
 
@@ -306,7 +329,7 @@ const SocialMediaPage = () => {
                 Success Story
               </h2>
               <p className="text-xl text-gray-600">
-                How we transformed a local restaurant's social media presence
+                How we scaled a D2C launch with nano + mid‑tier creators
               </p>
             </div>
 
@@ -331,7 +354,7 @@ const SocialMediaPage = () => {
                     </div>
                   </div>
                   <Link
-                    to="//contact"
+                    to="/contact"
                     className="inline-flex items-center mt-8 px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold rounded-lg hover:from-pink-700 hover:to-purple-700 transition-all duration-300"
                   >
                     View Full Case Study
@@ -376,12 +399,11 @@ const SocialMediaPage = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Choose Your Social Media Package
+                Choose Your Influencer Package
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Flexible packages designed to meet your business needs and
-                budget. All packages include dedicated support and regular
-                performance reviews.
+                Flexible packages for launches, promos ya always‑on
+                programs—hamisha ROI par focus.
               </p>
             </div>
 
@@ -475,12 +497,11 @@ const SocialMediaPage = () => {
         <div className="py-16 px-4 bg-gradient-to-br from-pink-600 to-purple-600">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Transform Your Social Media Presence?
+              Ready to Scale with Creators?
             </h3>
             <p className="text-xl text-pink-100 mb-8 max-w-2xl mx-auto">
-              Let's create a social media strategy that drives real results for
-              your business. Get started with a free consultation and social
-              media audit.
+              Let’s build an influencer program that drives measurable
+              growth—free audit & roadmap included.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -513,11 +534,11 @@ const SocialMediaPage = () => {
 
             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-white mb-2">500+</div>
-                <div className="text-pink-100">Successful Campaigns</div>
+                <div className="text-3xl font-bold text-white mb-2">800+</div>
+                <div className="text-pink-100">Creator Collaborations</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white mb-2">98%</div>
+                <div className="text-3xl font-bold text-white mb-2">96%</div>
                 <div className="text-pink-100">Client Satisfaction</div>
               </div>
               <div>
@@ -530,6 +551,6 @@ const SocialMediaPage = () => {
       </div>
     </>
   );
-};
+}
 
-export default SocialMediaPage;
+export default InfluencerMarketing;

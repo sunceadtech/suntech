@@ -100,6 +100,8 @@ function Graphic() {
           name="keywords"
           content="graphic design, creative design, banner design, social media graphics, Sunceadtech"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <main

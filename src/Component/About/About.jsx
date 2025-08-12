@@ -88,15 +88,46 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>Analytics & Reporting | Sunceadtech</title>
+        <title>
+          Best Digital Marketing Minds Behind Your Online Success | Sunceadtech
+        </title>
         <meta
           name="description"
-          content="Track performance with Sunceadtech's analytics and reporting services. Make data-driven digital marketing decisions for better ROI."
+          content="Empowering brands with top-tier digital marketing strategies that drive growth and deliver results."
         />
         <meta
           name="keywords"
-          content="analytics, reporting, digital marketing insights, performance tracking, ROI, Sunceadtech services"
+          content="Best Digital Marketing Minds Behind Your Online Success, The Best Digital Marketing Partner for You"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <link rel="canonical" href="https://www.sunceadtech.com/about" />
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SunceADTECH",
+      "url": "https://www.sunceadtech.com",
+      "logo": "https://www.sunceadtech.com/images/sun5.png",
+      "sameAs": [
+        "https://www.facebook.com/sunceadtech",
+        "https://www.instagram.com/sunceadtech",
+        "https://www.linkedin.com/company/sunceadtech"
+      ],
+      "description": "Empowering brands with top-tier digital marketing strategies that drive growth and deliver results.",
+      "founder": {
+        "@type": "Person",
+        "name": "Karan Sharma"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Delhi NCR",
+        "addressCountry": "India"
+      }
+    }
+    `}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-white via-[#f0f8ff] to-blue-100 overflow-hidden">
@@ -111,14 +142,9 @@ const AboutPage = () => {
                   NCR
                 </span>
               </div>
-
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-600">
-                  About Sunceadtech
-                </span>
-                <br />
                 <span className="bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
-                  Your Trusted Digital Marketing in Delhi NCR
+                  Best Digital Marketing Minds Behind Your Online Success
                 </span>
               </h1>
 
@@ -127,7 +153,6 @@ const AboutPage = () => {
                 who combine creativity with data-driven strategies to deliver
                 exceptional results.
               </p>
-
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/portfolio">
                   {" "}
@@ -184,8 +209,8 @@ const AboutPage = () => {
         {/* Values Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#f0f8ff]">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-5xl font-bold mb-16 text-orange-600 text-center">
-              Our Core Values
+            <h2 className="text-6xl font-bold mb-16 text-orange-600 text-center">
+              Our Proven Digital Approach
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {values.map((value, index) => (
@@ -249,6 +274,178 @@ const AboutPage = () => {
           )}
         </AnimatePresence>
       </div>
+      {/* About Us Section - Modern Digital Marketing Style */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto text-center">
+          {/* Main Heading */}
+          <h2 className="text-4xl font-bold text-orange-600 mb-6">
+            Your Growth Partner In The Digital Era
+          </h2>
+
+          {/* Intro */}
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
+            At <span className="font-bold">Sunceadtech</span>, we don’t just run
+            campaigns — we create growth stories. From building brands to
+            generating high-quality leads, our strategies are designed to
+            deliver <span className="font-bold">measurable ROI</span>.
+          </p>
+
+          {/* Quick Tagline */}
+          <p className="text-gray-500 italic max-w-2xl mx-auto mb-12">
+            Creativity + Data + Technology = Your Business Growth Formula
+          </p>
+
+          {/* Service Overview */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+            {/* Marketing Block */}
+            <div>
+              <h3 className="text-2xl font-semibold text-orange-500 mb-4">
+                Digital Marketing Solutions
+              </h3>
+              <p className="text-gray-700 mb-4">
+                We put your brand in front of the right audience at the right
+                time:
+              </p>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                  <span className="font-bold">
+                    Search Engine Optimization (SEO)
+                  </span>{" "}
+                  – Rank higher & drive organic traffic.
+                </li>
+                <li>
+                  <span className="font-bold">Pay-Per-Click (PPC)</span> –
+                  High-converting ad campaigns.
+                </li>
+                <li>
+                  <span className="font-bold">Social Media Marketing</span> –
+                  Engage & grow your audience.
+                </li>
+                <li>
+                  <span className="font-bold">Content Marketing</span> – Blogs,
+                  videos & visuals that convert.
+                </li>
+              </ul>
+            </div>
+
+            {/* Development Block */}
+            <div>
+              <h3 className="text-2xl font-semibold text-orange-500 mb-4">
+                Creative & Technical Excellence
+              </h3>
+              <p className="text-gray-700 mb-4">
+                We design and build digital experiences that inspire action:
+              </p>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                  <span className="font-bold">
+                    Website Design & Development
+                  </span>{" "}
+                  – Fast, modern & responsive.
+                </li>
+                <li>
+                  <span className="font-bold">Brand Identity</span> – Logo,
+                  color palette & brand voice.
+                </li>
+                <li>
+                  <span className="font-bold">App Development</span> – Engaging
+                  Android & iOS solutions.
+                </li>
+                <li>
+                  <span className="font-bold">Maintenance & Security</span> –
+                  Keeping your assets safe & updated.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="mt-12">
+            <a
+              href="/contact"
+              className="inline-block bg-orange-600 text-white font-semibold py-3 px-8 rounded-lg shadow hover:bg-orange-700 transition"
+            >
+              Let’s Grow Your Business
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b bg-[#f0f8ff]">
+        <div className="max-w-6xl mx-auto text-center">
+          {/* Main Heading */}
+          <h2 className="text-4xl font-extrabol capitalize text-orange-600 mb-6 font-bold transition">
+            Who We Are & Why We Exist
+          </h2>
+
+          {/* Subheading (Only One h3 in Whole Section) */}
+          {/* Intro Paragraph */}
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-10">
+            We’re not just a digital marketing agency — we combine creativity,
+            technology, and data-driven strategies to turn your vision into
+            measurable success.
+          </p>
+
+          {/* Storytelling Section */}
+          <div className="bg-white shadow-lg rounded-2xl p-8 md:p-12 mb-12 text-left">
+            <p className="text-gray-700 mb-6">
+              In today’s fast-paced digital world, brands need more than just
+              ads — they need
+              <span className="font-bold"> impact</span>. We craft campaigns
+              that speak to your audience, build trust, and drive conversions.
+              Whether you’re a startup aiming to disrupt or an established
+              business seeking fresh momentum, we deliver strategies that align
+              with your goals.
+            </p>
+            <p className="text-gray-700">
+              Our approach:{" "}
+              <span className="font-bold text-orange-500">
+                Understand, Create, Execute, Grow.
+              </span>
+              Every plan is backed by research, powered by creativity, and
+              optimized for measurable results.
+            </p>
+          </div>
+
+          {/* Key Strengths */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-left">
+            <div className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+              <p className="text-lg font-semibold text-orange-600 mb-2">
+                Data-Driven Decisions
+              </p>
+              <p className="text-gray-600">
+                We analyze trends, measure results, and make decisions based on
+                numbers, not guesses.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+              <p className="text-lg font-semibold text-orange-600 mb-2">
+                Creative Storytelling
+              </p>
+              <p className="text-gray-600">
+                Our designs and campaigns inspire, engage, and emotionally
+                connect with your audience.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+              <p className="text-lg font-semibold text-orange-600 mb-2">
+                Full-Service Expertise
+              </p>
+              <p className="text-gray-600">
+                From marketing to development, we handle every step of your
+                digital journey.
+              </p>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <a
+            href="/contact"
+            className="inline-block bg-orange-600 text-white font-semibold py-3 px-8 rounded-lg shadow hover:bg-orange-700 transition"
+          >
+            Let’s Work Together
+          </a>
+        </div>
+      </section>
     </>
   );
 };

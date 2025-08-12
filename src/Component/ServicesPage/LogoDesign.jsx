@@ -55,7 +55,7 @@ export default function LogoDesign() {
 
   return (
     <>
-   <Helmet>
+      <Helmet>
         <title>Logo Design Services | Sunceadtech</title>
         <meta
           name="description"
@@ -65,6 +65,8 @@ export default function LogoDesign() {
           name="keywords"
           content="logo design services, custom logo, branding logo, business logo design, creative logo design, Sunceadtech, professional logo designers"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-pink-900 via-purple-900 to-indigo-900 text-white overflow-hidden">
         {/* Hero Section */}

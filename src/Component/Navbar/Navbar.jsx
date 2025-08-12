@@ -38,6 +38,8 @@ const Navbar = () => {
             { name: "Content Marketing", path: "/services/content" },
             { name: "Analytics & Reporting", path: "/services/analytics" },
             { name: "Digital strategy consultant", path: "/services/analysis" },
+            { name: "Online Reputation Management", path: "/services/online-reputation" },
+            { name: "Influencer Marketing", path: "/services/influencer" },
           ],
         },
         {
@@ -80,7 +82,7 @@ const Navbar = () => {
           <div className="flex-shrink-0 group">
             <Link to="/" className="flex items-center space-x-2">
               <img
-                src={sunceAdtec}
+                src="/images/sun4.png"
                 alt="Sunceadtech"
                 className="w-32 h-14 p-1 object-contain transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300"
               />
@@ -103,7 +105,7 @@ const Navbar = () => {
                       aria-expanded={activeDropdown === item.name}
                     >
                       <span>
-                        {item.name === "Services" ? "Our Experties" : item.name}
+                        {item.name === "Services" ? "Our Expertise" : item.name}
                       </span>
                       <svg
                         className={`w-4 h-4 ${
@@ -214,7 +216,7 @@ const Navbar = () => {
                       className="w-full flex justify-between items-center text-gray-800 font-semibold py-2 px-2 rounded-md hover:bg-blue-50"
                     >
                       <span className="w-full text-center block">
-                        {item.name === "Services" ? "Our Experties" : item.name}
+                        {item.name === "Services" ? "Our Expertise" : item.name}
                       </span>
                       <svg
                         className={`w-4 h-4 transform transition-transform ${

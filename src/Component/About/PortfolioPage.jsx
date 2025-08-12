@@ -186,6 +186,8 @@ const PortfolioPage = () => {
           name="keywords"
           content="SEO, social media, branding, UI/UX, web design, PPC, development"
         />
+          <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" /> 
       </Helmet>
 
       <section className="relative px-4 py-20 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-[#fefefe] to-blue-50">

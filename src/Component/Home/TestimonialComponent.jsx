@@ -15,52 +15,51 @@ const TestimonialComponent = () => {
   const [imageLoaded, setImageLoaded] = useState({});
 
   const testimonials = [
-  {
-    id: 1,
-    name: "Priya Desai",
-    role: "Head of Performance Marketing",
-    company: "BuzzReach Media",
-    image: "./images/women2.webp",
-    rating: 5,
-    text: "Their data-driven approach took our campaigns to the next level. We achieved a 4x boost in engagement and significantly reduced ad spend waste.",
-    location: "Bangalore, India",
-    date: "1 month ago",
-  },
-  {
-    id: 2,
-    name: "Ravi Mehra",
-    role: "Digital Strategy Consultant",
-    company: "BrandSphere India",
-    image: "./images/man9.avif",
-    rating: 5,
-    text: "Thanks to their expertise, our SEO rankings and lead quality have improved massively. We saw a 60% growth in inbound leads in just 6 weeks.",
-    location: "Mumbai, India",
-    date: "3 weeks ago",
-  },
-  {
-    id: 3,
-    name: "Ananya Verma",
-    role: "Founder & CMO",
-    company: "SocialNest",
-    image: "./images/women4.avif",
-    rating: 5,
-    text: "Working with them was a game-changer. Their creative ad strategies helped us reach a younger audience and double our conversion rate.",
-    location: "Delhi, India",
-    date: "2 weeks ago",
-  },
-  {
-    id: 4,
-    name: "Kunal Sharma",
-    role: "Growth Marketing Lead",
-    company: "AdSparrow",
-    image: "./images/man1.avif",
-    rating: 5,
-    text: "Their automation and funnel strategies brought clarity and results. We reduced customer acquisition cost by 40% while scaling fast.",
-    location: "Pune, India",
-    date: "1 week ago",
-  },
-];
-
+    {
+      id: 1,
+      name: "Priya Desai",
+      role: "Head of Performance Marketing",
+      company: "BuzzReach Media",
+      image: "./images/women2.webp",
+      rating: 5,
+      text: "Their data-driven approach took our campaigns to the next level. We achieved a 4x boost in engagement and significantly reduced ad spend waste.",
+      location: "Bangalore, India",
+      date: "1 month ago",
+    },
+    {
+      id: 2,
+      name: "Ravi Mehra",
+      role: "Digital Strategy Consultant",
+      company: "BrandSphere India",
+      image: "./images/man9.avif",
+      rating: 5,
+      text: "Thanks to their expertise, our SEO rankings and lead quality have improved massively. We saw a 60% growth in inbound leads in just 6 weeks.",
+      location: "Mumbai, India",
+      date: "3 weeks ago",
+    },
+    {
+      id: 3,
+      name: "Ananya Verma",
+      role: "Founder & CMO",
+      company: "SocialNest",
+      image: "./images/women4.avif",
+      rating: 5,
+      text: "Working with them was a game-changer. Their creative ad strategies helped us reach a younger audience and double our conversion rate.",
+      location: "Delhi, India",
+      date: "2 weeks ago",
+    },
+    {
+      id: 4,
+      name: "Kunal Sharma",
+      role: "Growth Marketing Lead",
+      company: "AdSparrow",
+      image: "./images/man1.avif",
+      rating: 5,
+      text: "Their automation and funnel strategies brought clarity and results. We reduced customer acquisition cost by 40% while scaling fast.",
+      location: "Pune, India",
+      date: "1 week ago",
+    },
+  ];
 
   useEffect(() => {
     let interval;
@@ -228,6 +227,7 @@ const TestimonialComponent = () => {
                 aria-label={`View testimonial ${index + 1} of ${
                   testimonials.length
                 }`}
+                aria-current={currentIndex === index ? "true" : undefined}
                 title={`View testimonial ${index + 1}`}
               />
             ))}
@@ -275,38 +275,34 @@ const TestimonialComponent = () => {
           </div>
         </div>
       </div>
-     <div
-  className={`mt-12 sm:mt-16 lg:mt-20 transition-all duration-1000 delay-700 ${
-    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-  }`}
-  role="region"
-  aria-label="Business performance statistics"
->
-  <dl className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-    {[
-      { number: "500+", label: "Happy Clients" },
-      { number: "98%", label: "Satisfaction Rate" },
-      { number: "300%", label: "Average ROI" },
-      { number: "24/7", label: "Support Availability" },
-    ].map((stat, index) => (
       <div
-        key={index}
-        className="text-center p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-        role="group"
-        aria-label={`${stat.label}: ${stat.number}`}
-        title={`${stat.label} is ${stat.number}`}
+        className={`mt-12 sm:mt-16 lg:mt-20 transition-all duration-1000 delay-700 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+        role="region"
+        aria-label="Business performance statistics"
       >
-        <dt className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-600 mb-1 sm:mb-2">
-          {stat.number}
-        </dt>
-        <dd className="text-xs sm:text-sm lg:text-base text-blue-900 font-medium">
-          {stat.label}
-        </dd>
+        <dl className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+          {[
+            { number: "500+", label: "Happy Clients" },
+            { number: "98%", label: "Satisfaction Rate" },
+            { number: "300%", label: "Average ROI" },
+            { number: "24/7", label: "Support Availability" },
+          ].map((stat, index) => (
+            <div
+              key={index}
+              className="text-center p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              <dt className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-600 mb-1 sm:mb-2">
+                {stat.number}
+              </dt>
+              <dd className="text-xs sm:text-sm lg:text-base text-blue-900 font-medium">
+                {stat.label}
+              </dd>
+            </div>
+          ))}
+        </dl>
       </div>
-    ))}
-  </dl>
-</div>
-
     </div>
   );
 };

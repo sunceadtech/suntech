@@ -67,6 +67,8 @@ function UiUx() {
           name="keywords"
           content="UI design, UX design, UI/UX services, user interface design, user experience, Sunceadtech"
         />
+          <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" /> 
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50">

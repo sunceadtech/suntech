@@ -73,7 +73,7 @@ const ContactPage = () => {
     setIsSubmitting(true);
     const formPayload = {
       access_key: "bb8e7492-826c-47d4-a267-11ad80807fbe", // 🔑 Yahan apna key daal
-      subject: ` Sunceadtech - ${formData.service}`,
+      subject: ` Sunceadtech- ${formData.service}`,
       from_name: `${formData.firstName} ${formData.lastName}`,
       email: formData.email,
       phone: formData.phone || "Not provided",
@@ -117,29 +117,54 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Sunceadtech</title>
+        <title>
+          Talk to the Best Digital Marketing Experts in Delhi NCR | Sunceadtech
+        </title>
         <meta
           name="description"
-          content="Get in touch with Sunceadtech, the best digital marketing agency in Delhi NCR. We're here to answer your queries and help grow your business online."
+          content="Have a project in mind? Connect with Sunceadtech– your growth-focused digital marketing partner in Delhi NCR. Get expert advice for SEO, social media, PPC & more."
         />
         <meta
           name="keywords"
-          content="Contact SunceADTECH, Digital Marketing Support, SEO Expert Delhi, Social Media Help, PPC Consultation, Marketing Agency Delhi"
+          content="Contact Digital Marketing Agency Delhi, SunceadtechExperts, SEO Help Delhi NCR, Social Media Marketing Support, PPC Expert Consultation, Growth Strategy Delhi"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <link rel="canonical" href="https://www.sunceadtech.com/contact" />
+
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "SunceADTECH",
+        "url": "https://www.sunceadtech.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-91 9211877900",
+          "contactType": "Customer Service",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi"]
+        }
+      }
+    }
+    `}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
         {/* Hero Section */}
         {/* Hero Section */}
         <div className="relative sm:py-6 md:mt-0 mt-8"></div>
-
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Contact Information */}
             <div className="space-y-8 animate-slide-in-left">
               <div>
-                <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                  Get In Touch
+                <h1 className="text-2xl sm:text-3xl  uppercase font-bold text-gray-900 mb-6">
+                  Talk to the Best Digital Marketing Experts in Delhi NCR
                 </h1>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   We'd love to hear from you. Send us a message and we'll
@@ -244,7 +269,7 @@ const ContactPage = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 font-medium hover:underline"
-                      aria-label="Visit Sunceadtech LinkedIn page"
+                      aria-label="Visit SunceadtechLinkedIn page"
                     >
                       Find us on LinkedIn: @Sunceadtech
                     </a>
@@ -255,7 +280,7 @@ const ContactPage = () => {
             {/* Contact Form */}
             <div className="animate-slide-in-right">
               <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-10 border border-gray-100">
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
+                <h2 className="text-2xl sm:text-3xl  uppercase font-bold text-gray-900 mb-8 text-center">
                   Start Your Project Today
                 </h2>
 

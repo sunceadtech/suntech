@@ -105,11 +105,12 @@ const BestDigitalMarketing = () => {
           name="description"
           content="Sunceadtech is the best digital marketing agency in Delhi NCR offering SEO, video marketing, mobile app development, and custom web solutions to boost your online growth."
         />
-       <meta
-  name="keywords"
-  content="digital marketing Delhi, SEO Delhi NCR, video marketing India, app & web development, Sunceadtech, branding, PPC, social media"
-/>
-
+        <meta
+          name="keywords"
+          content="digital marketing Delhi, SEO Delhi NCR, video marketing India, app & web development, Sunceadtech, branding, PPC, social media"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <section className="relative py-24 lg:py-32 bg-gradient-to-br from-white via-blue-50 to-blue-100 overflow-hidden">

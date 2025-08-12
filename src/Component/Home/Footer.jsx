@@ -1,67 +1,88 @@
-import React, { useState, useEffect, useCallback, Suspense } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect, useCallback, Suspense } from "react";
+import { Link } from "react-router-dom";
 import {
-  Facebook, Twitter, Instagram, Linkedin, Youtube, Mail,
-  Phone, MapPin, Clock, ArrowUp, MessageCircle, Send, Heart, Globe
-} from 'lucide-react';
-import { throttle } from 'lodash';
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Youtube,
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  ArrowUp,
+  MessageCircle,
+  Send,
+  Heart,
+  Globe,
+} from "lucide-react";
+import { throttle } from "lodash";
 
-const Newsletter = React.lazy(() => import('./Newsletter'));
+const Newsletter = React.lazy(() => import("./Newsletter"));
 
 const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleScroll = useCallback(throttle(() => {
-    setShowScrollTop(window.scrollY > 300);
-    setIsScrolled(window.scrollY > 10);
-  }, 200), []);
+  const handleScroll = useCallback(
+    throttle(() => {
+      setShowScrollTop(window.scrollY > 300);
+      setIsScrolled(window.scrollY > 10);
+    }, 200),
+    []
+  );
 
   useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      setIsVisible(entry.isIntersecting);
-    }, { threshold: 0.1 });
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
 
-    const footerElement = document.getElementById('animated-footer');
+    const footerElement = document.getElementById("animated-footer");
     if (footerElement) observer.observe(footerElement);
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
       if (footerElement) observer.unobserve(footerElement);
     };
   }, [handleScroll]);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const quickLinks = [
-    { name: 'About', path: '/about' },
-    { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Blog', path: '/blog' },
+    { name: "About", path: "/about" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "Blog", path: "/blog" },
   ];
 
   const services = [
-    { name: 'SEO Marketing', path: '/services/seo' },
-    { name: 'Social Media', path: '/services/social-media' },
-    { name: 'PPC Advertising', path: '/services/ppc' },
-    { name: 'Content Marketing', path: '/services/content' },
-    { name: 'Video Content', path: '/services/video-content' },
-    { name: 'Analytics & Reporting', path: '/services/analytics' },
-    { name: 'Photography & video', path: '/services/photography' },
-    { name: 'Web Development', path: '/services/web' },
-    { name: 'Mobile App Development', path: '/services/mobile' },
-    { name: 'Software Development', path: '/services/software' },
+    { name: "SEO Marketing", path: "/services/seo" },
+    { name: "Social Media", path: "/services/social-media" },
+    { name: "PPC Advertising", path: "/services/ppc" },
+    { name: "Content Marketing", path: "/services/content" },
+    { name: "Video Content", path: "/services/video-content" },
+    { name: "Analytics & Reporting", path: "/services/analytics" },
+    { name: "Photography & video", path: "/services/photography" },
+    { name: "Web Development", path: "/services/web" },
+    { name: "Mobile App Development", path: "/services/mobile" },
+    { name: "Software Development", path: "/services/software" },
   ];
 
   const legalLinks = [...quickLinks];
 
   return (
     <>
-      <footer id="animated-footer" className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden md:mb-0 mb-4">
+      <footer
+        id="animated-footer"
+        className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden md:mb-0 mb-4"
+      >
         <div className="absolute inset-0 opacity-5">
           {isVisible && (
             <>
@@ -74,38 +95,81 @@ const Footer = () => {
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 lg:pt-20 pb-8">
-          <nav aria-label="Footer" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 lg:gap-12">
+          <nav
+            aria-label="Footer"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 lg:gap-12"
+          >
             {/* Column 1: Company Info */}
-            <div className={`lg:col-span-2 xl:col-span-2 transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <div
+              className={`lg:col-span-2 xl:col-span-2 transform transition-all duration-700 ${
+                isVisible
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               <div className="mb-6">
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="relative group">
                     <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-110">
-                      <Globe className="w-6 h-6 text-white" aria-hidden="true" />
+                      <Globe
+                        className="w-6 h-6 text-white"
+                        aria-hidden="true"
+                      />
                     </div>
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">SunceADTECH</h3>
+                  <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                    SunceADTECH
+                  </h3>
                 </div>
                 <p className="text-gray-300 mb-6 text-sm sm:text-base">
-                  We're passionate about helping businesses thrive in the digital world.
+                  We're passionate about helping businesses thrive in the
+                  digital world.
                 </p>
                 <div className="space-y-2">
-                  <ContactItem icon={Mail} text="Email: sunceadtech@gmail.com" color="bg-blue-600 mb-2" />
-                  <ContactItem icon={Phone} text="Phone: +91 9211877900" color="bg-green-600 mb-2" />
-                  <ContactItem icon={MapPin} text="Location: 1st floor A 797 GD Colony MayurVihar-Phase-III" color="bg-red-600 mb-2" />
-                  <ContactItem icon={Clock} text="Hours: Mon-Sat, 10AM–7PM EST" color="bg-yellow-500" />
+                  <ContactItem
+                    icon={Mail}
+                    text="Email: sunceadtech@gmail.com"
+                    color="bg-blue-600 mb-2"
+                  />
+                  <ContactItem
+                    icon={Phone}
+                    text="Phone: +91 9211877900"
+                    color="bg-green-600 mb-2"
+                  />
+                  <ContactItem
+                    icon={MapPin}
+                    text="Location: 1st floor A 797 GD Colony MayurVihar-Phase-III"
+                    color="bg-red-600 mb-2"
+                  />
+                  <ContactItem
+                    icon={Clock}
+                    text="Hours: Mon-Sat, 10AM–7PM EST"
+                    color="bg-yellow-500"
+                  />
                 </div>
               </div>
             </div>
 
             {/* Column 2: Quick Links with Follow Us */}
-            <div className={`transform transition-all duration-700 delay-200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              <h4 className="text-lg sm:text-xl font-semibold mb-6 text-white">Quick Links</h4>
+            <div
+              className={`transform transition-all duration-700 delay-200 ${
+                isVisible
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
+              <h4 className="text-lg sm:text-xl font-semibold mb-6 text-white">
+                Quick Links
+              </h4>
               <ul className="space-y-3 mb-6">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="text-gray-300 hover:text-white text-sm sm:text-base transition-all duration-300 hover:translate-x-2 inline-block group">
-                      <span className="relative">{link.name}
+                    <Link
+                      to={link.path}
+                      className="text-gray-300 hover:text-white text-sm sm:text-base transition-all duration-300 hover:translate-x-2 inline-block group"
+                    >
+                      <span className="relative">
+                        {link.name}
                         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
                       </span>
                     </Link>
@@ -114,28 +178,60 @@ const Footer = () => {
               </ul>
 
               {/* Follow Us Section */}
-              <h4 className="text-lg sm:text-xl font-semibold mb-4 text-white">Follow Us</h4>
+              <h4 className="text-lg sm:text-xl font-semibold mb-4 text-white">
+                Follow Us
+              </h4>
               <div className="flex space-x-4 mx-14 md:mx-10">
-                <a href="https://www.linkedin.com/in/sunce-adtech-600655364/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a
+                  href="https://www.linkedin.com/in/sunce-adtech-600655364/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
                   <Linkedin className="w-6 h-6 text-gray-300 hover:text-blue-500 transition duration-300" />
                 </a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                >
                   <Youtube className="w-6 h-6 text-gray-300 hover:text-red-500 transition duration-300" />
                 </a>
-                <a href="https://www.facebook.com/people/Sunce-Adtech/pfbid0LowM7Wqbyob9oVcAU3owX73BA47NTDpSHFeN6w64oH2YUKWDQiLCUm5adUuKt6epl/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <a
+                  href="https://www.facebook.com/people/Sunce-Adtech/pfbid0LowM7Wqbyob9oVcAU3owX73BA47NTDpSHFeN6w64oH2YUKWDQiLCUm5adUuKt6epl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
                   <Facebook className="w-6 h-6 text-gray-300 hover:text-blue-600 transition duration-300" />
                 </a>
-                <a href="https://x.com/sunceadtech" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <a
+                  href="https://x.com/sunceadtech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
                   <Twitter className="w-6 h-6 text-gray-300 hover:text-sky-500 transition duration-300" />
                 </a>
               </div>
             </div>
 
             {/* Column 3: Services */}
-            <FooterLinks title="Services" links={services.slice(0, Math.ceil(services.length / 2))} delay="300" isVisible={isVisible} />
+            <FooterLinks
+              title="Services"
+              links={services.slice(0, Math.ceil(services.length / 2))}
+              delay="300"
+              isVisible={isVisible}
+            />
 
             {/* Column 4: More Services */}
-            <FooterLinks title="More Services" links={services.slice(Math.ceil(services.length / 2))} delay="400" isVisible={isVisible} />
+            <FooterLinks
+              title="More Services"
+              links={services.slice(Math.ceil(services.length / 2))}
+              delay="400"
+              isVisible={isVisible}
+            />
           </nav>
         </div>
 
@@ -143,7 +239,10 @@ const Footer = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
               <span>© 2025 SunceADTECH. Made with</span>
-              <Heart className="w-4 h-4 text-red-500 animate-pulse" aria-hidden="true" />
+              <Heart
+                className="w-4 h-4 text-red-500 animate-pulse"
+                aria-hidden="true"
+              />
               <span>All rights reserved.</span>
             </div>
             <div className="flex flex-wrap justify-center lg:justify-end items-center space-x-6 text-sm">
@@ -166,8 +265,8 @@ const Footer = () => {
       <div
         className={`fixed bottom-0 left-0 right-0 z-50 ${
           isScrolled
-            ? 'bg-white border-t border-gray-100'
-            : 'bg-gradient-to-r from-gray-800 to-gray-900 border-t border-gray-700'
+            ? "bg-white border-t border-gray-100"
+            : "bg-gradient-to-r from-gray-800 to-gray-900 border-t border-gray-700"
         } p-3 flex flex-nowrap items-center justify-center gap-2 transition-all duration-300`}
       >
         <a
@@ -178,6 +277,7 @@ const Footer = () => {
           <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
           <span className="font-semibold">Call Us</span>
         </a>
+
         <a
           href="https://wa.me/919211877900"
           target="_blank"
@@ -194,7 +294,9 @@ const Footer = () => {
         onClick={scrollToTop}
         aria-label="Scroll to top"
         className={`fixed bottom-20 right-6 z-50 w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 ${
-          showScrollTop ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          showScrollTop
+            ? "translate-y-0 opacity-100"
+            : "translate-y-16 opacity-0"
         }`}
       >
         <ArrowUp className="w-5 h-5 mx-auto" aria-hidden="true" />
@@ -205,11 +307,15 @@ const Footer = () => {
 
 const ContactItem = React.memo(({ icon: Icon, text, href, color }) => (
   <div className="flex items-center space-x-3 group">
-    <div className={`w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center transition-colors duration-300 group-hover:${color}`}>
+    <div
+      className={`w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center transition-colors duration-300 group-hover:${color}`}
+    >
       <Icon className="w-4 h-4" aria-hidden="true" />
     </div>
     {href ? (
-      <a href={href} className="text-gray-300 text-sm sm:text-base">{text}</a>
+      <a href={href} className="text-gray-300 text-sm sm:text-base">
+        {text}
+      </a>
     ) : (
       <span className="text-gray-300 text-sm sm:text-base">{text}</span>
     )}
@@ -217,13 +323,23 @@ const ContactItem = React.memo(({ icon: Icon, text, href, color }) => (
 ));
 
 const FooterLinks = React.memo(({ title, links, delay, isVisible }) => (
-  <div className={`transform transition-all duration-700 delay-${delay} ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-    <h4 className="text-lg sm:text-xl font-semibold mb-6 text-white">{title}</h4>
+  <div
+    className={`transform transition-all duration-700 delay-${delay} ${
+      isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+    }`}
+  >
+    <h4 className="text-lg sm:text-xl font-semibold mb-6 text-white">
+      {title}
+    </h4>
     <ul className="space-y-3">
       {links.map((link, index) => (
         <li key={index}>
-          <Link to={link.path} className="text-gray-300 hover:text-white text-sm sm:text-base transition-all duration-300 hover:translate-x-2 inline-block group">
-            <span className="relative">{link.name}
+          <Link
+            to={link.path}
+            className="text-gray-300 hover:text-white text-sm sm:text-base transition-all duration-300 hover:translate-x-2 inline-block group"
+          >
+            <span className="relative">
+              {link.name}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
             </span>
           </Link>

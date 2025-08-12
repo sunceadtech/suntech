@@ -275,6 +275,8 @@ const PPCAdvertisingPage = () => {
           name="keywords"
           content="PPC advertising, Google Ads, paid marketing, search ads, PPC services, Sunceadtech"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">

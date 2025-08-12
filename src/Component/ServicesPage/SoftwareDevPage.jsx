@@ -125,6 +125,8 @@ const SoftwareDevPage = () => {
           name="keywords"
           content="software development, custom software, enterprise software, web applications, Sunceadtech"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
@@ -141,7 +143,7 @@ const SoftwareDevPage = () => {
             <div className="inline-flex items-center px-4 py-2 bg-purple-600/20 rounded-full border border-purple-400/30 mb-8 backdrop-blur-sm">
               <Code className="w-5 h-5 mr-2 text-purple-400" />
               <span className="text-purple-300 font-medium">
-                Professional Software Development 
+                Professional Software Development
               </span>
             </div>
 

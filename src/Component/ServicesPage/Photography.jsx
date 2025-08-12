@@ -23,6 +23,8 @@ function Photography() {
           name="keywords"
           content="photography services, professional photography, event photography, product shoots, Sunceadtech"
         />
+          <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" /> 
       </Helmet>
 
       <div className="font-sans text-gray-800">

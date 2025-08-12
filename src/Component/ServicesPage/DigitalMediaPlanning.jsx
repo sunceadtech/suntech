@@ -98,15 +98,19 @@ function DigitalMediaPlanning() {
   return (
     <>
       <Helmet>
-        <title>Video Content Solutions | Sunceadtech</title>
+        <title>Digital Media Planning Services | Sunceadtech</title>
         <meta
           name="description"
-          content="Create impactful video content with Sunceadtech. From explainer videos to brand storytelling, boost engagement with expert video production services."
+          content="Plan smarter media campaigns with Sunceadtech—channel mix, audience targeting, budget allocation, and performance measurement for higher ROI."
         />
         <meta
           name="keywords"
-          content="video content solutions, video production services, explainer videos, brand storytelling, marketing videos, digital media strategy, Sunceadtech"
+          content="digital media planning, media strategy, channel mix, budget allocation, audience targeting, media buying, campaign planning, Sunceadtech"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        {/* Optional but recommended */}
+        {/* <link rel="canonical" href="https://example.com/digital-media-planning" /> */}
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
         <div

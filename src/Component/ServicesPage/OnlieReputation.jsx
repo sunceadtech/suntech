@@ -2,53 +2,56 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-const SEOMarketingPage = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [activeTab, setActiveTab] = useState("overview");
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
-  const seoServices = [
+function OnlieReputation() {
+     const [isVisible, setIsVisible] = useState(false);
+      const [activeTab, setActiveTab] = useState("overview");
+    
+      useEffect(() => {
+        setIsVisible(true);
+      }, []);
+  const ormServices = [
     {
-      title: "Technical SEO Audit",
-      description: "Comprehensive analysis of your website's technical health",
+      title: "Review Monitoring & Response",
+      description:
+        "Track reviews across Google, Facebook, Practo and other platforms with prompt, brand-safe replies.",
       features: [
-        "Site Speed Optimization",
-        "Mobile Responsiveness",
-        "URL Structure",
-        "XML Sitemaps",
+        "Automated Review Alerts",
+        "Response Playbooks",
+        "Escalation Rules",
+        "Sentiment Analysis",
       ],
     },
     {
-      title: "Keyword Research",
-      description: "Strategic keyword analysis to target the right audience",
+      title: "Crisis Management",
+      description:
+        "Contain emerging issues fast with a proven playbook for social, news and forums.",
       features: [
-        "Competitor Analysis",
-        "Search Volume Data",
-        "Long-tail Keywords",
-        "Intent Mapping",
+        "Real-time War Room",
+        "Stakeholder Messaging",
+        "Media Guidelines",
+        "Post-crisis Audit",
       ],
     },
     {
-      title: "On-Page Optimization",
-      description: "Optimize individual pages for better search rankings",
+      title: "SERP Cleanup & Suppression",
+      description:
+        "Push down negative links and elevate positive assets on Google for branded queries.",
       features: [
-        "Title Tag Optimization",
-        "Meta Descriptions",
-        "Header Structure",
-        "Internal Linking",
+        "Owned Asset Optimization",
+        "Digital PR & Features",
+        "Knowledge Panel Hygiene",
+        "Wikipedia/Listing Guidance",
       ],
     },
     {
-      title: "Link Building",
-      description: "Build high-quality backlinks to boost domain authority",
+      title: "Brand Mentions & Social Listening",
+      description:
+        "Discover, classify and act on mentions across web & social to protect brand trust.",
       features: [
-        "Guest Posting",
-        "Resource Link Building",
-        "Broken Link Building",
-        "Brand Mentions",
+        "Platform-wide Listening",
+        "Influencer/Publisher Mapping",
+        "Competitor Watch",
+        "Monthly Insights Report",
       ],
     },
   ];
@@ -59,10 +62,10 @@ const SEOMarketingPage = () => {
       price: "₹₹₹",
       period: "/month",
       features: [
-        "Up to 10 Keywords",
-        "Monthly SEO Report",
-        "Basic On-Page Optimization",
-        "Google My Business Setup",
+        "Review Tracking (Google + 1 Platform)",
+        "Weekly Reputation Report",
+        "Response Templates",
+        "Basic SERP Suppression Plan",
         "Email Support",
       ],
       popular: false,
@@ -72,11 +75,11 @@ const SEOMarketingPage = () => {
       price: "₹₹₹",
       period: "/month",
       features: [
-        "Up to 30 Keywords",
-        "Bi-weekly SEO Reports",
-        "Advanced On-Page Optimization",
-        "Link Building Campaign",
-        "Content Creation (4 posts)",
+        "Multi-platform Monitoring (4+)",
+        "Crisis Playbook & On-call Support",
+        "Digital PR Outreach (2/mo)",
+        "Advanced SERP Suppression",
+        "Bi‑weekly Strategy Reviews",
         "Phone + Email Support",
       ],
       popular: true,
@@ -84,15 +87,15 @@ const SEOMarketingPage = () => {
     {
       name: "Enterprise",
       price: "₹₹₹",
-      period: "/month",
+      period: "/quarter",
       features: [
-        "Unlimited Keywords",
-        "Weekly SEO Reports",
-        "Complete SEO Management",
-        "Advanced Link Building",
-        "Content Creation (8 posts)",
+        "24/7 Monitoring & War Room",
+        "High-volume Response Management",
+        "PR + Thought Leadership Program",
+        "Aggressive Link Suppression",
+        "Custom Dashboards & SLAs",
         "Dedicated Account Manager",
-        "24/7 Priority Support",
+        "Priority Support",
       ],
       popular: false,
     },
@@ -100,44 +103,48 @@ const SEOMarketingPage = () => {
 
   const faqs = [
     {
-      question: "How long does it take to see SEO results?",
+      question: "How long does ORM take to show results?",
       answer:
-        "SEO is a long-term strategy. You can expect to see initial improvements in 3-6 months, with significant results typically appearing after 6-12 months of consistent optimization.",
+        "Quick wins can appear in 2–4 weeks (faster responses, improved ratings). SERP suppression and PR impact typically take 2–3 months for stable, measurable shifts.",
     },
     {
-      question: "Do you guarantee #1 rankings on Google?",
+      question: "Can you remove negative articles or reviews?",
       answer:
-        "No reputable SEO agency can guarantee specific rankings. We focus on improving your overall visibility, traffic quality, and conversions through proven SEO strategies.",
+        "We can’t delete third‑party content, but we can push down harmful links, request removals if they violate policies, and offset with stronger positive assets.",
     },
     {
-      question: "What's included in your SEO audit?",
+      question: "Which platforms do you monitor?",
       answer:
-        "Our comprehensive audit includes technical SEO analysis, on-page optimization review, competitor analysis, keyword research, and a detailed action plan.",
+        "Google Reviews, Facebook, Instagram, X (Twitter), YouTube, Practo, Justdial, Quora, news sites and niche forums—plus any custom sources you request.",
     },
     {
-      question: "Do you work with local businesses?",
+      question: "Is ORM suitable for local clinics and SMEs?",
       answer:
-        "Yes! We specialize in both local and national SEO. Our local SEO services include Google My Business optimization, local citations, and location-based keyword targeting.",
+        "Yes. We tailor monitoring, response SOPs and PR to your size and goals—often starting with Google reviews and local listings for quick impact.",
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>SEO Marketing Services | Sunceadtech</title>
+        <title>Online Reputation Management (ORM) Services | Sunceadtech</title>
         <meta
           name="description"
-          content="Improve your online visibility with Sunceadtech's SEO marketing services. We offer on-page, off-page, and technical SEO to boost your rankings."
+          content="Protect and grow your brand with ORM—review monitoring, crisis management, SERP suppression and social listening. Improve ratings and trust quickly."
         />
         <meta
           name="keywords"
-          content="SEO marketing, search engine optimization, on-page SEO, off-page SEO, SEO services, Sunceadtech"
+          content="online reputation management, ORM services, review management, crisis management, brand reputation, SERP suppression, Sunceadtech"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://example.com/online-reputation-management"
+        />
+        {/* OG/Twitter optional */}
       </Helmet>
-
-      <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50">
+      <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-violet-50">
         {/* Hero Section */}
         <div
           className={`pt-32 pb-16 px-4 transform transition-all duration-1000 ${
@@ -148,7 +155,7 @@ const SEOMarketingPage = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg mr-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-xl flex items-center justify-center shadow-lg mr-4">
                     <svg
                       className="w-8 h-8 text-white"
                       fill="none"
@@ -159,37 +166,37 @@ const SEOMarketingPage = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                        d="M3 10h3l3 10 4-18 3 8h5"
                       />
                     </svg>
                   </div>
-                  <span className="text-green-600 font-semibold text-lg">
-                    SEO Marketing
+                  <span className="text-indigo-600 font-semibold text-lg">
+                    Online Reputation Management
                   </span>
                 </div>
 
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                  Dominate Search Results with
-                  <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+                  Build Trust & Control Your
+                  <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
                     {" "}
-                    Expert SEO
+                    Online Reputation
                   </span>
                 </h1>
 
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Increase your organic traffic, improve search rankings, and
-                  drive qualified leads with our data-driven SEO strategies. Get
-                  found by customers actively searching for your services.
+                  Monitor reviews and mentions, respond fast, and keep negative
+                  results out of sight. We combine review ops, crisis playbooks,
+                  PR and SEO to safeguard your brand.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
                     to="/contact"
-                    className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-700 hover:to-emerald-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                    aria-label="Request a free SEO audit for your website"
-                    title="Get Free SEO Audit"
+                    className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-indigo-600 to-violet-600 text-white font-semibold rounded-xl hover:from-indigo-700 hover:to-violet-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                    aria-label="Request a free reputation audit"
+                    title="Get Free Reputation Audit"
                   >
-                    Get Free SEO Audit
+                    Get Free Reputation Audit
                     <svg
                       className="w-5 h-5 ml-2"
                       fill="none"
@@ -207,44 +214,48 @@ const SEOMarketingPage = () => {
 
                   <Link
                     to="/contact"
-                    className="inline-flex items-center px-8 py-4 bg-white text-green-700 font-semibold rounded-xl hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border border-green-200"
-                    aria-label="Schedule a professional SEO consultation"
-                    title="Schedule SEO Consultation"
+                    className="inline-flex items-center px-8 py-4 bg-white text-indigo-700 font-semibold rounded-xl hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border border-indigo-200"
+                    aria-label="Schedule an ORM consultation"
+                    title="Schedule ORM Consultation"
                   >
                     Schedule Consultation
                   </Link>
                 </div>
               </div>
 
+              {/* Metric Card */}
               <div className="relative">
                 <div className="bg-white rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition-all duration-300">
                   <div className="space-y-6">
                     <div className="flex items-center justify-between">
-                      <span className="text-gray-600">Organic Traffic</span>
-                      <span className="text-green-600 font-bold">+185%</span>
+                      <span className="text-gray-600">Average Rating Lift</span>
+                      <span className="text-indigo-600 font-bold">+1.2★</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-3">
-                      <div className="bg-gradient-to-r from-green-500 to-emerald-500 h-3 rounded-full w-4/5"></div>
+                      <div className="bg-gradient-to-r from-indigo-500 to-violet-500 h-3 rounded-full w-4/5"></div>
                     </div>
 
                     <div className="flex items-center justify-between">
-                      <span className="text-gray-600">Keyword Rankings</span>
-                      <span className="text-green-600 font-bold">+247%</span>
+                      <span className="text-gray-600">
+                        Negative Links Pushed
+                      </span>
+                      <span className="text-indigo-600 font-bold">‑70%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-3">
-                      <div className="bg-gradient-to-r from-green-500 to-emerald-500 h-3 rounded-full w-5/6"></div>
+                      <div className="bg-gradient-to-r from-indigo-500 to-violet-500 h-3 rounded-full w-5/6"></div>
                     </div>
 
                     <div className="flex items-center justify-between">
-                      <span className="text-gray-600">Lead Generation</span>
-                      <span className="text-green-600 font-bold">+312%</span>
+                      <span className="text-gray-600">Response SLA Met</span>
+                      <span className="text-indigo-600 font-bold">99%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-3">
-                      <div className="bg-gradient-to-r from-green-500 to-emerald-500 h-3 rounded-full w-full"></div>
+                      <div className="bg-gradient-to-r from-indigo-500 to-violet-500 h-3 rounded-full w-full"></div>
                     </div>
                   </div>
                 </div>
               </div>
+              {/* /Metric Card */}
             </div>
           </div>
         </div>
@@ -254,20 +265,19 @@ const SEOMarketingPage = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Comprehensive SEO Services
+                Complete ORM Solutions
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Our proven SEO methodology covers every aspect of search
-                optimization to ensure maximum visibility and sustainable
-                growth.
+                From review operations to SERP suppression and crisis control,
+                we manage every layer of your brand reputation.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              {seoServices.map((service, index) => (
+              {ormServices.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                  className="bg-gradient-to-br from-indigo-50 to-violet-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <p className="text-2xl font-bold text-gray-800 mb-4">
                     {service.title}
@@ -276,7 +286,7 @@ const SEOMarketingPage = () => {
                   <div className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center">
-                        <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                        <div className="w-2 h-2 bg-indigo-500 rounded-full mr-3"></div>
                         <span className="text-gray-700">{feature}</span>
                       </div>
                     ))}
@@ -288,15 +298,14 @@ const SEOMarketingPage = () => {
         </div>
 
         {/* Pricing Section */}
-        <div className="py-16 px-4 bg-gradient-to-br from-gray-50 to-green-50">
+        <div className="py-16 px-4 bg-gradient-to-br from-gray-50 to-indigo-50">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                SEO Packages & Pricing
+                ORM Packages & Pricing
               </h2>
               <p className="text-xl text-gray-600">
-                Choose the perfect SEO package for your business needs and
-                budget
+                Pick a plan that fits your brand’s scale and risk profile
               </p>
             </div>
 
@@ -305,12 +314,12 @@ const SEOMarketingPage = () => {
                 <div
                   key={index}
                   className={`bg-white rounded-2xl shadow-xl p-8 relative transform hover:scale-105 transition-all duration-300 ${
-                    pkg.popular ? "ring-4 ring-green-500 ring-opacity-50" : ""
+                    pkg.popular ? "ring-4 ring-indigo-500 ring-opacity-50" : ""
                   }`}
                 >
                   {pkg.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <span className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-2 rounded-full text-sm font-semibold">
+                      <span className="bg-gradient-to-r from-indigo-500 to-violet-500 text-white px-6 py-2 rounded-full text-sm font-semibold">
                         Most Popular
                       </span>
                     </div>
@@ -321,7 +330,7 @@ const SEOMarketingPage = () => {
                       {pkg.name}
                     </p>
                     <div className="flex items-baseline justify-center">
-                      <span className="text-4xl font-bold text-green-600">
+                      <span className="text-4xl font-bold text-indigo-600">
                         {pkg.price}
                       </span>
                       <span className="text-gray-600 ml-1">{pkg.period}</span>
@@ -332,7 +341,7 @@ const SEOMarketingPage = () => {
                     {pkg.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center">
                         <svg
-                          className="w-5 h-5 text-green-500 mr-3"
+                          className="w-5 h-5 text-indigo-500 mr-3"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -353,8 +362,8 @@ const SEOMarketingPage = () => {
                     to="/contact"
                     className={`block w-full text-center px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
                       pkg.popular
-                        ? "bg-gradient-to-r from-green-600 to-emerald-600 text-white hover:from-green-700 hover:to-emerald-700 shadow-lg"
-                        : "bg-green-100 text-green-700 hover:bg-green-200"
+                        ? "bg-gradient-to-r from-indigo-600 to-violet-600 text-white hover:from-indigo-700 hover:to-violet-700 shadow-lg"
+                        : "bg-indigo-100 text-indigo-700 hover:bg-indigo-200"
                     }`}
                   >
                     Get Started
@@ -370,11 +379,10 @@ const SEOMarketingPage = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Our SEO Process
+                Our ORM Process
               </h3>
               <p className="text-xl text-gray-600">
-                A systematic approach to improve your search rankings and drive
-                results
+                Practical steps that restore trust—and keep it
               </p>
             </div>
 
@@ -382,27 +390,27 @@ const SEOMarketingPage = () => {
               {[
                 {
                   step: "01",
-                  title: "Audit & Analysis",
-                  desc: "Comprehensive website and competitor analysis",
+                  title: "Audit & Baseline",
+                  desc: "Ratings, SERP, mentions & risk mapping",
                 },
                 {
                   step: "02",
-                  title: "Strategy Development",
-                  desc: "Custom SEO strategy based on your goals",
+                  title: "Playbooks & Setup",
+                  desc: "Review ops, response SOPs & escalation",
                 },
                 {
                   step: "03",
-                  title: "Implementation",
-                  desc: "Execute optimization across all channels",
+                  title: "Execution",
+                  desc: "Monitoring, PR, suppression & outreach",
                 },
                 {
                   step: "04",
-                  title: "Monitor & Optimize",
-                  desc: "Track results and continuously improve",
+                  title: "Measure & Improve",
+                  desc: "Dashboards, insights & monthly tune-ups",
                 },
               ].map((process, index) => (
                 <div key={index} className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl group-hover:scale-110 transition-transform duration-300">
                     {process.step}
                   </div>
                   <h3 className="text-xl font-bold text-gray-800 mb-4">
@@ -416,7 +424,7 @@ const SEOMarketingPage = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="py-16 px-4 bg-gradient-to-br from-green-50 to-emerald-50">
+        <div className="py-16 px-4 bg-gradient-to-br from-indigo-50 to-violet-50">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
@@ -441,21 +449,21 @@ const SEOMarketingPage = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="py-16 px-4 bg-gradient-to-r from-green-600 to-emerald-600">
+        <div className="py-16 px-4 bg-gradient-to-r from-indigo-600 to-violet-600">
           <div className="max-w-4xl mx-auto text-center text-white">
             <p className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Boost Your Search Rankings?
+              Ready to Protect Your Brand Reputation?
             </p>
             <p className="text-xl mb-8 opacity-90">
-              Get a free SEO audit and discover how we can help you dominate
-              search results.
+              Get a free reputation audit and a step‑by‑step plan to improve
+              ratings, visibility and trust.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="inline-flex items-center px-8 py-4 bg-white text-green-600 font-semibold rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg"
+                className="inline-flex items-center px-8 py-4 bg-white text-indigo-700 font-semibold rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg"
               >
-                Get Free SEO Audit
+                Get Free Reputation Audit
                 <svg
                   className="w-5 h-5 ml-2"
                   fill="none"
@@ -472,7 +480,7 @@ const SEOMarketingPage = () => {
               </Link>
               <Link
                 to="/contact"
-                className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-green-600 transform hover:scale-105 transition-all duration-300"
+                className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-indigo-700 transform hover:scale-105 transition-all duration-300"
               >
                 Talk to an Expert
               </Link>
@@ -482,6 +490,6 @@ const SEOMarketingPage = () => {
       </div>
     </>
   );
-};
+}
 
-export default SEOMarketingPage;
+export default OnlieReputation;

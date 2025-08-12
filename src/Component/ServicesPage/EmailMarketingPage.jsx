@@ -268,6 +268,8 @@ const EmailMarketingPage = () => {
           name="keywords"
           content="digital strategy consultant, marketing strategy, digital transformation, business growth, SunceADTECH, online strategy, data-driven consulting"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white overflow-hidden">

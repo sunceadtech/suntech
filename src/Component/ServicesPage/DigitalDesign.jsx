@@ -67,6 +67,8 @@ function DigitalDesign() {
           name="keywords"
           content="video content solutions, video production services, explainer videos, brand storytelling, marketing videos, Sunceadtech"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-pink-900 via-purple-900 to-indigo-900 text-white overflow-hidden">

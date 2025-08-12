@@ -282,9 +282,9 @@ const USPComponent = () => {
                   </div>
 
                   <div className="flex-1 min-w-0">
-                    <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2 leading-tight">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2 leading-tight">
                       {feature.title}
-                    </h4>
+                    </h3>
                     <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                       {feature.description}
                     </p>
@@ -319,9 +319,9 @@ const USPComponent = () => {
             <div className="bg-gradient-to-br from-orange-500 via-red-500 to-blue-900 rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden">
               <div className="absolute inset-0 bg-black/10"></div>
               <div className="relative z-10">
-                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-center sm:text-left">
+                <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-center sm:text-left">
                   Ready to 10X Your Business?
-                </h3>
+                </h4>
                 <p className="text-base sm:text-lg mb-5 sm:mb-6 opacity-90 text-center sm:text-left leading-relaxed">
                   Join successful businesses who've already transformed their
                   digital presence.

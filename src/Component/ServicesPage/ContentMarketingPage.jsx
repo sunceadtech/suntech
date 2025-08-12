@@ -125,6 +125,8 @@ const ContentMarketingPage = () => {
           name="keywords"
           content="Content Marketing, SEO Content, Blog Writing, Brand Storytelling, Content Strategy, Sunceadtech, Digital Marketing Agency, Delhi NCR"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
         {/* Hero Section */}

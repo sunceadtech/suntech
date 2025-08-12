@@ -50,6 +50,8 @@ function Branding() {
           name="keywords"
           content="branding solutions, brand identity, storytelling, logo design, visual branding, brand strategy, Sunceadtech branding"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-100 text-gray-800">

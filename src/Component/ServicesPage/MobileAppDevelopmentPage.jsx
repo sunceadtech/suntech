@@ -126,6 +126,8 @@ const MobileAppDevelopmentPage = () => {
           name="keywords"
           content="mobile app development, android app, ios app, app development company, Sunceadtech"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
